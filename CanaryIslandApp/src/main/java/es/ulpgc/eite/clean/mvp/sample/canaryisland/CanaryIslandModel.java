@@ -1,12 +1,12 @@
-package es.ulpgc.eite.clean.mvp.sample.dummy;
+package es.ulpgc.eite.clean.mvp.sample.canaryisland;
 
 import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
 
 
-public class DummyModel
-    extends GenericModel<Dummy.ModelToPresenter> implements Dummy.PresenterToModel {
+public class CanaryIslandModel
+    extends GenericModel<CanaryIsland.ModelToPresenter> implements CanaryIsland.PresenterToModel {
 
 
   private String dummyText;
@@ -23,7 +23,7 @@ public class DummyModel
    * @param presenter Presenter interface
    */
   @Override
-  public void onCreate(Dummy.ModelToPresenter presenter) {
+  public void onCreate(CanaryIsland.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
 

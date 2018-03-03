@@ -1,4 +1,4 @@
-package es.ulpgc.eite.clean.mvp.sample.hello;
+package es.ulpgc.eite.clean.mvp.sample.canaryisland;
 
 
 import android.content.Context;
@@ -9,12 +9,14 @@ import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
 
-public class HelloPresenter
+public class CanaryIslandPresenter
     extends GenericPresenter
-    <Hello.PresenterToView, Hello.PresenterToModel, Hello.ModelToPresenter, HelloModel>
-    implements Hello.ViewToPresenter, Hello.ModelToPresenter, Hello.DummyTo, Hello.ToDummy {
+        <CanaryIsland.PresenterToView, CanaryIsland.PresenterToModel, CanaryIsland.ModelToPresenter, CanaryIslandModel>
+    implements CanaryIsland.ViewToPresenter, CanaryIsland.ModelToPresenter, CanaryIsland.CanaryIslandTo, CanaryIsland.ToCanaryIsland {
 
-  private boolean toolbarVisible, buttonClicked, textVisible, progressBarVisible;
+  private boolean toolbarVisible;
+  private boolean buttonClicked;
+  private boolean textVisible;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -25,22 +27,14 @@ public class HelloPresenter
    * @param view The current VIEW instance
    */
   @Override
-  public void onCreate(Hello.PresenterToView view) {
-    super.onCreate(HelloModel.class, this);
+  public void onCreate(CanaryIsland.PresenterToView view) {
+    super.onCreate(CanaryIslandModel.class, this);
     setView(view);
     Log.d(TAG, "calling onCreate()");
-
-    /*
-    toolbarVisible = false;
-    buttonClicked = false;
-    textVisible = false;
-    progressBarVisible = false;
-    */
 
     Log.d(TAG, "calling startingScreen()");
     Mediator.Lifecycle mediator = (Mediator.Lifecycle) getApplication();
     mediator.startingScreen(this);
-
   }
 
   /**
@@ -51,7 +45,7 @@ public class HelloPresenter
    * @param view The current VIEW instance
    */
   @Override
-  public void onResume(Hello.PresenterToView view) {
+  public void onResume(CanaryIsland.PresenterToView view) {
     setView(view);
     Log.d(TAG, "calling onResume()");
 
@@ -84,57 +78,21 @@ public class HelloPresenter
   public void onDestroy(boolean isChangingConfiguration) {
     super.onDestroy(isChangingConfiguration);
 
-    if (isChangingConfiguration) {
+    if(isChangingConfiguration) {
       Log.d(TAG, "calling onChangingConfiguration()");
     } else {
       Log.d(TAG, "calling onDestroy()");
     }
   }
 
-  ///////////////////////////////////////////////////////////////////////////////////
-  // Model To Presenter /////////////////////////////////////////////////////////////
-
-
-  public void onHelloGetMessageTaskFinished(String text){
-
-    // pasar el texto a la vista  (aplicar estado)
-
-    // hacer visible el texto (aplicar estado)
-
-    // hacer invisible el progress bar (aplicar estado)
-
-    // actualizar estado (fijar estado)
-    textVisible = true;
-    progressBarVisible = false;
-  }
 
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
-
-  @Override
-  public void onSayHelloBtnClicked() {
-
-    if (isViewRunning()) {
-
-      // pedir el texto al modelo asíncronamente
-      // al finalizar el modelo llamará a onHelloGetMessageTaskFinished()
-
-      // hacer visible el progress bar (aplicar estado)
-
-      // actualizar estado (fijar estado)
-      buttonClicked = true;
-      progressBarVisible = true;
-
-    }
-  }
-
-
-  /*
   @Override
   public void onButtonClicked() {
     Log.d(TAG, "calling onButtonClicked()");
-    if (getModel().isNumOfTimesCompleted()) {
+    if(getModel().isNumOfTimesCompleted()){
 
       getModel().resetMsgByBtnClicked(); // reseteamos el estado al cumplirse la condición
 
@@ -144,7 +102,7 @@ public class HelloPresenter
       return;
     }
 
-    if (isViewRunning()) {
+    if(isViewRunning()) {
       getModel().changeMsgByBtnClicked();
       getView().setText(getModel().getText());
       textVisible = true;
@@ -153,7 +111,6 @@ public class HelloPresenter
     }
 
   }
-  */
 
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -181,16 +138,6 @@ public class HelloPresenter
   }
 
   @Override
-  public void setProgressBarVisibility(boolean visible) {
-    progressBarVisible = visible;
-  }
-
-  @Override
-  public void setButtonClicked(boolean clicked) {
-    buttonClicked = clicked;
-  }
-
-  @Override
   public void onScreenResumed() {
     Log.d(TAG, "calling onScreenResumed()");
 
@@ -206,13 +153,13 @@ public class HelloPresenter
 
 
   @Override
-  public Context getManagedContext() {
+  public Context getManagedContext(){
     return getActivityContext();
   }
 
   @Override
-  public void destroyView() {
-    if (isViewRunning()) {
+  public void destroyView(){
+    if(isViewRunning()) {
       getView().finishScreen();
     }
   }
@@ -234,37 +181,24 @@ public class HelloPresenter
   private void setCurrentState() {
     Log.d(TAG, "calling setCurrentState()");
 
-    if (isViewRunning()) {
-      getView().setSayHelloLabel(getModel().getSayHelloLabel());
-      getView().setGoToByeLabel(getModel().getGoToByeLabel());
-      getView().setText(getModel().getText());
+    if(isViewRunning()) {
+      getView().setLabel(getModel().getLabel());
     }
     checkToolbarVisibility();
     checkTextVisibility();
-    checkProgressBarVisibility();
   }
 
-
-  private void checkProgressBarVisibility() {
-    if (isViewRunning()) {
-      if (!progressBarVisible) {
-        getView().hideProgressBar();
-      }
-    }
-  }
-
-
-  private void checkToolbarVisibility() {
-    if (isViewRunning()) {
+  private void checkToolbarVisibility(){
+    if(isViewRunning()) {
       if (!toolbarVisible) {
         getView().hideToolbar();
       }
     }
   }
 
-  private void checkTextVisibility() {
-    if (isViewRunning()) {
-      if (!textVisible) {
+  private void checkTextVisibility(){
+    if(isViewRunning()) {
+      if(!textVisible) {
         getView().hideText();
       } else {
         getView().showText();

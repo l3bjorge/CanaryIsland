@@ -1,4 +1,4 @@
-package es.ulpgc.eite.clean.mvp.sample.dummy;
+package es.ulpgc.eite.clean.mvp.sample.canaryisland;
 
 import android.content.Context;
 
@@ -10,7 +10,7 @@ import es.ulpgc.eite.clean.mvp.Presenter;
  * Created by Luis on 12/11/16.
  */
 
-public interface Dummy {
+public interface CanaryIsland {
 
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -21,11 +21,11 @@ public interface Dummy {
     void setTextVisibility(boolean visible);
   }
 
-  interface ToDummy extends State {
+  interface ToCanaryIsland extends State {
     void onScreenStarted();
   }
 
-  interface DummyTo extends State{
+  interface CanaryIslandTo extends State{
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
