@@ -31,7 +31,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
   ///////////////////////////////////////////////////////////////////////////////////
   // Lifecycle /////////////////////////////////////////////////////////////////////
 
-  // CanaryIsland Screen
+  // Home Screen
 
   @Override
   public void startingScreen(CanaryIsland.ToCanaryIsland presenter){
@@ -76,7 +76,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
   ///////////////////////////////////////////////////////////////////////////////////
   // Navigation ////////////////////////////////////////////////////////////////////
 
-  // CanaryIsland Screen
+  // Home Screen
 
   @Override
   public void backToPreviousScreen(CanaryIsland.CanaryIslandTo presenter) {
