@@ -21,11 +21,11 @@ public interface Home {
     void setTextVisibility(boolean visible);
   }
 
-  interface ToCanaryIsland extends State {
+  interface ToHome extends State {
     void onScreenStarted();
   }
 
-  interface CanaryIslandTo extends State{
+  interface HomeTo extends State{
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();

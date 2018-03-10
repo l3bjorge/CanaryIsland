@@ -12,7 +12,7 @@ import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
 public class HomePresenter
     extends GenericPresenter
         <Home.PresenterToView, Home.PresenterToModel, Home.ModelToPresenter, HomeModel>
-    implements Home.ViewToPresenter, Home.ModelToPresenter, Home.CanaryIslandTo, Home.ToCanaryIsland {
+    implements Home.ViewToPresenter, Home.ModelToPresenter, Home.HomeTo, Home.ToHome {
 
   private boolean toolbarVisible;
   private boolean buttonClicked;
