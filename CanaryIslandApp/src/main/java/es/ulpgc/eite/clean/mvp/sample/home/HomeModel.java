@@ -23,7 +23,7 @@ public class HomeModel
   public void onCreate(Home.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-
+    msgText = "Canary Island";
     englishLabel = "English";
   }
 

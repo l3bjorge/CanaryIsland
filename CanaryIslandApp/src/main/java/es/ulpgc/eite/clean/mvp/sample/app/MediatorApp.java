@@ -28,7 +28,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         Log.d(TAG, "calling creatingInitialState()");
         toCanaryIslandState = new CanaryIslandState();
         toCanaryIslandState.toolbarVisibility = false;
-        toCanaryIslandState.textVisibility = false;
+        toCanaryIslandState.textVisibility = true;
 
 
         Log.d(TAG, "calling creatingInitialHelloState()");

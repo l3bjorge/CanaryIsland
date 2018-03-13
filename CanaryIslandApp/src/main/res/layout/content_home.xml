@@ -22,24 +22,62 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/screen_text"
+            android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:id="@+id/text"/>
+            android:textSize="36sp" />
 
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
-        <Button
-            android:id="@+id/BtnEnglish"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/ButtonSpain"
+                app:srcCompat="@mipmap/es" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/ButtonEnglish"
+                app:srcCompat="@mipmap/gb" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/ButtonGermany"
+                app:srcCompat="@mipmap/de" />
+
+        </LinearLayout>
+
+        <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_label"
-            android:layout_gravity="bottom|right"
-            android:layout_margin="@dimen/fab_margin"/>
+            android:layout_weight="1"/>
 
     </LinearLayout>
 </RelativeLayout>

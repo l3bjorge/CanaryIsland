@@ -186,13 +186,10 @@ public class HomePresenter
     }
   }
 
-  private void checkTextVisibility(){
-    if(isViewRunning()) {
-      if(!textVisible) {
-        getView().hideText();
-      } else {
-        getView().showText();
-      }
+  private void checkTextVisibility() {
+    if (isViewRunning()) {
+      getView().showText();
+      getView().setText(getModel().getText());
     }
   }
 

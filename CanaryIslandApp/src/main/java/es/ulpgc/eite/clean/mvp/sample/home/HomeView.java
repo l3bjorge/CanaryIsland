@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import es.ulpgc.eite.clean.mvp.GenericActivity;
@@ -16,7 +17,7 @@ public class HomeView
     implements Home.PresenterToView {
 
   private Toolbar toolbar;
-  private Button button;
+  private ImageButton button;
   private TextView text;
 
   @Override
@@ -27,10 +28,11 @@ public class HomeView
 
     text = (TextView) findViewById(R.id.text);
 
+
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    button = (Button) findViewById(R.id.BtnEnglish);
+    button = (ImageButton) findViewById(R.id.ButtonEnglish);
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -78,7 +80,7 @@ public class HomeView
 
   @Override
   public void hideText() {
-    text.setVisibility(View.GONE);
+    text.setVisibility(View.INVISIBLE);
   }
 
   @Override
@@ -93,6 +95,6 @@ public class HomeView
 
   @Override
   public void setLabel(String txt) {
-    button.setText(txt);
+    setText(txt);
   }
 }
