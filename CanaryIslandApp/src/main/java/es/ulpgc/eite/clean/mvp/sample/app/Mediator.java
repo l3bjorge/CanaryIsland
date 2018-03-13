@@ -33,7 +33,7 @@ public interface Mediator {
     void backToPreviousScreen(CanaryIsland.CanaryIslandTo presenter);
 
     //Home
-    void goToNextScreen(Home.HomeTo presenter);
+    void goToIslandsMenuScreen(Home.HomeTo presenter);
     void backToPreviousScreen(Home.HomeTo presenter);
 
     //IslandsMenu

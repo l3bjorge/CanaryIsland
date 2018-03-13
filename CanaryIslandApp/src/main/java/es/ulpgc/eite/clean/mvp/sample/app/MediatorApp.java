@@ -204,7 +204,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void goToNextScreen(Home.HomeTo presenter) {
+    public void goToIslandsMenuScreen(Home.HomeTo presenter) {
         Log.d(TAG, "calling savingUpdatedState()");
         homeToState = new HomeState();
         homeToState.toolbarVisibility = presenter.isToolbarVisible();

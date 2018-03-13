@@ -96,7 +96,7 @@ public class HomePresenter
     Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
     if(isViewRunning()) {
       MediatorApp mediator = new MediatorApp();
-      mediator.goToNextScreen(this);
+      mediator.goToIslandsMenuScreen(this);
     }
 
   }
