@@ -89,28 +89,7 @@ public class HomePresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
-  @Override
-  public void onButtonClicked() {
-    Log.d(TAG, "calling onButtonClicked()");
-    if(getModel().isNumOfTimesCompleted()){
 
-      getModel().resetMsgByBtnClicked(); // reseteamos el estado al cumplirse la condición
-
-      Log.d(TAG, "calling goToNextScreen()");
-      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToNextScreen(this);
-      return;
-    }
-
-    if(isViewRunning()) {
-      getModel().changeMsgByBtnClicked();
-      getView().setText(getModel().getText());
-      textVisible = true;
-      buttonClicked = true;
-      checkTextVisibility();
-    }
-
-  }
 
 
   ///////////////////////////////////////////////////////////////////////////////////
