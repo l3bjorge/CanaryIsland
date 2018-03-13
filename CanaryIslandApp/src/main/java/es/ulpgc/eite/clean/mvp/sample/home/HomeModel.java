@@ -9,10 +9,7 @@ public class HomeModel
     extends GenericModel<Home.ModelToPresenter> implements Home.PresenterToModel {
 
 
-  private String dummyText;
-  private String dummyLabel;
-  private int numOfTimes;
-  private int maxNumOfTimes;
+  private String englishLabel;
   private String msgText;
 
 
@@ -27,9 +24,7 @@ public class HomeModel
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
 
-    dummyLabel = "Click Me!";
-    dummyText = "Hello World!";
-    maxNumOfTimes = 3;
+    englishLabel = "English";
   }
 
   /**
@@ -47,22 +42,7 @@ public class HomeModel
   ///////////////////////////////////////////////////////////////////////////////////
   // Presenter To Model ////////////////////////////////////////////////////////////
 
-  @Override
-  public boolean isNumOfTimesCompleted() {
-    if(numOfTimes == maxNumOfTimes) {
-      return true;
-    }
-    return false;
-  }
 
-  @Override
-  public void changeMsgByBtnClicked() {
-    msgText = dummyText;
-    if(numOfTimes > 0) {
-      msgText += ", " + (numOfTimes + 1) + " times";
-    }
-    numOfTimes++;
-  }
 
   @Override
   public String getText() {
@@ -71,13 +51,8 @@ public class HomeModel
 
   @Override
   public String getLabel() {
-    return dummyLabel;
+    return englishLabel;
   }
 
-  @Override
-  public void resetMsgByBtnClicked() {
-    numOfTimes = 1;
-    msgText = dummyText;
-  }
 
 }
