@@ -9,71 +9,74 @@ import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
 import es.ulpgc.eite.clean.mvp.sample.home.HomeView;
+import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
+import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuView;
 
 public class MediatorApp extends Application implements Mediator.Lifecycle, Mediator.Navigation {
 
-  protected final String TAG = this.getClass().getSimpleName();
+    protected final String TAG = this.getClass().getSimpleName();
 
-  private CanaryIslandState toCanaryIslandState, canaryislandToState;
-  private HomeState toHomeState, homeToState;
+    private CanaryIslandState toCanaryIslandState, canaryislandToState;
+    private HomeState toHomeState, homeToState;
+    private IslandsMenuState toIslandsMenuState, islandsmenuToState;
 
-  @Override
-  public void onCreate() {
-    super.onCreate();
-    Log.d(TAG, "calling onCreate()");
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Log.d(TAG, "calling onCreate()");
 
-    Log.d(TAG, "calling creatingInitialState()");
-    toCanaryIslandState = new CanaryIslandState();
-    toCanaryIslandState.toolbarVisibility = false;
-    toCanaryIslandState.textVisibility = false;
+        Log.d(TAG, "calling creatingInitialState()");
+        toCanaryIslandState = new CanaryIslandState();
+        toCanaryIslandState.toolbarVisibility = false;
+        toCanaryIslandState.textVisibility = false;
 
 
-    Log.d(TAG, "calling creatingInitialHelloState()");
-  }
-
-  ///////////////////////////////////////////////////////////////////////////////////
-  // Lifecycle /////////////////////////////////////////////////////////////////////
-
-  // CanaryIsland Screen
-
-  @Override
-  public void startingScreen(CanaryIsland.ToCanaryIsland presenter){
-    if(toCanaryIslandState != null) {
-      Log.d(TAG, "calling settingInitialState()");
-      presenter.setToolbarVisibility(toCanaryIslandState.toolbarVisibility);
-      presenter.setTextVisibility(toCanaryIslandState.textVisibility);
-
-      Log.d(TAG, "calling removingInitialState()");
-      toCanaryIslandState = null;
+        Log.d(TAG, "calling creatingInitialHelloState()");
     }
 
-    if(canaryislandToState != null) {
-      Log.d(TAG, "calling settingUpdatedState()");
-      presenter.setToolbarVisibility(canaryislandToState.toolbarVisibility);
-      presenter.setTextVisibility(canaryislandToState.textVisibility);
+    ///////////////////////////////////////////////////////////////////////////////////
+    // Lifecycle /////////////////////////////////////////////////////////////////////
 
-      Log.d(TAG, "calling removingUpdateState()");
-      canaryislandToState = null;
+    // CanaryIsland Screen
+
+    @Override
+    public void startingScreen(CanaryIsland.ToCanaryIsland presenter){
+        if(toCanaryIslandState != null) {
+            Log.d(TAG, "calling settingInitialState()");
+            presenter.setToolbarVisibility(toCanaryIslandState.toolbarVisibility);
+            presenter.setTextVisibility(toCanaryIslandState.textVisibility);
+
+            Log.d(TAG, "calling removingInitialState()");
+            toCanaryIslandState = null;
+        }
+
+        if(canaryislandToState != null) {
+            Log.d(TAG, "calling settingUpdatedState()");
+            presenter.setToolbarVisibility(canaryislandToState.toolbarVisibility);
+            presenter.setTextVisibility(canaryislandToState.textVisibility);
+
+            Log.d(TAG, "calling removingUpdateState()");
+            canaryislandToState = null;
+        }
+
+        presenter.onScreenStarted();
     }
 
-    presenter.onScreenStarted();
-  }
 
+    @Override
+    public void resumingScreen(CanaryIsland.CanaryIslandTo presenter){
+        if(canaryislandToState != null) {
+            Log.d(TAG, "calling resumingScreen()");
+            Log.d(TAG, "calling restoringUpdatedState()");
+            presenter.setToolbarVisibility(canaryislandToState.toolbarVisibility);
+            presenter.setTextVisibility(canaryislandToState.textVisibility);
 
-  @Override
-  public void resumingScreen(CanaryIsland.CanaryIslandTo presenter){
-    if(canaryislandToState != null) {
-      Log.d(TAG, "calling resumingScreen()");
-      Log.d(TAG, "calling restoringUpdatedState()");
-      presenter.setToolbarVisibility(canaryislandToState.toolbarVisibility);
-      presenter.setTextVisibility(canaryislandToState.textVisibility);
+            Log.d(TAG, "calling removingUpdatedState()");
+            canaryislandToState = null;
+        }
 
-      Log.d(TAG, "calling removingUpdatedState()");
-      canaryislandToState = null;
+        presenter.onScreenResumed();
     }
-
-    presenter.onScreenResumed();
-  }
 
     // Home Screen
 
@@ -100,10 +103,9 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         presenter.onScreenStarted();
     }
 
-
     @Override
     public void resumingScreen(Home.HomeTo presenter){
-        if(homeToState != null) {
+        if(canaryislandToState != null) {
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(homeToState.toolbarVisibility);
@@ -117,79 +119,157 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
 
+    // IslandsMenu Screen
+
+    @Override
+    public void startingScreen(IslandsMenu.ToIslandsMenu presenter){
+        if(toHomeState != null) {
+            Log.d(TAG, "calling settingInitialState()");
+            presenter.setToolbarVisibility(toIslandsMenuState.toolbarVisibility);
+            presenter.setTextVisibility(toIslandsMenuState.textVisibility);
+
+            Log.d(TAG, "calling removingInitialState()");
+            toIslandsMenuState = null;
+        }
+
+        if(homeToState != null) {
+            Log.d(TAG, "calling settingUpdatedState()");
+            presenter.setToolbarVisibility(islandsmenuToState.toolbarVisibility);
+            presenter.setTextVisibility(islandsmenuToState.textVisibility);
+
+            Log.d(TAG, "calling removingUpdateState()");
+            islandsmenuToState = null;
+        }
+
+        presenter.onScreenStarted();
+    }
+
+
+
+    @Override
+    public void resumingScreen(IslandsMenu.IslandsMenuTo presenter){
+        if(islandsmenuToState != null) {
+            Log.d(TAG, "calling resumingScreen()");
+            Log.d(TAG, "calling restoringUpdatedState()");
+            presenter.setToolbarVisibility(islandsmenuToState.toolbarVisibility);
+            presenter.setTextVisibility(islandsmenuToState.textVisibility);
+
+            Log.d(TAG, "calling removingUpdatedState()");
+            islandsmenuToState = null;
+        }
+
+        presenter.onScreenResumed();
+    }
+
+
 
     ///////////////////////////////////////////////////////////////////////////////////
-  // Navigation ////////////////////////////////////////////////////////////////////
+    // Navigation ////////////////////////////////////////////////////////////////////
 
-  // CanaryIsland Screen
+    // CanaryIsland Screen
 
-  @Override
-  public void backToPreviousScreen(CanaryIsland.CanaryIslandTo presenter) {
-    Log.d(TAG, "calling savingUpdatedState()");
-    canaryislandToState = new CanaryIslandState();
-      canaryislandToState.textVisibility = true;
-      canaryislandToState.toolbarVisibility = false;
-  }
+    @Override
+    public void backToPreviousScreen(CanaryIsland.CanaryIslandTo presenter) {
+        Log.d(TAG, "calling savingUpdatedState()");
+        canaryislandToState = new CanaryIslandState();
+        canaryislandToState.textVisibility = true;
+        canaryislandToState.toolbarVisibility = false;
+    }
 
-  @Override
-  public void goToNextScreen(CanaryIsland.CanaryIslandTo presenter) {
-      Log.d(TAG, "calling savingUpdatedState()");
-      canaryislandToState = new CanaryIslandState();
-      canaryislandToState.toolbarVisibility = presenter.isToolbarVisible();
-      //canaryislandToState.textVisibility = presenter.isTextVisible();
-      canaryislandToState.textVisibility = false;
+    @Override
+    public void goToNextScreen(CanaryIsland.CanaryIslandTo presenter) {
+        Log.d(TAG, "calling savingUpdatedState()");
+        canaryislandToState = new CanaryIslandState();
+        canaryislandToState.toolbarVisibility = presenter.isToolbarVisible();
+        //canaryislandToState.textVisibility = presenter.isTextVisible();
+        canaryislandToState.textVisibility = false;
 
-      Context view = presenter.getManagedContext();
-      if (view != null) {
-          Log.d(TAG, "calling startingNextScreen()");
-          view.startActivity(new Intent(view, CanaryIslandView.class));
-          //Log.d(TAG, "calling finishingCurrentScreen()");
-          //presenter.destroyView();
-      }
-  }
+        Context view = presenter.getManagedContext();
+        if (view != null) {
+            Log.d(TAG, "calling startingNextScreen()");
+            view.startActivity(new Intent(view, CanaryIslandView.class));
+            //Log.d(TAG, "calling finishingCurrentScreen()");
+            //presenter.destroyView();
+        }
+    }
 
-      // Home Screen
+    // Home Screen
 
-      @Override
-      public void backToPreviousScreen(Home.HomeTo presenter) {
-          Log.d(TAG, "calling savingUpdatedState()");
-          homeToState = new HomeState();
-          homeToState.textVisibility = true;
-          homeToState.toolbarVisibility = false;
-      }
+    @Override
+    public void backToPreviousScreen(Home.HomeTo presenter) {
+        Log.d(TAG, "calling savingUpdatedState()");
+        homeToState = new HomeState();
+        homeToState.textVisibility = true;
+        homeToState.toolbarVisibility = false;
+    }
 
-      @Override
-      public void goToNextScreen(Home.HomeTo presenter) {
-          Log.d(TAG, "calling savingUpdatedState()");
-          homeToState = new HomeState();
-          homeToState.toolbarVisibility = presenter.isToolbarVisible();
-          //homeToState.textVisibility = presenter.isTextVisible();
-          homeToState.textVisibility = false;
+    @Override
+    public void goToNextScreen(Home.HomeTo presenter) {
+        Log.d(TAG, "calling savingUpdatedState()");
+        homeToState = new HomeState();
+        homeToState.toolbarVisibility = presenter.isToolbarVisible();
+        //homeToState.textVisibility = presenter.isTextVisible();
+        homeToState.textVisibility = false;
 
-          Context view = presenter.getManagedContext();
-          if (view != null) {
-              Log.d(TAG, "calling startingNextScreen()");
-              view.startActivity(new Intent(view, HomeView.class));
-              //Log.d(TAG, "calling finishingCurrentScreen()");
-              //presenter.destroyView();
-          }
+        Context view = presenter.getManagedContext();
+        if (view != null) {
+            Log.d(TAG, "calling startingNextScreen()");
+            view.startActivity(new Intent(view, IslandsMenuView.class));
+            //Log.d(TAG, "calling finishingCurrentScreen()");
+            //presenter.destroyView();
+        }
 
 
 
-      }
+    }
 
-  ///////////////////////////////////////////////////////////////////////////////////
-  // State /////////////////////////////////////////////////////////////////////////
+    // IslandsMenu Screen
 
-  private class CanaryIslandState {
-    boolean toolbarVisibility;
-    boolean textVisibility;
-  }
+    @Override
+    public void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter) {
+        Log.d(TAG, "calling savingUpdatedState()");
+        islandsmenuToState = new IslandsMenuState();
+        islandsmenuToState.textVisibility = true;
+        islandsmenuToState.toolbarVisibility = false;
+    }
 
-  private class HomeState {
-    boolean toolbarVisibility;
-    boolean textVisibility;
-  }
+    @Override
+    public void goToNextScreen(IslandsMenu.IslandsMenuTo presenter) {
+        Log.d(TAG, "calling savingUpdatedState()");
+        islandsmenuToState = new IslandsMenuState();
+        islandsmenuToState.toolbarVisibility = presenter.isToolbarVisible();
+        //homeToState.textVisibility = presenter.isTextVisible();
+        islandsmenuToState.textVisibility = false;
+
+        Context view = presenter.getManagedContext();
+        if (view != null) {
+            Log.d(TAG, "calling startingNextScreen()");
+            view.startActivity(new Intent(view, IslandsMenuView.class));
+            //Log.d(TAG, "calling finishingCurrentScreen()");
+            //presenter.destroyView();
+        }
+
+
+
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    // State /////////////////////////////////////////////////////////////////////////
+
+    private class CanaryIslandState {
+        boolean toolbarVisibility;
+        boolean textVisibility;
+    }
+
+    private class HomeState {
+        boolean toolbarVisibility;
+        boolean textVisibility;
+    }
+
+    private class IslandsMenuState {
+        boolean toolbarVisibility;
+        boolean textVisibility;
+    }
 
 
 
