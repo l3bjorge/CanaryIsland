@@ -8,6 +8,7 @@ import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
+import es.ulpgc.eite.clean.mvp.sample.app.MediatorApp;
 
 public class HomePresenter
     extends GenericPresenter
@@ -89,6 +90,16 @@ public class HomePresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
+
+  @Override
+  public void onGoToIslandsMenuBtnClicked() {
+    Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
+    if(isViewRunning()) {
+      MediatorApp mediator = new MediatorApp();
+      mediator.goToNextScreen(this);
+    }
+
+  }
 
 
 
