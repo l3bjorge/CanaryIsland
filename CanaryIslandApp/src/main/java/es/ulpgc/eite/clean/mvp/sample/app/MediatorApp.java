@@ -11,6 +11,8 @@ import es.ulpgc.eite.clean.mvp.sample.home.Home;
 import es.ulpgc.eite.clean.mvp.sample.home.HomeView;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuView;
+import es.ulpgc.eite.clean.mvp.sample.locations.Locations;
+import es.ulpgc.eite.clean.mvp.sample.locations.LocationsView;
 
 public class MediatorApp extends Application implements Mediator.Lifecycle, Mediator.Navigation {
 
@@ -19,6 +21,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     private CanaryIslandState toCanaryIslandState, canaryislandToState;
     private HomeState toHomeState, homeToState;
     private IslandsMenuState toIslandsMenuState, islandsmenuToState;
+    private LocationsState toLocationsState, locationsToState;
 
     @Override
     public void onCreate() {
@@ -161,6 +164,47 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         presenter.onScreenResumed();
     }
 
+    // Locations Screen
+
+    @Override
+    public void startingScreen(Locations.ToLocations presenter){
+        if(toLocationsState != null) {
+            Log.d(TAG, "calling settingInitialState()");
+            presenter.setToolbarVisibility(toLocationsState.toolbarVisibility);
+            presenter.setTextVisibility(toLocationsState.textVisibility);
+
+            Log.d(TAG, "calling removingInitialState()");
+            toLocationsState = null;
+        }
+
+        if(locationsToState != null) {
+            Log.d(TAG, "calling settingUpdatedState()");
+            presenter.setToolbarVisibility(locationsToState.toolbarVisibility);
+            presenter.setTextVisibility(locationsToState.textVisibility);
+
+            Log.d(TAG, "calling removingUpdateState()");
+            locationsToState = null;
+        }
+
+        presenter.onScreenStarted();
+    }
+
+
+    @Override
+    public void resumingScreen(Locations.LocationsTo presenter){
+        if(locationsToState != null) {
+            Log.d(TAG, "calling resumingScreen()");
+            Log.d(TAG, "calling restoringUpdatedState()");
+            presenter.setToolbarVisibility(locationsToState.toolbarVisibility);
+            presenter.setTextVisibility(locationsToState.textVisibility);
+
+            Log.d(TAG, "calling removingUpdatedState()");
+            locationsToState = null;
+        }
+
+        presenter.onScreenResumed();
+    }
+
 
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -249,9 +293,38 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             //presenter.destroyView();
         }
 
-
-
     }
+
+        // Locations Screen
+
+        @Override
+        public void backToPreviousScreen(Locations.LocationsTo presenter) {
+            Log.d(TAG, "calling savingUpdatedState()");
+            locationsToState = new LocationsState();
+            locationsToState.textVisibility = true;
+            locationsToState.toolbarVisibility = false;
+        }
+
+        @Override
+        public void goToNextScreen(Locations.LocationsTo presenter) {
+            Log.d(TAG, "calling savingUpdatedState()");
+            locationsToState = new LocationsState();
+            locationsToState.toolbarVisibility = presenter.isToolbarVisible();
+            //canaryislandToState.textVisibility = presenter.isTextVisible();
+            locationsToState.textVisibility = false;
+
+            Context view = presenter.getManagedContext();
+            if (view != null) {
+                Log.d(TAG, "calling startingNextScreen()");
+                view.startActivity(new Intent(view, LocationsView.class));
+                //Log.d(TAG, "calling finishingCurrentScreen()");
+                //presenter.destroyView();
+            }
+        }
+
+
+
+
 
     ///////////////////////////////////////////////////////////////////////////////////
     // State /////////////////////////////////////////////////////////////////////////
@@ -271,6 +344,9 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         boolean textVisibility;
     }
 
-
+    private class LocationsState {
+        boolean toolbarVisibility;
+        boolean textVisibility;
+    }
 
 }

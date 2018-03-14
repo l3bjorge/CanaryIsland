@@ -3,6 +3,7 @@ package es.ulpgc.eite.clean.mvp.sample.app;
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
+import es.ulpgc.eite.clean.mvp.sample.locations.Locations;
 
 /**
  * Created by imac on 23/1/18.
@@ -24,6 +25,11 @@ public interface Mediator {
     void startingScreen(IslandsMenu.ToIslandsMenu presenter);
     void resumingScreen(IslandsMenu.IslandsMenuTo presenter);
 
+    //Locations
+    void startingScreen(Locations.ToLocations presenter);
+    void resumingScreen(Locations.LocationsTo presenter);
+
+
   }
 
   interface Navigation {
@@ -39,6 +45,10 @@ public interface Mediator {
     //IslandsMenu
     void goToNextScreen(IslandsMenu.IslandsMenuTo presenter);
     void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter);
+
+    //Locations
+    void goToNextScreen(Locations.LocationsTo presenter);
+    void backToPreviousScreen(Locations.LocationsTo presenter);
 
   }
 }
