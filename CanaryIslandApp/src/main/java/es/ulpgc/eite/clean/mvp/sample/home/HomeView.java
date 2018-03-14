@@ -36,7 +36,7 @@ public class HomeView
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-      getPresenter().onGoToIslandsMenuBtnClicked();
+      getPresenter(). onGoToIslandsMenuBtnClicked();
       }
     });
   }

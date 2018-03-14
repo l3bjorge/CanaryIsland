@@ -26,9 +26,7 @@ public class IslandsMenuModel
   public void onCreate(IslandsMenu.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-
-    dummyLabel = "Click Me!";
-    dummyText = "Hello World!";
+    msgText = "Canary Island";
     maxNumOfTimes = 3;
   }
 
