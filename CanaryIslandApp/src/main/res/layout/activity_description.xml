@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView">
+    tools:context="es.ulpgc.eite.clean.mvp.sample.description.DescriptionView">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_canaryisland"/>
+    <include layout="@layout/content_description"/>
 
 
 </android.support.design.widget.CoordinatorLayout>
