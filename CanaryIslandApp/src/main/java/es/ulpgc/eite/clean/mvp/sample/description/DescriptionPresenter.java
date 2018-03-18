@@ -16,8 +16,7 @@ public class DescriptionPresenter
     implements Description.ViewToPresenter, Description.ModelToPresenter, Description.DescriptionTo, Description.ToDescription, Presenter<es.ulpgc.eite.clean.mvp.sample.description.Description.PresenterToView> {
 
   private boolean toolbarVisible;
-  private boolean buttonClicked;
-  private boolean textVisible;
+  private boolean tittleVisible, descriptionVisible;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -93,23 +92,7 @@ public class DescriptionPresenter
   @Override
   public void onButtonClicked() {
     Log.d(TAG, "calling onButtonClicked()");
-    if(getModel().isNumOfTimesCompleted()){
 
-      getModel().resetMsgByBtnClicked(); // reseteamos el estado al cumplirse la condición
-
-      Log.d(TAG, "calling goToNextScreen()");
-      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToNextScreen(this);
-      return;
-    }
-
-    if(isViewRunning()) {
-      getModel().changeMsgByBtnClicked();
-      getView().setTittle(getModel().getText());
-      textVisible = true;
-      buttonClicked = true;
-      checkTextVisibility();
-    }
 
   }
 
@@ -124,8 +107,13 @@ public class DescriptionPresenter
   }
 
   @Override
-  public void setTextVisibility(boolean visible) {
-    textVisible = visible;
+  public void setTittleVisibility(boolean visible) {
+    tittleVisible = visible;
+  }
+
+  @Override
+  public void setDescriptionVisibility(boolean visible) {
+    descriptionVisible = visible;
   }
 
 
@@ -143,9 +131,8 @@ public class DescriptionPresenter
     Log.d(TAG, "calling onScreenResumed()");
 
     setCurrentState();
-    if (buttonClicked) {
-      getView().setTittle(getModel().getText());
-    }
+    getView().setTittle(getModel().getTittle());
+    getView().setTittle(getModel().getDescription());
   }
 
 
@@ -171,8 +158,13 @@ public class DescriptionPresenter
   }
 
   @Override
-  public boolean isTextVisible() {
-    return textVisible;
+  public boolean isTittleVisible() {
+    return tittleVisible;
+  }
+
+  @Override
+  public boolean isDescriptionVisible() {
+    return descriptionVisible;
   }
 
 
@@ -186,7 +178,18 @@ public class DescriptionPresenter
 
     }
     checkToolbarVisibility();
-    checkTextVisibility();
+    checkTittleVisibility();
+    checkDescriptionVisibility();
+  }
+
+  private void checkDescriptionVisibility() {
+    if(isViewRunning()) {
+      if (!descriptionVisible) {
+        getView().hideDescription();
+      } else {
+        getView().showDescription();
+      }
+    }
   }
 
   private void checkToolbarVisibility(){
@@ -197,9 +200,9 @@ public class DescriptionPresenter
     }
   }
 
-  private void checkTextVisibility(){
+  private void checkTittleVisibility(){
     if(isViewRunning()) {
-      if(!textVisible) {
+      if(!tittleVisible) {
         getView().hideTittle();
       } else {
         getView().showTittle();

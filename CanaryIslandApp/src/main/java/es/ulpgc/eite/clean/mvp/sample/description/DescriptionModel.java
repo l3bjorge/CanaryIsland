@@ -10,9 +10,6 @@ public class DescriptionModel
 
 
   private String tittleText, descriptionText;
-  private int numOfTimes;
-  private int maxNumOfTimes;
-  private String msgText;
 
 
   /**
@@ -47,33 +44,16 @@ public class DescriptionModel
   ///////////////////////////////////////////////////////////////////////////////////
   // Presenter To Model ////////////////////////////////////////////////////////////
 
+
   @Override
-  public boolean isNumOfTimesCompleted() {
-    if(numOfTimes == maxNumOfTimes) {
-      return true;
-    }
-    return false;
+  public String getTittle() {
+    return tittleText;
   }
 
   @Override
-  public void changeMsgByBtnClicked() {
-    msgText = tittleText;
-    if(numOfTimes > 0) {
-      msgText += ", " + (numOfTimes + 1) + " times";
-    }
-    numOfTimes++;
+  public String getDescription() {
+    return descriptionText;
   }
 
-  @Override
-  public String getText() {
-    return msgText;
-  }
-
-
-  @Override
-  public void resetMsgByBtnClicked() {
-    numOfTimes = 1;
-    msgText = tittleText;
-  }
 
 }

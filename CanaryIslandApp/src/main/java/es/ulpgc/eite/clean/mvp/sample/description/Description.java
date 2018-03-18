@@ -18,7 +18,8 @@ public interface Description {
 
   interface State {
     void setToolbarVisibility(boolean visible);
-    void setTextVisibility(boolean visible);
+    void setTittleVisibility(boolean visible);
+    void setDescriptionVisibility(boolean visible);
   }
 
   interface ToDescription extends State {
@@ -29,7 +30,8 @@ public interface Description {
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
-    boolean isTextVisible();
+    boolean isTittleVisible();
+    boolean isDescriptionVisible();
     void onScreenResumed();
   }
 
@@ -61,10 +63,8 @@ public interface Description {
    * Methods offered to MODEL to communicate with PRESENTER
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
-    boolean isNumOfTimesCompleted();
-    void changeMsgByBtnClicked();
-    String getText();
-    void resetMsgByBtnClicked();
+    String getTittle();
+    String getDescription();
   }
 
   /**
