@@ -7,8 +7,8 @@ import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView;
+import es.ulpgc.eite.clean.mvp.sample.description.Description;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
-import es.ulpgc.eite.clean.mvp.sample.home.HomeView;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuView;
 import es.ulpgc.eite.clean.mvp.sample.locations.Locations;
@@ -22,6 +22,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     private HomeState toHomeState, homeToState;
     private IslandsMenuState toIslandsMenuState, islandsmenuToState;
     private LocationsState toLocationsState, locationsToState;
+    private DescriptionState toDescriptionState, descriptionToState;
 
     @Override
     public void onCreate() {
@@ -205,6 +206,44 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         presenter.onScreenResumed();
     }
 
+    //Description Screen
+    @Override
+    public void startingScreen(Description.ToDescription presenter) {
+        if(toDescriptionState != null) {
+            Log.d(TAG, "calling settingInitialState()");
+            presenter.setToolbarVisibility(toDescriptionState.toolbarVisibility);
+            presenter.setTextVisibility(toDescriptionState.textVisibility);
+
+            Log.d(TAG, "calling removingInitialState()");
+            toDescriptionState = null;
+        }
+
+        if(descriptionToState != null) {
+            Log.d(TAG, "calling settingUpdatedState()");
+            presenter.setToolbarVisibility(descriptionToState.toolbarVisibility);
+            presenter.setTextVisibility(descriptionToState.textVisibility);
+
+            Log.d(TAG, "calling removingUpdateState()");
+            descriptionToState = null;
+        }
+
+        presenter.onScreenStarted();
+    }
+
+    @Override
+    public void resumingScreen(Description.DescriptionTo presenter) {
+        if(descriptionToState != null) {
+            Log.d(TAG, "calling resumingScreen()");
+            Log.d(TAG, "calling restoringUpdatedState()");
+            presenter.setToolbarVisibility(descriptionToState.toolbarVisibility);
+            presenter.setTextVisibility(descriptionToState.textVisibility);
+
+            Log.d(TAG, "calling removingUpdatedState()");
+            canaryislandToState = null;
+        }
+
+        presenter.onScreenResumed();
+    }
 
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -295,17 +334,19 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     }
 
-        // Locations Screen
+    // Locations Screen
 
-        @Override
+    @Override
         public void backToPreviousScreen(Locations.LocationsTo presenter) {
             Log.d(TAG, "calling savingUpdatedState()");
             locationsToState = new LocationsState();
             locationsToState.textVisibility = true;
             locationsToState.toolbarVisibility = false;
-        }
+    }
 
-        @Override
+
+
+    @Override
         public void goToNextScreen(Locations.LocationsTo presenter) {
             Log.d(TAG, "calling savingUpdatedState()");
             locationsToState = new LocationsState();
@@ -322,7 +363,16 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             }
         }
 
+    //Description Screen
+    @Override
+    public void goToNextScreen(Description.DescriptionTo presenter) {
 
+    }
+
+    @Override
+    public void backToPreviousScreen(Description.DescriptionTo presenter) {
+
+    }
 
 
 
@@ -349,4 +399,8 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         boolean textVisibility;
     }
 
+    private class DescriptionState {
+        boolean toolbarVisibility;
+        boolean textVisibility;
+    }
 }

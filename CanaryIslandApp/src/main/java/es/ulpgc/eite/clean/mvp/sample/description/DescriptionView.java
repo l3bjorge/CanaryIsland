@@ -6,35 +6,46 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
 
 public class DescriptionView
-    extends GenericActivity<Description.PresenterToView, Description.ViewToPresenter, CanaryIslandPresenter>
+    extends GenericActivity<Description.PresenterToView, Description.ViewToPresenter, DescriptionPresenter>
     implements Description.PresenterToView {
 
   private Toolbar toolbar;
-  private Button button;
-  private TextView text;
+  private ImageButton likeBttn, locationBttn;
+  private TextView tittle, description;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_canaryisland);
+    setContentView(R.layout.activity_description);
     Log.d(TAG, "calling onCreate()");
 
-    text = (TextView) findViewById(R.id.text);
+    tittle = (TextView) findViewById(R.id.tittle);
+    description = (TextView) findViewById(R.id.description);
+
 
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    button = (Button) findViewById(R.id.button);
-    button.setOnClickListener(new View.OnClickListener() {
+    likeBttn = (ImageButton) findViewById(R.id.likeBttn);
+    likeBttn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onButtonClicked();
+
+      }
+    });
+
+    locationBttn = (ImageButton) findViewById(R.id.locationBttn);
+    locationBttn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
       }
     });
   }
@@ -46,7 +57,7 @@ public class DescriptionView
   @SuppressLint("MissingSuperCall")
   @Override
   protected void onResume() {
-    super.onResume(CanaryIslandPresenter.class, this);
+    super.onResume(DescriptionPresenter.class, this);
   }
 
   @Override
@@ -77,22 +88,34 @@ public class DescriptionView
   }
 
   @Override
-  public void hideText() {
-    text.setVisibility(View.GONE);
+  public void hideTittle() {
+    tittle.setVisibility(View.GONE);
   }
 
   @Override
-  public void showText() {
-    text.setVisibility(View.VISIBLE);
+  public void showTittle() {
+    tittle.setVisibility(View.VISIBLE);
   }
 
   @Override
-  public void setText(String txt) {
-    text.setText(txt);
+  public void setTittle(String txt) {
+    tittle.setText(txt);
   }
 
   @Override
-  public void setLabel(String txt) {
-    button.setText(txt);
+  public void hideDescription() {
+
   }
+
+  @Override
+  public void showDescription() {
+
+  }
+
+  @Override
+  public void setDescription(String txt) {
+
+  }
+
+
 }

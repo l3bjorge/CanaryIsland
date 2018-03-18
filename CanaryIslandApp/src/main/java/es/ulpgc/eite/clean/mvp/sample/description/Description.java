@@ -21,11 +21,11 @@ public interface Description {
     void setTextVisibility(boolean visible);
   }
 
-  interface ToCanaryIsland extends State {
+  interface ToDescription extends State {
     void onScreenStarted();
   }
 
-  interface CanaryIslandTo extends State{
+  interface DescriptionTo extends State{
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
@@ -49,10 +49,12 @@ public interface Description {
   interface PresenterToView extends ContextView {
     void finishScreen();
     void hideToolbar();
-    void hideText();
-    void showText();
-    void setText(String txt);
-    void setLabel(String txt);
+    void hideTittle();
+    void showTittle();
+    void setTittle(String txt);
+    void hideDescription();
+    void showDescription();
+    void setDescription(String txt);
   }
 
   /**
@@ -62,7 +64,6 @@ public interface Description {
     boolean isNumOfTimesCompleted();
     void changeMsgByBtnClicked();
     String getText();
-    String getLabel();
     void resetMsgByBtnClicked();
   }
 

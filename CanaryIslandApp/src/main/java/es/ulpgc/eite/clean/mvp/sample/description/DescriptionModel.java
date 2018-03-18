@@ -9,8 +9,7 @@ public class DescriptionModel
     extends GenericModel<Description.ModelToPresenter> implements Description.PresenterToModel {
 
 
-  private String dummyText;
-  private String dummyLabel;
+  private String tittleText, descriptionText;
   private int numOfTimes;
   private int maxNumOfTimes;
   private String msgText;
@@ -27,9 +26,10 @@ public class DescriptionModel
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
 
-    dummyLabel = "Click Me!";
-    dummyText = "Hello World!";
-    maxNumOfTimes = 3;
+
+    tittleText = "Las Canteras";
+    descriptionText = "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.";
+
   }
 
   /**
@@ -57,7 +57,7 @@ public class DescriptionModel
 
   @Override
   public void changeMsgByBtnClicked() {
-    msgText = dummyText;
+    msgText = tittleText;
     if(numOfTimes > 0) {
       msgText += ", " + (numOfTimes + 1) + " times";
     }
@@ -69,15 +69,11 @@ public class DescriptionModel
     return msgText;
   }
 
-  @Override
-  public String getLabel() {
-    return dummyLabel;
-  }
 
   @Override
   public void resetMsgByBtnClicked() {
     numOfTimes = 1;
-    msgText = dummyText;
+    msgText = tittleText;
   }
 
 }

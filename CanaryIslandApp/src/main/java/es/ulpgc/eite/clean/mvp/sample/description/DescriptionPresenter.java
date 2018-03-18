@@ -7,14 +7,13 @@ import android.util.Log;
 import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
+import es.ulpgc.eite.clean.mvp.Presenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
-import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
-import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandModel;
 
 public class DescriptionPresenter
     extends GenericPresenter
-        <CanaryIsland.PresenterToView, CanaryIsland.PresenterToModel, CanaryIsland.ModelToPresenter, es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandModel>
-    implements CanaryIsland.ViewToPresenter, CanaryIsland.ModelToPresenter, CanaryIsland.CanaryIslandTo, CanaryIsland.ToCanaryIsland {
+        <Description.PresenterToView, Description.PresenterToModel, Description.ModelToPresenter, es.ulpgc.eite.clean.mvp.sample.description.DescriptionModel>
+    implements Description.ViewToPresenter, Description.ModelToPresenter, Description.DescriptionTo, Description.ToDescription, Presenter<es.ulpgc.eite.clean.mvp.sample.description.Description.PresenterToView> {
 
   private boolean toolbarVisible;
   private boolean buttonClicked;
@@ -29,8 +28,8 @@ public class DescriptionPresenter
    * @param view The current VIEW instance
    */
   @Override
-  public void onCreate(CanaryIsland.PresenterToView view) {
-    super.onCreate(CanaryIslandModel.class, this);
+  public void onCreate(Description.PresenterToView view) {
+    super.onCreate(DescriptionModel.class, this);
     setView(view);
     Log.d(TAG, "calling onCreate()");
 
@@ -47,7 +46,7 @@ public class DescriptionPresenter
    * @param view The current VIEW instance
    */
   @Override
-  public void onResume(CanaryIsland.PresenterToView view) {
+  public void onResume(Description.PresenterToView view) {
     setView(view);
     Log.d(TAG, "calling onResume()");
 
@@ -106,7 +105,7 @@ public class DescriptionPresenter
 
     if(isViewRunning()) {
       getModel().changeMsgByBtnClicked();
-      getView().setText(getModel().getText());
+      getView().setTittle(getModel().getText());
       textVisible = true;
       buttonClicked = true;
       checkTextVisibility();
@@ -145,7 +144,7 @@ public class DescriptionPresenter
 
     setCurrentState();
     if (buttonClicked) {
-      getView().setText(getModel().getText());
+      getView().setTittle(getModel().getText());
     }
   }
 
@@ -184,7 +183,7 @@ public class DescriptionPresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-      getView().setLabel(getModel().getLabel());
+
     }
     checkToolbarVisibility();
     checkTextVisibility();
@@ -201,9 +200,9 @@ public class DescriptionPresenter
   private void checkTextVisibility(){
     if(isViewRunning()) {
       if(!textVisible) {
-        getView().hideText();
+        getView().hideTittle();
       } else {
-        getView().showText();
+        getView().showTittle();
       }
     }
   }
