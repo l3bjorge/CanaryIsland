@@ -59,11 +59,8 @@ public interface IslandsMenu {
    * Methods offered to MODEL to communicate with PRESENTER
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
-    boolean isNumOfTimesCompleted();
-    void changeMsgByBtnClicked();
     String getText();
-    String getLabel();
-    void resetMsgByBtnClicked();
+;
   }
 
   /**

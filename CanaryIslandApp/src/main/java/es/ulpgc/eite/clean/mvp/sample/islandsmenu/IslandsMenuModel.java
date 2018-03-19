@@ -8,11 +8,6 @@ import es.ulpgc.eite.clean.mvp.GenericModel;
 public class IslandsMenuModel
     extends GenericModel<IslandsMenu.ModelToPresenter> implements IslandsMenu.PresenterToModel {
 
-
-  private String dummyText;
-  private String dummyLabel;
-  private int numOfTimes;
-  private int maxNumOfTimes;
   private String msgText;
 
 
@@ -26,8 +21,7 @@ public class IslandsMenuModel
   public void onCreate(IslandsMenu.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-    msgText = "Canary Island";
-    maxNumOfTimes = 3;
+    msgText = "Choose your island";
   }
 
   /**
@@ -45,37 +39,14 @@ public class IslandsMenuModel
   ///////////////////////////////////////////////////////////////////////////////////
   // Presenter To Model ////////////////////////////////////////////////////////////
 
-  @Override
-  public boolean isNumOfTimesCompleted() {
-    if(numOfTimes == maxNumOfTimes) {
-      return true;
-    }
-    return false;
-  }
 
-  @Override
-  public void changeMsgByBtnClicked() {
-    msgText = dummyText;
-    if(numOfTimes > 0) {
-      msgText += ", " + (numOfTimes + 1) + " times";
-    }
-    numOfTimes++;
-  }
+
 
   @Override
   public String getText() {
     return msgText;
   }
 
-  @Override
-  public String getLabel() {
-    return dummyLabel;
-  }
 
-  @Override
-  public void resetMsgByBtnClicked() {
-    numOfTimes = 1;
-    msgText = dummyText;
-  }
 
 }
