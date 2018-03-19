@@ -1,4 +1,4 @@
-package es.ulpgc.eite.clean.mvp.sample.islandsmenu;
+package es.ulpgc.eite.clean.mvp.sample.category;
 
 
 import android.content.Context;
@@ -8,8 +8,10 @@ import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
+import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
+import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuModel;
 
-public class IslandsMenuPresenter
+public class CategoryPresenter
     extends GenericPresenter
         <IslandsMenu.PresenterToView, IslandsMenu.PresenterToModel, IslandsMenu.ModelToPresenter, IslandsMenuModel>
     implements IslandsMenu.ViewToPresenter, IslandsMenu.ModelToPresenter, IslandsMenu.IslandsMenuTo, IslandsMenu.ToIslandsMenu {

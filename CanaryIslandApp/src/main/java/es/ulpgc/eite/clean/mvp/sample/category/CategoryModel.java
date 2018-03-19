@@ -1,11 +1,12 @@
-package es.ulpgc.eite.clean.mvp.sample.islandsmenu;
+package es.ulpgc.eite.clean.mvp.sample.category;
 
 import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
+import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 
 
-public class IslandsMenuModel
+public class CategoryModel
     extends GenericModel<IslandsMenu.ModelToPresenter> implements IslandsMenu.PresenterToModel {
 
   private String msgText;
