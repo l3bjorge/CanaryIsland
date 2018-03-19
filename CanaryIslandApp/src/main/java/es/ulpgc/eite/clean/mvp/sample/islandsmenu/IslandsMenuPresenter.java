@@ -90,8 +90,12 @@ public class IslandsMenuPresenter
   // View To Presenter /////////////////////////////////////////////////////////////
 
   @Override
-  public void onButtonClicked() {
+  public void onGoToCategoryBtnClicked() {
     Log.d(TAG, "calling onButtonClicked()");
+    if(isViewRunning()) {
+      MediatorApp mediator = new MediatorApp();
+      mediator.goToCategoryScreen(this);
+    }
 
 
   }

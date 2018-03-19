@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import es.ulpgc.eite.clean.mvp.GenericActivity;
@@ -16,7 +17,7 @@ public class IslandsMenuView
     implements IslandsMenu.PresenterToView {
 
   private Toolbar toolbar;
-  private Button button;
+  private ImageButton button;
   private TextView text;
 
   @Override
@@ -30,11 +31,11 @@ public class IslandsMenuView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    button = (Button) findViewById(R.id.button);
+    button = (ImageButton) findViewById(R.id.ButtonGranCa);
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onButtonClicked();
+        getPresenter().onGoToCategoryBtnClicked();
       }
     });
   }
