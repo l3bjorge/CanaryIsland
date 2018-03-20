@@ -18,7 +18,6 @@ public interface IslandsMenu {
 
   interface State {
     void setToolbarVisibility(boolean visible);
-    void setTextVisibility(boolean visible);
   }
 
   interface ToIslandsMenu extends State {
@@ -29,7 +28,6 @@ public interface IslandsMenu {
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
-    boolean isTextVisible();
     void onScreenResumed();
   }
 
@@ -49,10 +47,6 @@ public interface IslandsMenu {
   interface PresenterToView extends ContextView {
     void finishScreen();
     void hideToolbar();
-    void hideText();
-    void showText();
-    void setText(String txt);
-    void setLabel(String txt);
     void setTextaso(String textaso);
   }
 

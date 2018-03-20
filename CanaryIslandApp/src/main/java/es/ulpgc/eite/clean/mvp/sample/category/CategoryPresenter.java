@@ -17,8 +17,6 @@ public class CategoryPresenter
     implements IslandsMenu.ViewToPresenter, IslandsMenu.ModelToPresenter, IslandsMenu.IslandsMenuTo, IslandsMenu.ToIslandsMenu {
 
   private boolean toolbarVisible;
-  private boolean buttonClicked;
-  private boolean textVisible;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -108,11 +106,6 @@ public class CategoryPresenter
     toolbarVisible = visible;
   }
 
-  @Override
-  public void setTextVisibility(boolean visible) {
-    textVisible = visible;
-  }
-
 
   ///////////////////////////////////////////////////////////////////////////////////
   // To Hello //////////////////////////////////////////////////////////////////////
@@ -128,9 +121,6 @@ public class CategoryPresenter
     Log.d(TAG, "calling onScreenResumed()");
 
     setCurrentState();
-    if (buttonClicked) {
-    //  getView().setText(getModel().getText());
-    }
   }
 
 
@@ -155,11 +145,6 @@ public class CategoryPresenter
     return toolbarVisible;
   }
 
-  @Override
-  public boolean isTextVisible() {
-    return textVisible;
-  }
-
 
   ///////////////////////////////////////////////////////////////////////////////////
 
@@ -171,23 +156,12 @@ public class CategoryPresenter
      // getView().setButtonBeach(getModel().getButtonBeach());
     }
     checkToolbarVisibility();
-    checkTextVisibility();
   }
 
   private void checkToolbarVisibility(){
     if(isViewRunning()) {
       if (!toolbarVisible) {
         getView().hideToolbar();
-      }
-    }
-  }
-
-  private void checkTextVisibility(){
-    if(isViewRunning()) {
-      if(!textVisible) {
-        getView().hideText();
-      } else {
-        getView().showText();
       }
     }
   }

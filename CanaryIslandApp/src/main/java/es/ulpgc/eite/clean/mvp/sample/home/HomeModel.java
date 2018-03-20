@@ -9,8 +9,7 @@ public class HomeModel
     extends GenericModel<Home.ModelToPresenter> implements Home.PresenterToModel {
 
 
-  private String englishLabel;
-  private String msgText;
+  private String label;
 
 
   /**
@@ -23,8 +22,7 @@ public class HomeModel
   public void onCreate(Home.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-    msgText = "Canary Island";
-    englishLabel = "English";
+    label = "Canary Island";
   }
 
   /**
@@ -42,16 +40,9 @@ public class HomeModel
   ///////////////////////////////////////////////////////////////////////////////////
   // Presenter To Model ////////////////////////////////////////////////////////////
 
-
-
-  @Override
-  public String getText() {
-    return msgText;
-  }
-
   @Override
   public String getLabel() {
-    return englishLabel;
+    return label;
   }
 
 

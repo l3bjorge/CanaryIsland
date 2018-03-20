@@ -16,7 +16,7 @@ public class DescriptionPresenter
     implements Description.ViewToPresenter, Description.ModelToPresenter, Description.DescriptionTo, Description.ToDescription, Presenter<es.ulpgc.eite.clean.mvp.sample.description.Description.PresenterToView> {
 
   private boolean toolbarVisible;
-  private boolean tittleVisible, descriptionVisible;
+  private boolean tittleVisible, descriptionVisible, textVisibility;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -124,6 +124,11 @@ public class DescriptionPresenter
   public void onScreenStarted() {
     Log.d(TAG, "calling onScreenStarted()");
     setCurrentState();
+  }
+
+  @Override
+  public void setTextVisibility(boolean textVisibility) {
+    this.textVisibility = textVisibility;
   }
 
   @Override

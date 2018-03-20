@@ -16,8 +16,6 @@ public class HomePresenter
     implements Home.ViewToPresenter, Home.ModelToPresenter, Home.HomeTo, Home.ToHome {
 
   private boolean toolbarVisible;
-  private boolean buttonClicked;
-  private boolean textVisible;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -112,11 +110,6 @@ public class HomePresenter
     toolbarVisible = visible;
   }
 
-  @Override
-  public void setTextVisibility(boolean visible) {
-    textVisible = visible;
-  }
-
 
   ///////////////////////////////////////////////////////////////////////////////////
   // To Hello //////////////////////////////////////////////////////////////////////
@@ -132,9 +125,6 @@ public class HomePresenter
     Log.d(TAG, "calling onScreenResumed()");
 
     setCurrentState();
-    if (buttonClicked) {
-      getView().setText(getModel().getText());
-    }
   }
 
 
@@ -159,10 +149,6 @@ public class HomePresenter
     return toolbarVisible;
   }
 
-  @Override
-  public boolean isTextVisible() {
-    return textVisible;
-  }
 
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +161,6 @@ public class HomePresenter
       getView().setLabel(getModel().getLabel());
     }
     checkToolbarVisibility();
-    checkTextVisibility();
   }
 
   private void checkToolbarVisibility(){
@@ -183,13 +168,6 @@ public class HomePresenter
       if (!toolbarVisible) {
         getView().hideToolbar();
       }
-    }
-  }
-
-  private void checkTextVisibility() {
-    if (isViewRunning()) {
-      getView().showText();
-      getView().setText(getModel().getText());
     }
   }
 

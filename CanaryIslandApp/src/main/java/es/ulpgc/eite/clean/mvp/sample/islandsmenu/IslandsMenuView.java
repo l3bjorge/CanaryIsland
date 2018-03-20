@@ -78,25 +78,6 @@ public class IslandsMenuView
   }
 
   @Override
-  public void hideText() {
-    text.setVisibility(View.GONE);
-  }
-
-  @Override
-  public void showText() {
-    text.setVisibility(View.VISIBLE);
-  }
-
-  @Override
-  public void setText(String txt) {
-    text.setText(txt);
-  }
-
-  @Override
-  public void setLabel(String txt) {
-  }
-
-  @Override
   public void setTextaso(String textaso) {
     text.setText(textaso);
   }

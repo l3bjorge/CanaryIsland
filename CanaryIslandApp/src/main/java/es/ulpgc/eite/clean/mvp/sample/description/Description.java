@@ -24,6 +24,9 @@ public interface Description {
 
   interface ToDescription extends State {
     void onScreenStarted();
+
+      void setTextVisibility(boolean textVisibility);
+    
   }
 
   interface DescriptionTo extends State{
@@ -33,6 +36,8 @@ public interface Description {
     boolean isTittleVisible();
     boolean isDescriptionVisible();
     void onScreenResumed();
+
+    void setTextVisibility(boolean textVisibility);
   }
 
   ///////////////////////////////////////////////////////////////////////////////////

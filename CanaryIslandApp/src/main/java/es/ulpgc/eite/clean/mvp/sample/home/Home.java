@@ -18,7 +18,6 @@ public interface Home {
 
   interface State {
     void setToolbarVisibility(boolean visible);
-    void setTextVisibility(boolean visible);
   }
 
   interface ToHome extends State {
@@ -29,7 +28,6 @@ public interface Home {
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
-    boolean isTextVisible();
     void onScreenResumed();
   }
 
@@ -50,9 +48,6 @@ public interface Home {
   interface PresenterToView extends ContextView {
     void finishScreen();
     void hideToolbar();
-    void hideText();
-    void showText();
-    void setText(String txt);
     void setLabel(String txt);
   }
 
@@ -60,7 +55,6 @@ public interface Home {
    * Methods offered to MODEL to communicate with PRESENTER
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
-    String getText();
     String getLabel();
   }
 

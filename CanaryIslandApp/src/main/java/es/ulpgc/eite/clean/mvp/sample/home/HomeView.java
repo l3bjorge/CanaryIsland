@@ -17,7 +17,7 @@ public class HomeView
     implements Home.PresenterToView {
 
   private Toolbar toolbar;
-  private ImageButton button;
+  private ImageButton buttoneng;
   private TextView text;
 
   @Override
@@ -32,11 +32,11 @@ public class HomeView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    button = (ImageButton) findViewById(R.id.ButtonEnglish);
-    button.setOnClickListener(new View.OnClickListener() {
+    buttoneng = (ImageButton) findViewById(R.id.ButtonEnglish);
+    buttoneng.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-      getPresenter(). onGoToIslandsMenuBtnClicked();
+      getPresenter().onGoToIslandsMenuBtnClicked();
       }
     });
   }
@@ -79,22 +79,7 @@ public class HomeView
   }
 
   @Override
-  public void hideText() {
-    text.setVisibility(View.INVISIBLE);
-  }
-
-  @Override
-  public void showText() {
-    text.setVisibility(View.VISIBLE);
-  }
-
-  @Override
-  public void setText(String txt) {
-    text.setText(txt);
-  }
-
-  @Override
   public void setLabel(String txt) {
-    setText(txt);
+    text.setText(txt);
   }
 }

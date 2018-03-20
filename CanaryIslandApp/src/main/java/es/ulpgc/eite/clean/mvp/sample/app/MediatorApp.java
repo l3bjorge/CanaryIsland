@@ -89,7 +89,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(toHomeState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toHomeState.toolbarVisibility);
-            presenter.setTextVisibility(toHomeState.textVisibility);
 
             Log.d(TAG, "calling removingInitialState()");
             toHomeState = null;
@@ -98,7 +97,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(homeToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
             presenter.setToolbarVisibility(homeToState.toolbarVisibility);
-            presenter.setTextVisibility(homeToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdateState()");
             homeToState = null;
@@ -113,7 +111,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(homeToState.toolbarVisibility);
-            presenter.setTextVisibility(homeToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdatedState()");
             homeToState = null;
@@ -130,7 +127,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(toHomeState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toIslandsMenuState.toolbarVisibility);
-            presenter.setTextVisibility(toIslandsMenuState.textVisibility);
 
             Log.d(TAG, "calling removingInitialState()");
             toIslandsMenuState = null;
@@ -139,7 +135,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(homeToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
             presenter.setToolbarVisibility(islandsmenuToState.toolbarVisibility);
-            presenter.setTextVisibility(islandsmenuToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdateState()");
             islandsmenuToState = null;
@@ -156,7 +151,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(islandsmenuToState.toolbarVisibility);
-            presenter.setTextVisibility(islandsmenuToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdatedState()");
             islandsmenuToState = null;
@@ -317,7 +311,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     public void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter) {
         Log.d(TAG, "calling savingUpdatedState()");
         islandsmenuToState = new IslandsMenuState();
-        islandsmenuToState.textVisibility = true;
         islandsmenuToState.toolbarVisibility = false;
     }
 
@@ -327,7 +320,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         islandsmenuToState = new IslandsMenuState();
         islandsmenuToState.toolbarVisibility = presenter.isToolbarVisible();
         //homeToState.textVisibility = presenter.isTextVisible();
-        islandsmenuToState.textVisibility = false;
 
         Context view = presenter.getManagedContext();
         if (view != null) {
@@ -396,7 +388,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class IslandsMenuState {
         boolean toolbarVisibility;
-        boolean textVisibility;
     }
 
     private class LocationsState {
@@ -406,6 +397,5 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class DescriptionState {
         boolean toolbarVisibility;
-        boolean textVisibility;
     }
 }

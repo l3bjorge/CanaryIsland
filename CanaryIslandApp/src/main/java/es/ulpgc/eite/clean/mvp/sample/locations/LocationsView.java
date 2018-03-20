@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import es.ulpgc.eite.clean.mvp.GenericActivity;
@@ -16,7 +17,7 @@ public class LocationsView
     implements Locations.PresenterToView {
 
   private Toolbar toolbar;
-  private Button button;
+  private ListView list;
   private TextView text;
 
   @Override
@@ -30,13 +31,7 @@ public class LocationsView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    button = (Button) findViewById(R.id.button);
-    button.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        getPresenter().onButtonClicked();
-      }
-    });
+    list = (ListView) findViewById(R.id.list);
   }
 
   /**
@@ -93,6 +88,7 @@ public class LocationsView
 
   @Override
   public void setLabel(String txt) {
-    button.setText(txt);
+
   }
+
 }
