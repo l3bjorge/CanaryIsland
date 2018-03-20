@@ -2,6 +2,7 @@ package es.ulpgc.eite.clean.mvp.sample.description;
 
 
 import android.content.Context;
+import android.net.Uri;
 import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.ContextView;
@@ -94,6 +95,19 @@ public class DescriptionPresenter
     Log.d(TAG, "calling onButtonClicked()");
 
 
+  }
+
+  @Override
+  public void onBtnLocationCliked() {
+    Log.d(TAG, "calling onBtnLocationCliked()");
+    if(isViewRunning()){
+      Uri location = getModel().getLocation();
+
+      Log.d(TAG, "calling goToGoogleMaps");
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToGoogleMaps(this);
+      return;
+    }
   }
 
 

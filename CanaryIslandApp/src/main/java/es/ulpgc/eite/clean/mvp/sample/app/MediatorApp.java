@@ -428,6 +428,16 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     }
 
+    @Override
+    public void goToGoogleMaps(Description.DescriptionTo presenter) {
+        Context view = presenter.getManagedContext();
+        if (view != null){
+            Log.d(TAG, "calling GoogleMaps");
+            /*Intent mapIntent = new Intent(Intent.ACTION_VIEW, );
+            mapIntent.setPackage("com.google.android.apps.maps");
+            startActivity(mapIntent);*/
+        }
+    }
 
 
     ///////////////////////////////////////////////////////////////////////////////////

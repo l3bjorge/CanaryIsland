@@ -1,6 +1,7 @@
 package es.ulpgc.eite.clean.mvp.sample.description;
 
 import android.content.Context;
+import android.net.Uri;
 
 import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.Model;
@@ -48,6 +49,7 @@ public interface Description {
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
     void onButtonClicked();
+    void onBtnLocationCliked();
   }
 
   /**
@@ -70,6 +72,7 @@ public interface Description {
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getTittle();
     String getDescription();
+    Uri getLocation();
   }
 
   /**
