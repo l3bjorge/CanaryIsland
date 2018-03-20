@@ -81,11 +81,11 @@ public class CategoryView
 
   @Override
   public void setLabel(String txt) {
-
+    text.setText(txt);
   }
 
   @Override
   public void setButtonBeach(String buttonBeach) {
-
+    button.setText(buttonBeach);
   }
 }

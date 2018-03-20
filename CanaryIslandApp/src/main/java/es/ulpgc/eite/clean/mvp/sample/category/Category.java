@@ -55,7 +55,7 @@ public interface Category {
    * Methods offered to MODEL to communicate with PRESENTER
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
-    String getText();
+    String getLabel();
     String getButtonBeach();
     String getButtonRest();
     String getButtonTourist();

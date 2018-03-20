@@ -151,7 +151,8 @@ public class CategoryPresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-     // getView().setButtonBeach(getModel().getButtonBeach());
+      getView().setLabel(getModel().getLabel());
+      getView().setButtonBeach(getModel().getButtonBeach());
     }
     checkToolbarVisibility();
   }

@@ -3,13 +3,12 @@ package es.ulpgc.eite.clean.mvp.sample.category;
 import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
-import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 
 
 public class CategoryModel
     extends GenericModel<Category.ModelToPresenter> implements Category.PresenterToModel {
 
-  private String msgText;
+  private String label;
   private String buttonBeach;
   private String buttonRest;
   private String buttonTourist;
@@ -25,7 +24,8 @@ public class CategoryModel
   public void onCreate(Category.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-    msgText = "Choose your island";
+    label = "Choose your category";
+    buttonBeach = "Beaches";
   }
 
   /**
@@ -45,8 +45,8 @@ public class CategoryModel
 
 
   @Override
-  public String getText() {
-    return msgText;
+  public String getLabel() {
+    return label;
   }
 
   public String getButtonBeach() {
