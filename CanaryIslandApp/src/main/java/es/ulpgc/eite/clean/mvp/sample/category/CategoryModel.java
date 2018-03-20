@@ -7,9 +7,12 @@ import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 
 
 public class CategoryModel
-    extends GenericModel<IslandsMenu.ModelToPresenter> implements IslandsMenu.PresenterToModel {
+    extends GenericModel<Category.ModelToPresenter> implements Category.PresenterToModel {
 
   private String msgText;
+  private String buttonBeach;
+  private String buttonRest;
+  private String buttonTourist;
 
 
   /**
@@ -19,7 +22,7 @@ public class CategoryModel
    * @param presenter Presenter interface
    */
   @Override
-  public void onCreate(IslandsMenu.ModelToPresenter presenter) {
+  public void onCreate(Category.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
     msgText = "Choose your island";
@@ -46,6 +49,18 @@ public class CategoryModel
     return msgText;
   }
 
+  public String getButtonBeach() {
+    return buttonBeach;
+  }
 
+
+  public String getButtonRest() {
+    return buttonRest;
+  }
+
+
+  public String getButtonTourist() {
+    return buttonTourist;
+  }
 
 }

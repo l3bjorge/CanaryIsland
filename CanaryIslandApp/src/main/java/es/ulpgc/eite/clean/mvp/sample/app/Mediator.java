@@ -59,5 +59,8 @@ public interface Mediator {
     void goToNextScreen(Description.DescriptionTo presenter);
     void backToPreviousScreen(Description.DescriptionTo presenter);
 
+    //Category
+    void goToCategoryScreen(IslandsMenu.IslandsMenuTo presenter);
+
   }
 }

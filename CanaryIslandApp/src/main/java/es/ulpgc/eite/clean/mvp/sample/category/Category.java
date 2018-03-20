@@ -21,11 +21,11 @@ public interface Category {
     void setTextVisibility(boolean visible);
   }
 
-  interface ToIslandsMenu extends State {
+  interface ToCategory extends State {
     void onScreenStarted();
   }
 
-  interface IslandsMenuTo extends State{
+  interface CategoryTo extends State{
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
@@ -53,6 +53,7 @@ public interface Category {
     void showText();
     void setText(String txt);
     void setLabel(String txt);
+    void setButtonBeach(String buttonBeach);
   }
 
   /**
@@ -60,6 +61,9 @@ public interface Category {
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getText();
+    String getButtonBeach();
+    String getButtonRest();
+    String getButtonTourist();
 ;
   }
 

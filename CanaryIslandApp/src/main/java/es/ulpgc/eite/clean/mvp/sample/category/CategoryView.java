@@ -97,4 +97,9 @@ public class CategoryView
   public void setLabel(String txt) {
     button.setText(txt);
   }
+
+  @Override
+  public void setTextaso(String textaso) {
+
+  }
 }

@@ -212,7 +212,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(toDescriptionState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toDescriptionState.toolbarVisibility);
-            presenter.setTextVisibility(toDescriptionState.textVisibility);
+         //   presenter.setTextVisibility(toDescriptionState.textVisibility);
 
             Log.d(TAG, "calling removingInitialState()");
             toDescriptionState = null;
@@ -221,7 +221,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(descriptionToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
             presenter.setToolbarVisibility(descriptionToState.toolbarVisibility);
-            presenter.setTextVisibility(descriptionToState.textVisibility);
+          //  presenter.setTextVisibility(descriptionToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdateState()");
             descriptionToState = null;
@@ -236,7 +236,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(descriptionToState.toolbarVisibility);
-            presenter.setTextVisibility(descriptionToState.textVisibility);
+          //  presenter.setTextVisibility(descriptionToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdatedState()");
             canaryislandToState = null;
@@ -284,6 +284,11 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         homeToState = new HomeState();
         homeToState.textVisibility = true;
         homeToState.toolbarVisibility = false;
+    }
+
+    @Override
+    public void goToNextScreen(IslandsMenu.IslandsMenuTo presenter) {
+
     }
 
     @Override

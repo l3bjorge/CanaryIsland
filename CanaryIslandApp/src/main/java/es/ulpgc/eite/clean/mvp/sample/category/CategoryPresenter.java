@@ -129,7 +129,7 @@ public class CategoryPresenter
 
     setCurrentState();
     if (buttonClicked) {
-      getView().setText(getModel().getText());
+    //  getView().setText(getModel().getText());
     }
   }
 
@@ -168,7 +168,7 @@ public class CategoryPresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-      getView().setLabel(getModel().getLabel());
+     // getView().setButtonBeach(getModel().getButtonBeach());
     }
     checkToolbarVisibility();
     checkTextVisibility();
