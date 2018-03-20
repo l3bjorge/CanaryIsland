@@ -14,8 +14,8 @@ import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuPresenter;
 
 public class CategoryView
-    extends GenericActivity<IslandsMenu.PresenterToView, IslandsMenu.ViewToPresenter, IslandsMenuPresenter>
-    implements IslandsMenu.PresenterToView {
+    extends GenericActivity<Category.PresenterToView, Category.ViewToPresenter, CategoryPresenter>
+    implements Category.PresenterToView {
 
   private Toolbar toolbar;
   private Button button;
@@ -24,7 +24,7 @@ public class CategoryView
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_islandsmenu);
+    setContentView(R.layout.activity_category);
     Log.d(TAG, "calling onCreate()");
 
     text = (TextView) findViewById(R.id.text);
@@ -32,11 +32,11 @@ public class CategoryView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    button = (Button) findViewById(R.id.button);
+    button = (Button) findViewById(R.id.button2);
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onButtonClicked();
+        getPresenter().goToLocationsScreen();
       }
     });
   }
@@ -48,7 +48,7 @@ public class CategoryView
   @SuppressLint("MissingSuperCall")
   @Override
   protected void onResume() {
-    super.onResume(IslandsMenuPresenter.class, this);
+    super.onResume(CategoryPresenter.class, this);
   }
 
   @Override
@@ -78,8 +78,14 @@ public class CategoryView
     toolbar.setVisibility(View.GONE);
   }
 
+
   @Override
-  public void setTextaso(String textaso) {
+  public void setLabel(String txt) {
+
+  }
+
+  @Override
+  public void setButtonBeach(String buttonBeach) {
 
   }
 }

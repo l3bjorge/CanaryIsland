@@ -87,16 +87,16 @@ public class IslandsMenuPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
- /* @Override
-  public void onGoToCategoryBtnClicked() {
-    Log.d(TAG, "calling onButtonClicked()");
+  @Override
+  public void goToCategoryScreen() {
+    Log.d(TAG, "calling goToCategoryScreen()");
     if(isViewRunning()) {
-      MediatorApp mediator = new MediatorApp();
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
       mediator.goToCategoryScreen(this);
     }
 
 
-  }*/
+  }
 
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -167,10 +167,4 @@ public class IslandsMenuPresenter
       }
     }
   }
-
-  @Override
-  public void onButtonClicked() {
-
-  }
-
 }

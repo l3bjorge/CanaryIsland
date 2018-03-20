@@ -35,7 +35,7 @@ public class IslandsMenuView
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-       // getPresenter().onGoToCategoryBtnClicked();
+        getPresenter().goToCategoryScreen();
       }
     });
   }

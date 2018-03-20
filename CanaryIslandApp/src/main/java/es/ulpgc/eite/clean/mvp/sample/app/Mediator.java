@@ -1,6 +1,7 @@
 package es.ulpgc.eite.clean.mvp.sample.app;
 
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
+import es.ulpgc.eite.clean.mvp.sample.category.Category;
 import es.ulpgc.eite.clean.mvp.sample.description.Description;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
@@ -26,6 +27,10 @@ public interface Mediator {
     void startingScreen(IslandsMenu.ToIslandsMenu presenter);
     void resumingScreen(IslandsMenu.IslandsMenuTo presenter);
 
+    //Category
+    void startingScreen(Category.ToCategory presenter);
+    void resumingScreen(Category.CategoryTo presenter);
+
     //Locations
     void startingScreen(Locations.ToLocations presenter);
     void resumingScreen(Locations.LocationsTo presenter);
@@ -48,8 +53,12 @@ public interface Mediator {
     void backToPreviousScreen(Home.HomeTo presenter);
 
     //IslandsMenu
-    void goToNextScreen(IslandsMenu.IslandsMenuTo presenter);
+    void goToCategoryScreen(IslandsMenu.IslandsMenuTo presenter);
     void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter);
+
+    //Category
+    void goToLocationsScreen(Category.CategoryTo presenter);
+    void backToPreviousScreen(Category.CategoryTo presenter);
 
     //Locations
     void goToNextScreen(Locations.LocationsTo presenter);
@@ -59,8 +68,6 @@ public interface Mediator {
     void goToNextScreen(Description.DescriptionTo presenter);
     void backToPreviousScreen(Description.DescriptionTo presenter);
 
-    //Category
-    void goToCategoryScreen(IslandsMenu.IslandsMenuTo presenter);
 
   }
 }

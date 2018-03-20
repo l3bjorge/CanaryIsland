@@ -8,13 +8,11 @@ import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
-import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
-import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuModel;
 
 public class CategoryPresenter
     extends GenericPresenter
-        <IslandsMenu.PresenterToView, IslandsMenu.PresenterToModel, IslandsMenu.ModelToPresenter, IslandsMenuModel>
-    implements IslandsMenu.ViewToPresenter, IslandsMenu.ModelToPresenter, IslandsMenu.IslandsMenuTo, IslandsMenu.ToIslandsMenu {
+        <Category.PresenterToView, Category.PresenterToModel, Category.ModelToPresenter, CategoryModel>
+    implements Category.ViewToPresenter, Category.ModelToPresenter, Category.CategoryTo, Category.ToCategory {
 
   private boolean toolbarVisible;
 
@@ -27,8 +25,8 @@ public class CategoryPresenter
    * @param view The current VIEW instance
    */
   @Override
-  public void onCreate(IslandsMenu.PresenterToView view) {
-    super.onCreate(IslandsMenuModel.class, this);
+  public void onCreate(Category.PresenterToView view) {
+    super.onCreate(CategoryModel.class, this);
     setView(view);
     Log.d(TAG, "calling onCreate()");
 
@@ -45,7 +43,7 @@ public class CategoryPresenter
    * @param view The current VIEW instance
    */
   @Override
-  public void onResume(IslandsMenu.PresenterToView view) {
+  public void onResume(Category.PresenterToView view) {
     setView(view);
     Log.d(TAG, "calling onResume()");
 
@@ -90,7 +88,7 @@ public class CategoryPresenter
   // View To Presenter /////////////////////////////////////////////////////////////
 
   @Override
-  public void onButtonClicked() {
+  public void goToLocationsScreen() {
     Log.d(TAG, "calling onButtonClicked()");
 
 
@@ -165,5 +163,6 @@ public class CategoryPresenter
       }
     }
   }
+
 
 }
