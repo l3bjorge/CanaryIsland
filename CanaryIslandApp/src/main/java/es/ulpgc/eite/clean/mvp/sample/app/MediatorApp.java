@@ -397,5 +397,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class DescriptionState {
         boolean toolbarVisibility;
+        public boolean textVisibility;
     }
 }
