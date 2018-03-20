@@ -35,7 +35,7 @@ public class IslandsMenuView
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onGoToCategoryBtnClicked();
+       // getPresenter().onGoToCategoryBtnClicked();
       }
     });
   }
@@ -94,6 +94,10 @@ public class IslandsMenuView
 
   @Override
   public void setLabel(String txt) {
-    button.setText(txt);
+  }
+
+  @Override
+  public void setTextaso(String textaso) {
+    text.setText(textaso);
   }
 }

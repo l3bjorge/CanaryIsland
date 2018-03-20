@@ -53,13 +53,14 @@ public interface IslandsMenu {
     void showText();
     void setText(String txt);
     void setLabel(String txt);
+    void setTextaso(String textaso);
   }
 
   /**
    * Methods offered to MODEL to communicate with PRESENTER
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
-    String getText();
+    String getTextaso(); // El presentador pide al modelo que le de el textaso
 ;
   }
 

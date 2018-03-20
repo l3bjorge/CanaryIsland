@@ -8,7 +8,8 @@ import es.ulpgc.eite.clean.mvp.GenericModel;
 public class IslandsMenuModel
     extends GenericModel<IslandsMenu.ModelToPresenter> implements IslandsMenu.PresenterToModel {
 
-  private String msgText;
+  private String textaso;
+
 
 
   /**
@@ -21,7 +22,7 @@ public class IslandsMenuModel
   public void onCreate(IslandsMenu.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-    msgText = "Choose your island";
+    textaso = "Choose your island";
   }
 
   /**
@@ -41,8 +42,8 @@ public class IslandsMenuModel
 
 
   @Override
-  public String getText() {
-    return msgText;
+  public String getTextaso() {
+    return textaso;
   }
 
 

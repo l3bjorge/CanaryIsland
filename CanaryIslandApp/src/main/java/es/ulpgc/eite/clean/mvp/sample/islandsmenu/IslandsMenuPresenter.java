@@ -89,7 +89,7 @@ public class IslandsMenuPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
-  @Override
+ /* @Override
   public void onGoToCategoryBtnClicked() {
     Log.d(TAG, "calling onButtonClicked()");
     if(isViewRunning()) {
@@ -98,7 +98,7 @@ public class IslandsMenuPresenter
     }
 
 
-  }
+  }*/
 
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -131,7 +131,7 @@ public class IslandsMenuPresenter
 
     setCurrentState();
     if (buttonClicked) {
-      getView().setText(getModel().getText());
+      getView().setTextaso(getModel().getTextaso());
     }
   }
 
@@ -170,7 +170,7 @@ public class IslandsMenuPresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-      getView().setLabel(getModel().getLabel());
+      getView().setLabel(getModel().getTextaso());
     }
     checkToolbarVisibility();
     checkTextVisibility();
@@ -192,6 +192,11 @@ public class IslandsMenuPresenter
         getView().showText();
       }
     }
+  }
+
+  @Override
+  public void onButtonClicked() {
+
   }
 
 }
