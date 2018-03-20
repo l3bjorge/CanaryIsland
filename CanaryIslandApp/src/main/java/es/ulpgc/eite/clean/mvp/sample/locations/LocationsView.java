@@ -32,6 +32,12 @@ public class LocationsView
     setSupportActionBar(toolbar);
 
     button = (Button) findViewById(R.id.button2);
+    button.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().goToDescriptionScreen();
+      }
+    });
   }
 
   /**

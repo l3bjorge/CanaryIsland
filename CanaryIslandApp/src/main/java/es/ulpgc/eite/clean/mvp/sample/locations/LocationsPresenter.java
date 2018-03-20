@@ -89,6 +89,11 @@ public class LocationsPresenter
 
   @Override
   public void goToDescriptionScreen() {
+    Log.d(TAG, "calling goToDescriptionScreen()");
+    if(isViewRunning()) {
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToDescriptionScreen(this);
+    }
   }
 
 

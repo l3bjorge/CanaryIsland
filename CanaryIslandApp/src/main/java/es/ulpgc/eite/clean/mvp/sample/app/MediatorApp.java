@@ -10,6 +10,7 @@ import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView;
 import es.ulpgc.eite.clean.mvp.sample.category.Category;
 import es.ulpgc.eite.clean.mvp.sample.category.CategoryView;
 import es.ulpgc.eite.clean.mvp.sample.description.Description;
+import es.ulpgc.eite.clean.mvp.sample.description.DescriptionView;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuView;
@@ -397,7 +398,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
 
     @Override
-        public void goToNextScreen(Locations.LocationsTo presenter) {
+        public void goToDescriptionScreen(Locations.LocationsTo presenter) {
             Log.d(TAG, "calling savingUpdatedState()");
             locationsToState = new LocationsState();
             locationsToState.toolbarVisibility = presenter.isToolbarVisible();
@@ -405,7 +406,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Context view = presenter.getManagedContext();
             if (view != null) {
                 Log.d(TAG, "calling startingNextScreen()");
-                view.startActivity(new Intent(view, LocationsView.class));
+                view.startActivity(new Intent(view, DescriptionView.class));
                 //Log.d(TAG, "calling finishingCurrentScreen()");
                 //presenter.destroyView();
             }
