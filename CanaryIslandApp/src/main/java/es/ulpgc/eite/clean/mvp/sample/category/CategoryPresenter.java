@@ -89,9 +89,11 @@ public class CategoryPresenter
 
   @Override
   public void goToLocationsScreen() {
-    Log.d(TAG, "calling onButtonClicked()");
-
-
+    Log.d(TAG, "calling goToLocationsScreen()");
+    if(isViewRunning()) {
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToLocationsScreen(this);
+    }
   }
 
 

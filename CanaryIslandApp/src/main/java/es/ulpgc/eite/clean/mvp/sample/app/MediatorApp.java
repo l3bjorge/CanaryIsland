@@ -169,7 +169,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(toLocationsState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toLocationsState.toolbarVisibility);
-            presenter.setTextVisibility(toLocationsState.textVisibility);
 
             Log.d(TAG, "calling removingInitialState()");
             toLocationsState = null;
@@ -178,7 +177,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(locationsToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
             presenter.setToolbarVisibility(locationsToState.toolbarVisibility);
-            presenter.setTextVisibility(locationsToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdateState()");
             locationsToState = null;
@@ -194,7 +192,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(locationsToState.toolbarVisibility);
-            presenter.setTextVisibility(locationsToState.textVisibility);
 
             Log.d(TAG, "calling removingUpdatedState()");
             locationsToState = null;
@@ -394,7 +391,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         public void backToPreviousScreen(Locations.LocationsTo presenter) {
             Log.d(TAG, "calling savingUpdatedState()");
             locationsToState = new LocationsState();
-            locationsToState.textVisibility = true;
             locationsToState.toolbarVisibility = false;
     }
 
@@ -405,8 +401,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling savingUpdatedState()");
             locationsToState = new LocationsState();
             locationsToState.toolbarVisibility = presenter.isToolbarVisible();
-            //canaryislandToState.textVisibility = presenter.isTextVisible();
-            locationsToState.textVisibility = false;
 
             Context view = presenter.getManagedContext();
             if (view != null) {
@@ -463,11 +457,9 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class LocationsState {
         boolean toolbarVisibility;
-        boolean textVisibility;
     }
 
     private class DescriptionState {
         boolean toolbarVisibility;
-        public boolean textVisibility;
     }
 }

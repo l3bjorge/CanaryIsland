@@ -9,11 +9,10 @@ public class LocationsModel
     extends GenericModel<Locations.ModelToPresenter> implements Locations.PresenterToModel {
 
 
-  private String dummyText;
-  private String dummyLabel;
-  private int numOfTimes;
-  private int maxNumOfTimes;
-  private String msgText;
+
+  private String label;
+  private String buttoncanteras;
+
 
 
   /**
@@ -27,9 +26,8 @@ public class LocationsModel
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
 
-    dummyLabel = "Click Me!";
-    dummyText = "Hello World!";
-    maxNumOfTimes = 3;
+    label = "choose your location";
+    buttoncanteras = "Las Canteras";
   }
 
   /**
@@ -48,36 +46,13 @@ public class LocationsModel
   // Presenter To Model ////////////////////////////////////////////////////////////
 
   @Override
-  public boolean isNumOfTimesCompleted() {
-    if(numOfTimes == maxNumOfTimes) {
-      return true;
-    }
-    return false;
-  }
-
-  @Override
-  public void changeMsgByBtnClicked() {
-    msgText = dummyText;
-    if(numOfTimes > 0) {
-      msgText += ", " + (numOfTimes + 1) + " times";
-    }
-    numOfTimes++;
-  }
-
-  @Override
-  public String getText() {
-    return msgText;
+  public String getButtonCanteras() {
+    return buttoncanteras;
   }
 
   @Override
   public String getLabel() {
-    return dummyLabel;
-  }
-
-  @Override
-  public void resetMsgByBtnClicked() {
-    numOfTimes = 1;
-    msgText = dummyText;
+    return label;
   }
 
 }

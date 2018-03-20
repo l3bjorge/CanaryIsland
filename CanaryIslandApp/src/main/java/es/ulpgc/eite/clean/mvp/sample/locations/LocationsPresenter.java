@@ -15,8 +15,6 @@ public class LocationsPresenter
     implements Locations.ViewToPresenter, Locations.ModelToPresenter, Locations.LocationsTo, Locations.ToLocations {
 
   private boolean toolbarVisible;
-  private boolean buttonClicked;
-  private boolean textVisible;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -90,26 +88,7 @@ public class LocationsPresenter
   // View To Presenter /////////////////////////////////////////////////////////////
 
   @Override
-  public void onButtonClicked() {
-    Log.d(TAG, "calling onButtonClicked()");
-    if(getModel().isNumOfTimesCompleted()){
-
-      getModel().resetMsgByBtnClicked(); // reseteamos el estado al cumplirse la condición
-
-      Log.d(TAG, "calling goToNextScreen()");
-      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToNextScreen(this);
-      return;
-    }
-
-    if(isViewRunning()) {
-      getModel().changeMsgByBtnClicked();
-      getView().setText(getModel().getText());
-      textVisible = true;
-      buttonClicked = true;
-      checkTextVisibility();
-    }
-
+  public void goToDescriptionScreen() {
   }
 
 
@@ -120,11 +99,6 @@ public class LocationsPresenter
   @Override
   public void setToolbarVisibility(boolean visible) {
     toolbarVisible = visible;
-  }
-
-  @Override
-  public void setTextVisibility(boolean visible) {
-    textVisible = visible;
   }
 
 
@@ -142,9 +116,6 @@ public class LocationsPresenter
     Log.d(TAG, "calling onScreenResumed()");
 
     setCurrentState();
-    if (buttonClicked) {
-      getView().setText(getModel().getText());
-    }
   }
 
 
@@ -169,11 +140,6 @@ public class LocationsPresenter
     return toolbarVisible;
   }
 
-  @Override
-  public boolean isTextVisible() {
-    return textVisible;
-  }
-
 
   ///////////////////////////////////////////////////////////////////////////////////
 
@@ -183,9 +149,9 @@ public class LocationsPresenter
 
     if(isViewRunning()) {
       getView().setLabel(getModel().getLabel());
+      getView().setButtonCanteras(getModel().getButtonCanteras());
     }
     checkToolbarVisibility();
-    checkTextVisibility();
   }
 
   private void checkToolbarVisibility(){
@@ -195,15 +161,4 @@ public class LocationsPresenter
       }
     }
   }
-
-  private void checkTextVisibility(){
-    if(isViewRunning()) {
-      if(!textVisible) {
-        getView().hideText();
-      } else {
-        getView().showText();
-      }
-    }
-  }
-
 }

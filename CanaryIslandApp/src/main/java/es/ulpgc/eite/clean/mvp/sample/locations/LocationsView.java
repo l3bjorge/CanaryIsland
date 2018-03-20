@@ -17,7 +17,7 @@ public class LocationsView
     implements Locations.PresenterToView {
 
   private Toolbar toolbar;
-  private ListView list;
+  private Button button;
   private TextView text;
 
   @Override
@@ -31,7 +31,7 @@ public class LocationsView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    list = (ListView) findViewById(R.id.list);
+    button = (Button) findViewById(R.id.button2);
   }
 
   /**
@@ -72,23 +72,13 @@ public class LocationsView
   }
 
   @Override
-  public void hideText() {
-    text.setVisibility(View.GONE);
-  }
-
-  @Override
-  public void showText() {
-    text.setVisibility(View.VISIBLE);
-  }
-
-  @Override
-  public void setText(String txt) {
+  public void setLabel(String txt) {
     text.setText(txt);
   }
 
   @Override
-  public void setLabel(String txt) {
-
+  public void setButtonCanteras(String txt) {
+    button.setText(txt);
   }
 
 }
