@@ -36,6 +36,13 @@ public class DescriptionPresenter
     Log.d(TAG, "calling startingScreen()");
     Mediator.Lifecycle mediator = (Mediator.Lifecycle) getApplication();
     mediator.startingScreen(this);
+    tittleVisible = true;
+    descriptionVisible = true;
+    checkTittleVisibility();
+    checkDescriptionVisibility();
+    getView().setTittle(getModel().getTittle());
+    getView().setDescription(getModel().getDescription());
+
   }
 
   /**
@@ -101,11 +108,12 @@ public class DescriptionPresenter
   public void onBtnLocationCliked() {
     Log.d(TAG, "calling onBtnLocationCliked()");
     if(isViewRunning()){
-      Uri location = getModel().getLocation();
+      String location = getModel().getLocation();
 
       Log.d(TAG, "calling goToGoogleMaps");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToGoogleMaps(this);
+      mediator.goToGoogleMaps(location);
+
       return;
     }
   }

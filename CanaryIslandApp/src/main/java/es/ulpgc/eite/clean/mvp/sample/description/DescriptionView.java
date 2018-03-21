@@ -37,7 +37,7 @@ public class DescriptionView
     likeBttn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onBtnLocationCliked();
+
       }
     });
 
@@ -45,7 +45,7 @@ public class DescriptionView
     locationBttn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-
+        getPresenter().onBtnLocationCliked();
       }
     });
   }
@@ -89,7 +89,7 @@ public class DescriptionView
 
   @Override
   public void hideTittle() {
-    tittle.setVisibility(View.GONE);
+    tittle.setVisibility(View.INVISIBLE);
   }
 
   @Override
@@ -104,17 +104,17 @@ public class DescriptionView
 
   @Override
   public void hideDescription() {
-
+    description.setVisibility(View.INVISIBLE);
   }
 
   @Override
   public void showDescription() {
-
+    description.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void setDescription(String txt) {
-
+    description.setText(txt);
   }
 
 

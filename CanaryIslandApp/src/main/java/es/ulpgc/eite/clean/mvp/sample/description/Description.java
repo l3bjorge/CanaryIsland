@@ -72,7 +72,7 @@ public interface Description {
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getTittle();
     String getDescription();
-    Uri getLocation();
+    String getLocation();
   }
 
   /**

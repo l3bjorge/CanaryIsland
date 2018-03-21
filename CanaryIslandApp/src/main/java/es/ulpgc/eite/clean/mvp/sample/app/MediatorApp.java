@@ -3,6 +3,7 @@ package es.ulpgc.eite.clean.mvp.sample.app;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
@@ -45,7 +46,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     ///////////////////////////////////////////////////////////////////////////////////
     // Lifecycle /////////////////////////////////////////////////////////////////////
 
-    // CanaryIsland Screen
+    // Favourite Screen
 
     @Override
     public void startingScreen(CanaryIsland.ToCanaryIsland presenter){
@@ -247,6 +248,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toDescriptionState.toolbarVisibility);
 
+
             Log.d(TAG, "calling removingInitialState()");
             toDescriptionState = null;
         }
@@ -280,7 +282,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     ///////////////////////////////////////////////////////////////////////////////////
     // Navigation ////////////////////////////////////////////////////////////////////
 
-    // CanaryIsland Screen
+    // Favourite Screen
 
     @Override
     public void backToPreviousScreen(CanaryIsland.CanaryIslandTo presenter) {
@@ -424,14 +426,16 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void goToGoogleMaps(Description.DescriptionTo presenter) {
-        Context view = presenter.getManagedContext();
-        if (view != null){
-            Log.d(TAG, "calling GoogleMaps");
-            /*Intent mapIntent = new Intent(Intent.ACTION_VIEW, );
-            mapIntent.setPackage("com.google.android.apps.maps");
-            startActivity(mapIntent);*/
+    public void goToGoogleMaps(String location) {
+        Log.d(TAG, "calling GoogleMaps");
+        Uri uri = Uri.parse("google.streetview:cbll=46.414382,10.013988");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        if (mapIntent.resolveActivity(getPackageManager()) != null){
+            startActivity(mapIntent);
         }
+
+
     }
 
 
