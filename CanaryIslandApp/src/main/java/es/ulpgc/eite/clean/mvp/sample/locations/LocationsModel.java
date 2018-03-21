@@ -26,7 +26,7 @@ public class LocationsModel
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
 
-    label = "choose your location";
+    label = "Choose your location";
     buttoncanteras = "Las Canteras";
   }
 
