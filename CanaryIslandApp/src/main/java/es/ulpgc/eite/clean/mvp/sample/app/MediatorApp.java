@@ -374,7 +374,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void goToLocationsScreen(Category.CategoryTo presenter) {
+    public void goToLocationsScreen(Category.CategoryTo presenter, ModelItem item) {
         Log.d(TAG, "calling savingUpdatedState()");
         categoryToState = new CategoryState();
         categoryToState.toolbarVisibility = presenter.isToolbarVisible();

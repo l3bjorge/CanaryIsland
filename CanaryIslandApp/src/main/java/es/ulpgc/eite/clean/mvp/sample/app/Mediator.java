@@ -57,7 +57,7 @@ public interface Mediator {
     void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter);
 
     //Category
-    void goToLocationsScreen(Category.CategoryTo presenter);
+    void goToLocationsScreen(Category.CategoryTo presenter, ModelItem item);
     void backToPreviousScreen(Category.CategoryTo presenter);
 
     //Locations

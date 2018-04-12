@@ -2,9 +2,12 @@ package es.ulpgc.eite.clean.mvp.sample.category;
 
 import android.content.Context;
 
+import java.util.List;
+
 import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.Model;
 import es.ulpgc.eite.clean.mvp.Presenter;
+import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 
 /**
  * Created by Luis on 12/11/16.
@@ -38,7 +41,8 @@ public interface Category {
    * Methods offered to VIEW to communicate with PRESENTER
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
-    void goToLocationsScreen();
+    void goToLocationsScreen(ModelItem item);
+    void onResumingContent();
   }
 
   /**
@@ -46,9 +50,11 @@ public interface Category {
    */
   interface PresenterToView extends ContextView {
     void finishScreen();
-    void hideToolbar();
-    void setLabel(String txt);
-    void setButtonBeach(String buttonBeach);
+    void hideProgress();
+    void showError(String msg);
+    void showProgress();
+    //void setLabel(String txt);
+    void setRecyclerAdapterContent(List<ModelItem> items);
   }
 
   /**
@@ -59,14 +65,17 @@ public interface Category {
     String getButtonBeach();
     String getButtonRest();
     String getButtonTourist();
-;
+    void loadItems();
+    void reloadItems();
+    String getErrorMessage();
   }
 
   /**
    * Required PRESENTER methods available to MODEL
    */
   interface ModelToPresenter {
-
+    void onLoadItemsTaskFinished(List<ModelItem> items);
+    void onLoadItemsTaskStarted();
   }
 
 }

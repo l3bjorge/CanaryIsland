@@ -2,12 +2,16 @@ package es.ulpgc.eite.clean.mvp.sample.category;
 
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.util.Log;
+
+import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
+import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 
 public class CategoryPresenter
     extends GenericPresenter
@@ -15,6 +19,8 @@ public class CategoryPresenter
     implements Category.ViewToPresenter, Category.ModelToPresenter, Category.CategoryTo, Category.ToCategory {
 
   private boolean toolbarVisible;
+  private ModelItem selectedItem;
+  private boolean hideProgress;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -87,13 +93,61 @@ public class CategoryPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
+  /**
+   * Llamado desde la vista cada vez que se reinicia el maestro.
+   * Esta llamada puede hacerse por giro de pantalla o por finalización del detalle pero,
+   * en cualquier caso, habrá que actualizar el contenido de la lista
+   */
   @Override
-  public void goToLocationsScreen() {
+  public void onResumingContent() {
+    Log.d(TAG, "calling onResumingContent()");
+
+    // Si la tarea para la obtención del contenido de la lista ha finalizado,
+    // el contenido estará disponible inmediatamente, sino habrá que esperar su finalización.
+    // En cualquier caso, el presentador será notificado desde el modelo
+    Log.d(TAG, "calling loadItems()");
+    getModel().loadItems();
+  }
+
+
+  @Override
+  public void goToLocationsScreen(ModelItem item) {
     Log.d(TAG, "calling goToLocationsScreen()");
     if(isViewRunning()) {
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToLocationsScreen(this);
+      mediator.goToLocationsScreen(this, item);
     }
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////
+  // Model To Presenter //////////////////////////////////////////////////////////////
+
+  /**
+   * Llamado desde el modelo cuando finaliza la tarea para la obtención del contenido de la lista
+   *
+   * @param items como contenido de la lista a mostrar en pantalla
+   */
+  @Override
+  public void onLoadItemsTaskFinished(List<ModelItem> items) {
+    Log.d(TAG, "calling onLoadItemsTaskFinished()");
+
+    // Una vez finaliza la tarea para la obtención del contenido de la lista,
+    // hacemos desaparecer de pantalla el círculo de progreso
+    // y actualizamos el contenido de la lista
+    hideProgress = true;
+    checkVisibility();
+    getView().setRecyclerAdapterContent(items);
+  }
+
+  /**
+   * Llamado desde el modelo cuando comienza la tarea para la obtención del contenido de la lista
+   */
+  @Override
+  public void onLoadItemsTaskStarted() {
+    Log.d(TAG, "calling onLoadItemsTaskStarted()");
+
+    hideProgress = false;
+    checkVisibility();
   }
 
 
@@ -108,12 +162,20 @@ public class CategoryPresenter
 
 
   ///////////////////////////////////////////////////////////////////////////////////
-  // To Hello //////////////////////////////////////////////////////////////////////
+  // To Category //////////////////////////////////////////////////////////////////////
 
   @Override
   public void onScreenStarted() {
     Log.d(TAG, "calling onScreenStarted()");
     setCurrentState();
+      // Comprobamos si debemos mostrar o no la barra de tareas en función
+      // de la orientación actúal de la pantalla
+      int screenOrientation = getActivityContext().getResources().getConfiguration().orientation;
+      if (toolbarVisible || screenOrientation == Configuration.ORIENTATION_LANDSCAPE) {
+          toolbarVisible = true;
+      } else {
+          toolbarVisible = false;
+      }
   }
 
   @Override
@@ -125,7 +187,7 @@ public class CategoryPresenter
 
 
   ///////////////////////////////////////////////////////////////////////////////////
-  // Hello To //////////////////////////////////////////////////////////////////////
+  // Category To //////////////////////////////////////////////////////////////////////
 
 
   @Override
@@ -153,19 +215,19 @@ public class CategoryPresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-      getView().setLabel(getModel().getLabel());
-      getView().setButtonBeach(getModel().getButtonBeach());
+      //getView().setLabel(getModel().getLabel());
+      //getView().setButtonBeach(getModel().getButtonBeach());
     }
-    checkToolbarVisibility();
+    checkVisibility();
   }
 
-  private void checkToolbarVisibility(){
+  private void checkVisibility(){
     if(isViewRunning()) {
-      if (!toolbarVisible) {
-        getView().hideToolbar();
+      if (hideProgress) {
+        getView().hideProgress();
+      } else {
+        getView().showProgress();
       }
     }
   }
-
-
 }
