@@ -31,6 +31,7 @@ public class LocationsView
   private Toolbar toolbar;
   private ProgressBar progressView;
   private RecyclerView recyclerView;
+  private ActionBar actionbar;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -40,10 +41,8 @@ public class LocationsView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    ActionBar actionbar = getSupportActionBar();
-    if (actionbar != null) {
-      actionbar.setTitle(getString(R.string.title_item_list_locations));
-    }
+    actionbar = getSupportActionBar();
+
 
     progressView = (ProgressBar) findViewById(R.id.progress_circle);
     recyclerView = (RecyclerView) findViewById(R.id.item_list);
@@ -114,10 +113,12 @@ public class LocationsView
   }
 
 
-  /*@Override
-  public void setLabel(String txt) {
-    text.setText(txt);
-  }*/
+  @Override
+  public void setActionBarTitle(String title) {
+    if (actionbar != null) {
+      actionbar.setTitle(title);
+    }
+  }
 
   @Override
   public void setRecyclerAdapterContent(List<ModelItem> items) {

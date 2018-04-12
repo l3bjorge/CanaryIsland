@@ -19,6 +19,7 @@ public class LocationsPresenter
     implements Locations.ViewToPresenter, Locations.ModelToPresenter, Locations.LocationsTo, Locations.ToLocations {
 
   private boolean hideToolbar, hideProgress;
+  private ModelItem selectedItem;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -158,6 +159,12 @@ public class LocationsPresenter
     hideToolbar = visible;
   }
 
+  @Override
+  public void setSelectedItem(ModelItem item) {
+    selectedItem = item;
+    getModel().setItem(item);
+  }
+
 
   ///////////////////////////////////////////////////////////////////////////////////
   // To Hello //////////////////////////////////////////////////////////////////////
@@ -211,6 +218,7 @@ public class LocationsPresenter
 
   private void setCurrentState() {
     Log.d(TAG, "calling setCurrentState()");
+    getView().setActionBarTitle(selectedItem.getContent());
     checkVisibility();
   }
 

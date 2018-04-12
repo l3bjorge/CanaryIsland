@@ -21,6 +21,7 @@ public interface Locations {
 
   interface State {
     void setToolbarVisibility(boolean visible);
+    void setSelectedItem(ModelItem item);
   }
 
   interface ToLocations extends State {
@@ -53,7 +54,7 @@ public interface Locations {
     void hideProgress();
     void showError(String msg);
     void showProgress();
-    //void setLabel(String txt);
+    void setActionBarTitle(String title);
     void setRecyclerAdapterContent(List<ModelItem> items);
   }
 
@@ -63,6 +64,7 @@ public interface Locations {
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getLabel();
     void loadItems();
+    void setItem(ModelItem item);
   }
 
   /**

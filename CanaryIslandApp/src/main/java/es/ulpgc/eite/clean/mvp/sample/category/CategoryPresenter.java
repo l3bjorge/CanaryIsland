@@ -113,9 +113,10 @@ public class CategoryPresenter
   @Override
   public void goToLocationsScreen(ModelItem item) {
     Log.d(TAG, "calling goToLocationsScreen()");
+    selectedItem = item;
     if(isViewRunning()) {
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToLocationsScreen(this, item);
+      mediator.goToLocationsScreen(this);
     }
   }
 
@@ -205,6 +206,16 @@ public class CategoryPresenter
   @Override
   public boolean isToolbarVisible() {
     return toolbarVisible;
+  }
+
+  /**
+   * Llamado por el mediador para recoger el estado a pasar al detalle
+   *
+   * @return item seleccionado en la lista al hacer click
+   */
+  @Override
+  public ModelItem getSelectedItem() {
+    return selectedItem;
   }
 
 

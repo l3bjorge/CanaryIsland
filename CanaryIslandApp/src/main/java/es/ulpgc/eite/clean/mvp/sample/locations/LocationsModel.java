@@ -17,8 +17,12 @@ public class LocationsModel
   private static final int ITEM_COUNT = 9;
 
   private String label;
-  public List<ModelItem> items = null;
+  private List<ModelItem> beaches = null;
+  private List<ModelItem> parks = null;
+  private List<List<ModelItem>> itemsSet = null;
+  private String position = null;
   private boolean runningTask;
+  private ModelItem selecteditem;
   private String errorMsg;
 
 
@@ -56,6 +60,12 @@ public class LocationsModel
     return label;
   }
 
+  @Override
+  public void setItem(ModelItem item) {
+    selecteditem = item;
+  }
+
+
   /**
    * Llamado para recuperar los elementos a mostrar en la lista.
    * Si el contenido ya ha sido fijado antes, se notificará inmediatamente al presentador y,
@@ -63,11 +73,12 @@ public class LocationsModel
    */
   @Override
   public void loadItems() {
-    if (items == null && !runningTask) {
+    if ( !runningTask) {
+
       startDelayedTask();
     } else {
       if (!runningTask) {
-        getPresenter().onLoadItemsTaskFinished(items);
+        getPresenter().onLoadItemsTaskFinished(itemsSet.get(Integer.parseInt(position)));
       } else {
         getPresenter().onLoadItemsTaskStarted();
       }
@@ -76,13 +87,7 @@ public class LocationsModel
 
   /////////////////////////////////////////////////////////////////////////////////////
 
-  private void addItem(ModelItem item) {
-    items.add(item);
-  }
 
-  private ModelItem createItem(int position) {
-    return new ModelItem(String.valueOf(position), "Location " + position, makeDetails(position));
-  }
 
   private String makeDetails(int position) {
     StringBuilder builder = new StringBuilder();
@@ -94,12 +99,36 @@ public class LocationsModel
   }
 
   private void setItems() {
-    items = new ArrayList();
+    itemsSet = new ArrayList();
+    beaches = new ArrayList();
+    parks= new ArrayList();
 
-    // Add some sample items.
-    for (int count = 1; count <= ITEM_COUNT; count++) {
-      addItem(createItem(count));
-    }
+
+    beaches.add(new ModelItem(String.valueOf(0), "Las Canteras", makeDetails(0)));
+    beaches.add(new ModelItem(String.valueOf(1), "Alcaravaneras", makeDetails(1)));
+    beaches.add(new ModelItem(String.valueOf(2), "Playa del Inglés", makeDetails(2)));
+    beaches.add(new ModelItem(String.valueOf(3), "Beach 4", makeDetails(3)));
+    beaches.add(new ModelItem(String.valueOf(4), "Beach 5", makeDetails(4)));
+    beaches.add(new ModelItem(String.valueOf(5), "Beach 6", makeDetails(5)));
+    beaches.add(new ModelItem(String.valueOf(6), "Beach 7", makeDetails(6)));
+    beaches.add(new ModelItem(String.valueOf(7), "Beach 8", makeDetails(7)));
+    beaches.add(new ModelItem(String.valueOf(8), "Beach 9", makeDetails(8)));
+    beaches.add(new ModelItem(String.valueOf(9), "Beach 10", makeDetails(9)));
+
+    itemsSet.add(beaches);
+
+    parks.add(new ModelItem(String.valueOf(0), "Las Rehoyas", makeDetails(0)));
+    parks.add(new ModelItem(String.valueOf(1), "Juan Pablo II", makeDetails(1)));
+    parks.add(new ModelItem(String.valueOf(2), "Doramas", makeDetails(2)));
+    parks.add(new ModelItem(String.valueOf(3), "Park 4 ", makeDetails(3)));
+    parks.add(new ModelItem(String.valueOf(4), "Park 5", makeDetails(4)));
+    parks.add(new ModelItem(String.valueOf(5), "Park 6", makeDetails(5)));
+    parks.add(new ModelItem(String.valueOf(6), "Park 7", makeDetails(6)));
+    parks.add(new ModelItem(String.valueOf(7), "Park 8", makeDetails(7)));
+    parks.add(new ModelItem(String.valueOf(8), "Park 9", makeDetails(8)));
+    parks.add(new ModelItem(String.valueOf(9), "Activities", makeDetails(9)));
+
+    itemsSet.add(parks);
   }
 
   /**
@@ -111,6 +140,8 @@ public class LocationsModel
     Log.d(TAG, "calling startDelayedTask()");
     runningTask = true;
     getPresenter().onLoadItemsTaskStarted();
+    position = selecteditem.getId();
+
 
     // Mock Hello: A handler to delay the answer
     new Handler().postDelayed(new Runnable() {
@@ -118,7 +149,7 @@ public class LocationsModel
       public void run() {
         setItems();
         runningTask = false;
-        getPresenter().onLoadItemsTaskFinished(items);
+        getPresenter().onLoadItemsTaskFinished(itemsSet.get(Integer.parseInt(position)));
       }
     }, 1000);
   }

@@ -168,20 +168,19 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void startingScreen(Locations.ToLocations presenter){
-        if(toLocationsState != null) {
+        if(categoryToState != null) {
             Log.d(TAG, "calling settingInitialState()");
-            presenter.setToolbarVisibility(toLocationsState.toolbarVisibility);
+            presenter.setSelectedItem(categoryToState.selectedItem);
 
             Log.d(TAG, "calling removingInitialState()");
-            toLocationsState = null;
+            categoryToState = null;
         }
 
-        if(locationsToState != null) {
+        if(categoryToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
-            presenter.setToolbarVisibility(locationsToState.toolbarVisibility);
 
             Log.d(TAG, "calling removingUpdateState()");
-            locationsToState = null;
+            categoryToState = null;
         }
 
         presenter.onScreenStarted();
@@ -374,10 +373,11 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void goToLocationsScreen(Category.CategoryTo presenter, ModelItem item) {
+    public void goToLocationsScreen(Category.CategoryTo presenter) {
         Log.d(TAG, "calling savingUpdatedState()");
         categoryToState = new CategoryState();
         categoryToState.toolbarVisibility = presenter.isToolbarVisible();
+        categoryToState.selectedItem = presenter.getSelectedItem();
 
         Context view = presenter.getManagedContext();
         if (view != null) {
@@ -458,6 +458,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class CategoryState {
         boolean toolbarVisibility;
+        ModelItem selectedItem;
     }
 
     private class LocationsState {

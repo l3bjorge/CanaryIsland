@@ -32,6 +32,7 @@ public interface Category {
     void destroyView();
     boolean isToolbarVisible();
     void onScreenResumed();
+    ModelItem getSelectedItem();
   }
 
   ///////////////////////////////////////////////////////////////////////////////////
