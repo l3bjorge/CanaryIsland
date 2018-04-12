@@ -2,6 +2,15 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="es.ulpgc.eite.clean.mvp.sample.category.CategoryView">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search_white_18dp"
+        app:showAsAction="ifRoom"
+        />
+
     <item
         android:id="@+id/action_restore"
         android:orderInCategory="100"

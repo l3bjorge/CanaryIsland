@@ -114,10 +114,17 @@ public class CategoryModel
   private void setItems(){
     items = new ArrayList();
 
-    // Add some sample items.
-    for (int count = 1; count <= ITEM_COUNT; count++) {
-      addItem(createItem(count));
-    }
+      addItem(new ModelItem(String.valueOf(0), "Beaches", makeDetails(0)));
+      addItem(new ModelItem(String.valueOf(1), "Parks", makeDetails(1)));
+      addItem(new ModelItem(String.valueOf(2), "Shopping Centres", makeDetails(2)));
+      addItem(new ModelItem(String.valueOf(3), "Museums", makeDetails(3)));
+      addItem(new ModelItem(String.valueOf(4), "Restaurants", makeDetails(4)));
+      addItem(new ModelItem(String.valueOf(5), "Touristic Spots", makeDetails(5)));
+      addItem(new ModelItem(String.valueOf(6), "Night Clubs", makeDetails(6)));
+      addItem(new ModelItem(String.valueOf(7), "Theaters", makeDetails(7)));
+      addItem(new ModelItem(String.valueOf(8), "Cultural Spots", makeDetails(8)));
+      addItem(new ModelItem(String.valueOf(9), "Activities", makeDetails(9)));
+
   }
 
   /**

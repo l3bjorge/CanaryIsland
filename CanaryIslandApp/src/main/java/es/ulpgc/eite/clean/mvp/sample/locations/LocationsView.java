@@ -3,6 +3,7 @@ package es.ulpgc.eite.clean.mvp.sample.locations;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -20,6 +21,8 @@ import java.util.List;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+
+import static android.support.v7.widget.RecyclerView.VERTICAL;
 
 public class LocationsView
     extends GenericActivity<Locations.PresenterToView, Locations.ViewToPresenter, LocationsPresenter>
@@ -44,6 +47,10 @@ public class LocationsView
 
     progressView = (ProgressBar) findViewById(R.id.progress_circle);
     recyclerView = (RecyclerView) findViewById(R.id.item_list);
+    recyclerView = (RecyclerView) findViewById(R.id.item_list);
+    DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
+            VERTICAL);
+    recyclerView.addItemDecoration(dividerItemDecoration);
     recyclerView.setAdapter(new LocationsView.ModelItemRecyclerViewAdapter());
   }
 
