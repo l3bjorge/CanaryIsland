@@ -27,8 +27,6 @@ public class CategoryView
     implements Category.PresenterToView {
 
   private Toolbar toolbar;
-  private Button button;
-  private TextView text;
   private ProgressBar progressView;
   private RecyclerView recyclerView;
 

@@ -62,9 +62,6 @@ public interface Category {
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getLabel();
-    String getButtonBeach();
-    String getButtonRest();
-    String getButtonTourist();
     void loadItems();
     void reloadItems();
     String getErrorMessage();

@@ -61,7 +61,7 @@ public interface Mediator {
     void backToPreviousScreen(Category.CategoryTo presenter);
 
     //Locations
-    void goToDescriptionScreen(Locations.LocationsTo presenter);
+    void goToDescriptionScreen(Locations.LocationsTo presenter, ModelItem item);
     void backToPreviousScreen(Locations.LocationsTo presenter);
 
     //Description

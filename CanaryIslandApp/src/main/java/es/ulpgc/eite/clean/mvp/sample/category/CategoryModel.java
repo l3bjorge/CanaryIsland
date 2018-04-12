@@ -59,20 +59,6 @@ public class CategoryModel
     return label;
   }
 
-  public String getButtonBeach() {
-    return buttonBeach;
-  }
-
-
-  public String getButtonRest() {
-    return buttonRest;
-  }
-
-
-  public String getButtonTourist() {
-    return buttonTourist;
-  }
-
   /**
    * Llamado para recuperar los elementos a mostrar en la lista.
    * Si el contenido ya ha sido fijado antes, se notificará inmediatamente al presentador y,
@@ -152,7 +138,7 @@ public class CategoryModel
         runningTask = false;
         getPresenter().onLoadItemsTaskFinished(items);
       }
-    }, 5000);
+    }, 1000);
   }
 
 }

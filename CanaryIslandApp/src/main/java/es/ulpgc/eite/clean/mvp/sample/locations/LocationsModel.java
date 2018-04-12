@@ -1,18 +1,25 @@
 package es.ulpgc.eite.clean.mvp.sample.locations;
 
+import android.os.Handler;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import es.ulpgc.eite.clean.mvp.GenericModel;
+import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 
 
 public class LocationsModel
     extends GenericModel<Locations.ModelToPresenter> implements Locations.PresenterToModel {
 
 
+  private static final int ITEM_COUNT = 9;
 
   private String label;
-  private String buttoncanteras;
-
+  public List<ModelItem> items = null;
+  private boolean runningTask;
+  private String errorMsg;
 
 
   /**
@@ -25,9 +32,7 @@ public class LocationsModel
   public void onCreate(Locations.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-
-    label = "Choose your location";
-    buttoncanteras = "Las Canteras";
+    label = "Choose your category";
   }
 
   /**
@@ -45,14 +50,77 @@ public class LocationsModel
   ///////////////////////////////////////////////////////////////////////////////////
   // Presenter To Model ////////////////////////////////////////////////////////////
 
-  @Override
-  public String getButtonCanteras() {
-    return buttoncanteras;
-  }
 
   @Override
   public String getLabel() {
     return label;
   }
 
+  /**
+   * Llamado para recuperar los elementos a mostrar en la lista.
+   * Si el contenido ya ha sido fijado antes, se notificará inmediatamente al presentador y,
+   * sino es el caso, la notificación se realizará al finalizar la tarea que fija este contenido
+   */
+  @Override
+  public void loadItems() {
+    if (items == null && !runningTask) {
+      startDelayedTask();
+    } else {
+      if (!runningTask) {
+        getPresenter().onLoadItemsTaskFinished(items);
+      } else {
+        getPresenter().onLoadItemsTaskStarted();
+      }
+    }
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////
+
+  private void addItem(ModelItem item) {
+    items.add(item);
+  }
+
+  private ModelItem createItem(int position) {
+    return new ModelItem(String.valueOf(position), "Location " + position, makeDetails(position));
+  }
+
+  private String makeDetails(int position) {
+    StringBuilder builder = new StringBuilder();
+    builder.append("Details about Item: ").append(position).append("\n");
+    for (int count = 0; count < position; count++) {
+      builder.append("\nMore details information here.");
+    }
+    return builder.toString();
+  }
+
+  private void setItems() {
+    items = new ArrayList();
+
+    // Add some sample items.
+    for (int count = 1; count <= ITEM_COUNT; count++) {
+      addItem(createItem(count));
+    }
+  }
+
+  /**
+   * Llamado para recuperar los elementos a mostrar en la lista.
+   * Consiste en una tarea asíncrona que retrasa un tiempo la obtención del contenido.
+   * El modelo notificará al presentador cuando se inicia y cuando finaliza esta tarea.
+   */
+  private void startDelayedTask() {
+    Log.d(TAG, "calling startDelayedTask()");
+    runningTask = true;
+    getPresenter().onLoadItemsTaskStarted();
+
+    // Mock Hello: A handler to delay the answer
+    new Handler().postDelayed(new Runnable() {
+      @Override
+      public void run() {
+        setItems();
+        runningTask = false;
+        getPresenter().onLoadItemsTaskFinished(items);
+      }
+    }, 1000);
+  }
 }
+
