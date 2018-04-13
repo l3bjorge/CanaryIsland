@@ -426,12 +426,16 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void goToGoogleMaps(String location) {
+    public void goToGoogleMaps(String url) {
         Log.d(TAG, "calling GoogleMaps");
-        Uri uri = Uri.parse("google.streetview:cbll=46.414382,10.013988");
+        Uri uri = Uri.parse(url);
+
+
+
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
         mapIntent.setPackage("com.google.android.apps.maps");
-        if (mapIntent.resolveActivity(getPackageManager()) != null){
+        if (mapIntent.resolveActivity(getPackageManager()) != null) {
+            mapIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(mapIntent);
         }
 

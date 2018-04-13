@@ -108,13 +108,12 @@ public class DescriptionPresenter
   public void onBtnLocationCliked() {
     Log.d(TAG, "calling onBtnLocationCliked()");
     if(isViewRunning()){
-      String location = getModel().getLocation();
+      //String url = getModel().getLocation();
 
       Log.d(TAG, "calling goToGoogleMaps");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToGoogleMaps(location);
+      mediator.goToGoogleMaps(getModel().getLocation());
 
-      return;
     }
   }
 
