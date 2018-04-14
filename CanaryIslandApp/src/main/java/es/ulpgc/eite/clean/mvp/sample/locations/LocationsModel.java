@@ -19,6 +19,7 @@ public class LocationsModel
   private String label;
   private List<ModelItem> beaches = null;
   private List<ModelItem> parks = null;
+  private List<ModelItem> shoppingCenters = null;
   private List<List<ModelItem>> itemsSet = null;
   private String position = null;
   private boolean runningTask;
@@ -102,6 +103,7 @@ public class LocationsModel
     itemsSet = new ArrayList();
     beaches = new ArrayList();
     parks= new ArrayList();
+    shoppingCenters= new ArrayList();
 
 
     beaches.add(new ModelItem(String.valueOf(0), "Las Canteras", makeDetails(0)));
@@ -129,6 +131,20 @@ public class LocationsModel
     parks.add(new ModelItem(String.valueOf(9), "Activities", makeDetails(9)));
 
     itemsSet.add(parks);
+
+    shoppingCenters.add(new ModelItem(String.valueOf(0), "Las Arenas", makeDetails(0)));
+    shoppingCenters.add(new ModelItem(String.valueOf(1), "Las terrazas", makeDetails(1)));
+    shoppingCenters.add(new ModelItem(String.valueOf(2), "El Mirador", makeDetails(2)));
+    shoppingCenters.add(new ModelItem(String.valueOf(3), "Atlantico Vecindario ", makeDetails(3)));
+    shoppingCenters.add(new ModelItem(String.valueOf(4), "El Tablero", makeDetails(4)));
+    shoppingCenters.add(new ModelItem(String.valueOf(5), "Los Alisios", makeDetails(5)));
+    shoppingCenters.add(new ModelItem(String.valueOf(6), "La Ballena", makeDetails(6)));
+    shoppingCenters.add(new ModelItem(String.valueOf(7), "El Muelle", makeDetails(7)));
+    shoppingCenters.add(new ModelItem(String.valueOf(8), "7 Palmas", makeDetails(8)));
+    shoppingCenters.add(new ModelItem(String.valueOf(9), "Las Ramblas", makeDetails(9)));
+
+    itemsSet.add(shoppingCenters);
+
   }
 
   /**

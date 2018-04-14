@@ -116,7 +116,7 @@ public class CategoryModel
 
       addItem(new ModelItem(String.valueOf(0), "Beaches", makeDetails(0)));
       addItem(new ModelItem(String.valueOf(1), "Parks", makeDetails(1)));
-      addItem(new ModelItem(String.valueOf(2), "Shopping Centres", makeDetails(2)));
+      addItem(new ModelItem(String.valueOf(2), "Shopping Centers", makeDetails(2)));
       addItem(new ModelItem(String.valueOf(3), "Museums", makeDetails(3)));
       addItem(new ModelItem(String.valueOf(4), "Restaurants", makeDetails(4)));
       addItem(new ModelItem(String.valueOf(5), "Touristic Spots", makeDetails(5)));
