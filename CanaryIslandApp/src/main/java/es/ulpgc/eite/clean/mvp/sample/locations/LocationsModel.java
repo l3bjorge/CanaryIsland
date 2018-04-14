@@ -109,26 +109,26 @@ public class LocationsModel
     beaches.add(new ModelItem(String.valueOf(0), "Las Canteras", makeDetails(0)));
     beaches.add(new ModelItem(String.valueOf(1), "Alcaravaneras", makeDetails(1)));
     beaches.add(new ModelItem(String.valueOf(2), "Playa del Inglés", makeDetails(2)));
-    beaches.add(new ModelItem(String.valueOf(3), "Beach 4", makeDetails(3)));
-    beaches.add(new ModelItem(String.valueOf(4), "Beach 5", makeDetails(4)));
-    beaches.add(new ModelItem(String.valueOf(5), "Beach 6", makeDetails(5)));
-    beaches.add(new ModelItem(String.valueOf(6), "Beach 7", makeDetails(6)));
-    beaches.add(new ModelItem(String.valueOf(7), "Beach 8", makeDetails(7)));
-    beaches.add(new ModelItem(String.valueOf(8), "Beach 9", makeDetails(8)));
-    beaches.add(new ModelItem(String.valueOf(9), "Beach 10", makeDetails(9)));
+    beaches.add(new ModelItem(String.valueOf(3), "Playa del Faro", makeDetails(3)));
+    beaches.add(new ModelItem(String.valueOf(4), "Amodores", makeDetails(4)));
+    beaches.add(new ModelItem(String.valueOf(5), "Anfi del Mar", makeDetails(5)));
+    beaches.add(new ModelItem(String.valueOf(6), "Playa de Mogan", makeDetails(6)));
+    beaches.add(new ModelItem(String.valueOf(7), "Playa de San Agustín", makeDetails(7)));
+    beaches.add(new ModelItem(String.valueOf(8), "Playa de Güigüí", makeDetails(8)));
+    beaches.add(new ModelItem(String.valueOf(9), "Playa de las Burras", makeDetails(9)));
 
     itemsSet.add(beaches);
 
     parks.add(new ModelItem(String.valueOf(0), "Las Rehoyas", makeDetails(0)));
     parks.add(new ModelItem(String.valueOf(1), "Juan Pablo II", makeDetails(1)));
     parks.add(new ModelItem(String.valueOf(2), "Doramas", makeDetails(2)));
-    parks.add(new ModelItem(String.valueOf(3), "Park 4 ", makeDetails(3)));
-    parks.add(new ModelItem(String.valueOf(4), "Park 5", makeDetails(4)));
-    parks.add(new ModelItem(String.valueOf(5), "Park 6", makeDetails(5)));
-    parks.add(new ModelItem(String.valueOf(6), "Park 7", makeDetails(6)));
-    parks.add(new ModelItem(String.valueOf(7), "Park 8", makeDetails(7)));
-    parks.add(new ModelItem(String.valueOf(8), "Park 9", makeDetails(8)));
-    parks.add(new ModelItem(String.valueOf(9), "Activities", makeDetails(9)));
+    parks.add(new ModelItem(String.valueOf(3), "Parque Sur ", makeDetails(3)));
+    parks.add(new ModelItem(String.valueOf(4), "San Telmo", makeDetails(4)));
+    parks.add(new ModelItem(String.valueOf(5), "Santa Catalina", makeDetails(5)));
+    parks.add(new ModelItem(String.valueOf(6), "Palmitos Park", makeDetails(6)));
+    parks.add(new ModelItem(String.valueOf(7), "San Cristóbal", makeDetails(7)));
+    parks.add(new ModelItem(String.valueOf(8), "Parque Romano", makeDetails(8)));
+    parks.add(new ModelItem(String.valueOf(9), "Parque Natural Pilancones", makeDetails(9)));
 
     itemsSet.add(parks);
 
