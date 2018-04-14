@@ -20,6 +20,14 @@ public class LocationsModel
   private List<ModelItem> beaches = null;
   private List<ModelItem> parks = null;
   private List<ModelItem> shoppingCenters = null;
+  private List<ModelItem> museums = null;
+  private List<ModelItem> restaurants = null;
+  private List<ModelItem> touristicSpots = null;
+  private List<ModelItem> nightClubs = null;
+  private List<ModelItem> theates = null;
+  private List<ModelItem> culturalSpots = null;
+
+
   private List<List<ModelItem>> itemsSet = null;
   private String position = null;
   private boolean runningTask;
@@ -104,6 +112,14 @@ public class LocationsModel
     beaches = new ArrayList();
     parks= new ArrayList();
     shoppingCenters= new ArrayList();
+    museums= new ArrayList();
+    restaurants= new ArrayList();
+    touristicSpots= new ArrayList();
+    nightClubs= new ArrayList();
+    theates= new ArrayList();
+    culturalSpots= new ArrayList();
+
+
 
 
     beaches.add(new ModelItem(String.valueOf(0), "Las Canteras", makeDetails(0)));
@@ -144,6 +160,84 @@ public class LocationsModel
     shoppingCenters.add(new ModelItem(String.valueOf(9), "Las Ramblas", makeDetails(9)));
 
     itemsSet.add(shoppingCenters);
+
+    museums.add(new ModelItem(String.valueOf(0), "Pérez Galdós", makeDetails(0)));
+    museums.add(new ModelItem(String.valueOf(1), "Casa de Colón", makeDetails(1)));
+    museums.add(new ModelItem(String.valueOf(2), "Leon y Castillo", makeDetails(2)));
+    museums.add(new ModelItem(String.valueOf(3), "Cueva Pintada ", makeDetails(3)));
+    museums.add(new ModelItem(String.valueOf(4), "Elder de la Ciencia", makeDetails(4)));
+    museums.add(new ModelItem(String.valueOf(5), "Néstor", makeDetails(5)));
+    museums.add(new ModelItem(String.valueOf(6), "Diocesano de Arte Sacro", makeDetails(6)));
+    museums.add(new ModelItem(String.valueOf(7), "Museo del Vino", makeDetails(7)));
+    museums.add(new ModelItem(String.valueOf(8), "Museo Naval", makeDetails(8)));
+    museums.add(new ModelItem(String.valueOf(9), "Poeta Domingo Rivero", makeDetails(9)));
+
+    itemsSet.add(museums);
+
+    restaurants.add(new ModelItem(String.valueOf(0), "Wapa Tapa", makeDetails(0)));
+    restaurants.add(new ModelItem(String.valueOf(1), "Valle de Mogan", makeDetails(1)));
+    restaurants.add(new ModelItem(String.valueOf(2), "El Capitan", makeDetails(2)));
+    restaurants.add(new ModelItem(String.valueOf(3), "Adio Mare ", makeDetails(3)));
+    restaurants.add(new ModelItem(String.valueOf(4), "El Churrasco", makeDetails(4)));
+    restaurants.add(new ModelItem(String.valueOf(5), "El Clandestino", makeDetails(5)));
+    restaurants.add(new ModelItem(String.valueOf(6), "El Carretón", makeDetails(6)));
+    restaurants.add(new ModelItem(String.valueOf(7), "Sakura VI Wok", makeDetails(7)));
+    restaurants.add(new ModelItem(String.valueOf(8), "Foster´s Hollywood", makeDetails(8)));
+    restaurants.add(new ModelItem(String.valueOf(9), "Tony Roma's", makeDetails(9)));
+
+    itemsSet.add(restaurants);
+
+    touristicSpots.add(new ModelItem(String.valueOf(0), "Roque Nublo", makeDetails(0)));
+    touristicSpots.add(new ModelItem(String.valueOf(1), "Agaete", makeDetails(1)));
+    touristicSpots.add(new ModelItem(String.valueOf(2), "Galdar", makeDetails(2)));
+    touristicSpots.add(new ModelItem(String.valueOf(3), "Maspalomas ", makeDetails(3)));
+    touristicSpots.add(new ModelItem(String.valueOf(4), "Mogan", makeDetails(4)));
+    touristicSpots.add(new ModelItem(String.valueOf(5), "Teror", makeDetails(5)));
+    touristicSpots.add(new ModelItem(String.valueOf(6), "Tamadaba", makeDetails(6)));
+    touristicSpots.add(new ModelItem(String.valueOf(7), "touristicSpots7", makeDetails(7)));
+    touristicSpots.add(new ModelItem(String.valueOf(8), "touristicSpots8", makeDetails(8)));
+    touristicSpots.add(new ModelItem(String.valueOf(9), "touristicSpots", makeDetails(9)));
+
+    itemsSet.add(touristicSpots);
+
+    nightClubs.add(new ModelItem(String.valueOf(0), "Chester", makeDetails(0)));
+    nightClubs.add(new ModelItem(String.valueOf(1), "Terraza Kopa", makeDetails(1)));
+    nightClubs.add(new ModelItem(String.valueOf(2), "Pacha", makeDetails(2)));
+    nightClubs.add(new ModelItem(String.valueOf(3), "El Papagayo ", makeDetails(3)));
+    nightClubs.add(new ModelItem(String.valueOf(4), "Sotavento", makeDetails(4)));
+    nightClubs.add(new ModelItem(String.valueOf(5), "On the Sea", makeDetails(5)));
+    nightClubs.add(new ModelItem(String.valueOf(6), "Aqua Ocean Club", makeDetails(6)));
+    nightClubs.add(new ModelItem(String.valueOf(7), "TAO Club & Garden", makeDetails(7)));
+    nightClubs.add(new ModelItem(String.valueOf(8), "Dubai Club", makeDetails(8)));
+    nightClubs.add(new ModelItem(String.valueOf(9), "ChinaWhite", makeDetails(9)));
+
+    itemsSet.add(nightClubs);
+
+    theates.add(new ModelItem(String.valueOf(0), "Pérez Galdós", makeDetails(0)));
+    theates.add(new ModelItem(String.valueOf(1), "Guiniguada", makeDetails(1)));
+    theates.add(new ModelItem(String.valueOf(2), "Theatre Cuyás", makeDetails(2)));
+    theates.add(new ModelItem(String.valueOf(3), "Theatro3 ", makeDetails(3)));
+    theates.add(new ModelItem(String.valueOf(4), "Theatre4", makeDetails(4)));
+    theates.add(new ModelItem(String.valueOf(5), "Theatre5", makeDetails(5)));
+    theates.add(new ModelItem(String.valueOf(6), "Theatre6", makeDetails(6)));
+    theates.add(new ModelItem(String.valueOf(7), "Theatre7", makeDetails(7)));
+    theates.add(new ModelItem(String.valueOf(8), "Theatre8", makeDetails(8)));
+    theates.add(new ModelItem(String.valueOf(9), "Theatre9", makeDetails(9)));
+
+    itemsSet.add(theates);
+
+    culturalSpots.add(new ModelItem(String.valueOf(0), "Centro Cultural San fernando", makeDetails(0)));
+    culturalSpots.add(new ModelItem(String.valueOf(1), "Centro Cultural Cicca", makeDetails(1)));
+    culturalSpots.add(new ModelItem(String.valueOf(2), "San Martín Contemporáneo", makeDetails(2)));
+    culturalSpots.add(new ModelItem(String.valueOf(3), "Cultural3 ", makeDetails(3)));
+    culturalSpots.add(new ModelItem(String.valueOf(4), "Cultural4", makeDetails(4)));
+    culturalSpots.add(new ModelItem(String.valueOf(5), "Cultural5", makeDetails(5)));
+    culturalSpots.add(new ModelItem(String.valueOf(6), "Cultural6", makeDetails(6)));
+    culturalSpots.add(new ModelItem(String.valueOf(7), "Cultural7", makeDetails(7)));
+    culturalSpots.add(new ModelItem(String.valueOf(8), "Cultural8", makeDetails(8)));
+    culturalSpots.add(new ModelItem(String.valueOf(9), "Cultural9", makeDetails(9)));
+
+    itemsSet.add(culturalSpots);
 
   }
 
