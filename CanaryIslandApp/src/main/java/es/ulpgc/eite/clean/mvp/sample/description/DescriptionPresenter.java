@@ -144,12 +144,23 @@ public class DescriptionPresenter
   public void onBtnFacebookClicked() {
     Log.d(TAG, "calling onBtnFacebookClicked()");
     if(isViewRunning()){
-      Log.d(TAG, "calling onBtnWebCliked()");
+      Log.d(TAG, "calling onBtnFacebookClicked()");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
       mediator.goToFacebook(getModel().getFacebook());
 
     }
 
+  }
+
+  @Override
+  public void onBtnInstagramClicked() {
+    Log.d(TAG, "calling onBtnInstagramClicked()");
+    if(isViewRunning()){
+      Log.d(TAG, "onBtnInstagramClicked()");
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToInstagram(getModel().getInstagram());
+
+    }
   }
 
   ///////////////////////////////////////////////////////////////////////////////////

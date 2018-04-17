@@ -69,7 +69,7 @@ public class DescriptionView
     instaBttn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-
+        getPresenter().onBtnInstagramClicked();
       }
     });
   }

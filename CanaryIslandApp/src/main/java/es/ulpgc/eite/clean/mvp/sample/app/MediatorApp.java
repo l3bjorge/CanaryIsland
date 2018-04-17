@@ -1,6 +1,7 @@
 package es.ulpgc.eite.clean.mvp.sample.app;
 
 import android.app.Application;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -460,7 +461,16 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToInstagram(String url) {
-
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setPackage("com.instagram.android");
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse(url)));
+        }
     }
 
 

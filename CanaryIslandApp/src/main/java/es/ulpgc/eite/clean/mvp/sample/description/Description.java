@@ -55,6 +55,7 @@ public interface Description {
     void onBtnLocationCliked();
     void onBtnWebCliked();
     void onBtnFacebookClicked();
+    void onBtnInstagramClicked();
 
   }
 

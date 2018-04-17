@@ -31,7 +31,7 @@ public class DescriptionModel
     location = "geo:28.1428538,-15.433716499999946";
     web = null; //"http://www.ulpgc.es";
     facebook = /*null;*/ "https://es-es.facebook.com/periodicoCanarias7/";
-    instagram = null;
+    instagram = /*null;*/ "https://www.instagram.com/instagram/?hl=es";
 
   }
 
