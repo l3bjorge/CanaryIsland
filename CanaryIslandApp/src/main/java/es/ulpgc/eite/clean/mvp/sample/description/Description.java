@@ -25,8 +25,7 @@ public interface Description {
 
   interface ToDescription extends State {
     void onScreenStarted();
-
-      void setTextVisibility(boolean textVisibility);
+    //void setTextVisibility(boolean textVisibility);
     
   }
 
@@ -36,9 +35,13 @@ public interface Description {
     boolean isToolbarVisible();
     boolean isTittleVisible();
     boolean isDescriptionVisible();
+    boolean isLocationBttnVisible();
+    boolean isWebBttnVisible();
+    boolean isFaceBttnVisible();
+    boolean isInstaBttnVisible();
     void onScreenResumed();
 
-    void setTextVisibility(boolean textVisibility);
+    //void setTextVisibility(boolean textVisibility);
   }
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -64,6 +67,16 @@ public interface Description {
     void hideDescription();
     void showDescription();
     void setDescription(String txt);
+    void hideLocationBttn();
+    void showLocationBttn();
+    void hideWebBttn();
+    void showWebBttn();
+    void hideFaceBttn();
+    void showFaceBttn();
+    void hideInstaBttn();
+    void showInstaBttn();
+
+
   }
 
   /**
@@ -73,6 +86,9 @@ public interface Description {
     String getTittle();
     String getDescription();
     String getLocation();
+    String getWeb();
+    String getFacebook();
+    String getInstagram();
   }
 
   /**

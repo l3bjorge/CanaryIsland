@@ -17,7 +17,7 @@ public class DescriptionPresenter
     implements Description.ViewToPresenter, Description.ModelToPresenter, Description.DescriptionTo, Description.ToDescription, Presenter<es.ulpgc.eite.clean.mvp.sample.description.Description.PresenterToView> {
 
   private boolean toolbarVisible;
-  private boolean tittleVisible, descriptionVisible, textVisibility;
+  private boolean tittleVisible, descriptionVisible, textVisibility, locationBttnVisibity, webBttnVisibity, faceBttnVisibity, instaBttnVisibity;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -38,8 +38,26 @@ public class DescriptionPresenter
     mediator.startingScreen(this);
     tittleVisible = true;
     descriptionVisible = true;
+
+    if (getModel().getLocation() != null){
+      locationBttnVisibity = true;
+    }
+
+    if (getModel().getWeb() != null){
+      webBttnVisibity = true;
+    }
+
+    if (getModel().getFacebook() != null){
+      faceBttnVisibity = true;
+    }
+
+    if (getModel().getInstagram() != null){
+      instaBttnVisibity = true;
+    }
+
     checkTittleVisibility();
     checkDescriptionVisibility();
+    checkLocationBttnVisibility();
     getView().setTittle(getModel().getTittle());
     getView().setDescription(getModel().getDescription());
 
@@ -147,10 +165,6 @@ public class DescriptionPresenter
     setCurrentState();
   }
 
-  @Override
-  public void setTextVisibility(boolean textVisibility) {
-    this.textVisibility = textVisibility;
-  }
 
   @Override
   public void onScreenResumed() {
@@ -158,7 +172,8 @@ public class DescriptionPresenter
 
     setCurrentState();
     getView().setTittle(getModel().getTittle());
-    getView().setTittle(getModel().getDescription());
+    getView().setDescription(getModel().getDescription());
+
   }
 
 
@@ -193,6 +208,26 @@ public class DescriptionPresenter
     return descriptionVisible;
   }
 
+  @Override
+  public boolean isLocationBttnVisible() {
+    return locationBttnVisibity;
+  }
+
+  @Override
+  public boolean isWebBttnVisible() {
+    return webBttnVisibity;
+  }
+
+  @Override
+  public boolean isFaceBttnVisible() {
+    return faceBttnVisibity;
+  }
+
+  @Override
+  public boolean isInstaBttnVisible() {
+    return instaBttnVisibity;
+  }
+
 
   ///////////////////////////////////////////////////////////////////////////////////
 
@@ -206,6 +241,10 @@ public class DescriptionPresenter
     checkToolbarVisibility();
     checkTittleVisibility();
     checkDescriptionVisibility();
+    checkLocationBttnVisibility();
+    checkWebBttnVisibility();
+    checkFaceBttnVisibility();
+    checkInstaBttnVisibility();
   }
 
   private void checkDescriptionVisibility() {
@@ -236,4 +275,43 @@ public class DescriptionPresenter
     }
   }
 
+  private void checkLocationBttnVisibility(){
+    if(isViewRunning()) {
+      if(!locationBttnVisibity) {
+        getView().hideLocationBttn();
+      } else {
+        getView().showLocationBttn();
+      }
+    }
+  }
+
+  private void checkWebBttnVisibility(){
+    if(isViewRunning()) {
+      if(!webBttnVisibity) {
+        getView().hideWebBttn();
+      } else {
+        getView().showWebBttn();
+      }
+    }
+  }
+
+  private void checkFaceBttnVisibility(){
+    if(isViewRunning()) {
+      if(!faceBttnVisibity) {
+        getView().hideFaceBttn();
+      } else {
+        getView().showFaceBttn();
+      }
+    }
+  }
+
+  private void checkInstaBttnVisibility(){
+    if(isViewRunning()) {
+      if(!instaBttnVisibity) {
+        getView().hideInstaBttn();
+      } else {
+        getView().showInstaBttn();
+      }
+    }
+  }
 }

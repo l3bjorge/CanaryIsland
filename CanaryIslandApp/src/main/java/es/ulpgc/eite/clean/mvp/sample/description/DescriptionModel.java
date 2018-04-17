@@ -10,7 +10,8 @@ public class DescriptionModel
     extends GenericModel<Description.ModelToPresenter> implements Description.PresenterToModel {
 
 
-  private String tittleText, descriptionText, location;
+  private String tittleText, descriptionText, location, web, facebook, instagram;
+
 
 
   /**
@@ -28,6 +29,10 @@ public class DescriptionModel
     tittleText = "Las Canteras";
     descriptionText = "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.";
     location = "geo:28.1428538,-15.433716499999946";
+    web = null;
+    facebook = null;
+    instagram = null;
+
   }
 
   /**
@@ -59,6 +64,21 @@ public class DescriptionModel
   @Override
   public String getLocation() {
     return location;
+  }
+
+  @Override
+  public String getWeb() {
+    return web;
+  }
+
+  @Override
+  public String getFacebook() {
+    return facebook;
+  }
+
+  @Override
+  public String getInstagram() {
+    return instagram;
   }
 
 

@@ -13,11 +13,11 @@ import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
 
 public class DescriptionView
-    extends GenericActivity<Description.PresenterToView, Description.ViewToPresenter, DescriptionPresenter>
-    implements Description.PresenterToView {
+        extends GenericActivity<Description.PresenterToView, Description.ViewToPresenter, DescriptionPresenter>
+        implements Description.PresenterToView {
 
   private Toolbar toolbar;
-  private ImageButton likeBttn, locationBttn;
+  private ImageButton likeBttn, locationBttn, webBttn, faceBttn, instaBttn;
   private TextView tittle, description;
 
   @Override
@@ -48,7 +48,32 @@ public class DescriptionView
         getPresenter().onBtnLocationCliked();
       }
     });
+
+    webBttn = (ImageButton) findViewById(R.id.webBttn);
+    webBttn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+      }
+    });
+
+    faceBttn = (ImageButton) findViewById(R.id.faceBttn);
+    faceBttn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+      }
+    });
+
+    instaBttn = (ImageButton) findViewById(R.id.instaBttn);
+    instaBttn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+
+      }
+    });
   }
+
 
   /**
    * Method that initialized MVP objects
@@ -117,5 +142,44 @@ public class DescriptionView
     description.setText(txt);
   }
 
+  @Override
+  public void hideLocationBttn() {
+    locationBttn.setVisibility(View.INVISIBLE);
+  }
+
+  @Override
+  public void showLocationBttn() {
+    locationBttn.setVisibility(View.VISIBLE);
+  }
+
+  @Override
+  public void hideWebBttn() {
+    webBttn.setVisibility(View.GONE);
+  }
+
+  @Override
+  public void showWebBttn() {
+    webBttn.setVisibility(View.VISIBLE);
+  }
+
+  @Override
+  public void hideFaceBttn() {
+    faceBttn.setVisibility(View.GONE);
+  }
+
+  @Override
+  public void showFaceBttn() {
+    faceBttn.setVisibility(View.VISIBLE);
+  }
+
+  @Override
+  public void hideInstaBttn() {
+    instaBttn.setVisibility(View.GONE);
+  }
+
+  @Override
+  public void showInstaBttn() {
+    instaBttn.setVisibility(View.VISIBLE);
+  }
 
 }
