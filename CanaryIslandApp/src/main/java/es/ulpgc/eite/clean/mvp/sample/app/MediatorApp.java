@@ -450,7 +450,12 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToFacebook(String url) {
-
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        //String facebookUrl = getFacebookPageURL(this);
+        intent.setData(uri);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override

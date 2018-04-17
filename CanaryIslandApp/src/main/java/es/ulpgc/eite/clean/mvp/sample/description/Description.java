@@ -52,10 +52,9 @@ public interface Description {
    * Methods offered to VIEW to communicate with PRESENTER
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
-
     void onBtnLocationCliked();
     void onBtnWebCliked();
-    void onButtonClicked();
+    void onBtnFacebookClicked();
 
   }
 

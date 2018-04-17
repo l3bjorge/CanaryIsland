@@ -119,18 +119,9 @@ public class DescriptionPresenter
   // View To Presenter /////////////////////////////////////////////////////////////
 
   @Override
-  public void onButtonClicked() {
-    Log.d(TAG, "calling onButtonClicked()");
-
-
-  }
-
-  @Override
   public void onBtnLocationCliked() {
     Log.d(TAG, "calling onBtnLocationCliked()");
     if(isViewRunning()){
-      //String url = getModel().getLocation();
-
       Log.d(TAG, "calling goToGoogleMaps");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
       mediator.goToGoogleMaps(getModel().getLocation());
@@ -142,13 +133,23 @@ public class DescriptionPresenter
   public void onBtnWebCliked() {
     Log.d(TAG, "calling onBtnWebCliked()");
     if(isViewRunning()){
-      //String url = getModel().getLocation();
-
       Log.d(TAG, "calling onBtnWebCliked()");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
       mediator.goToWeb(getModel().getWeb());
 
     }
+  }
+
+  @Override
+  public void onBtnFacebookClicked() {
+    Log.d(TAG, "calling onBtnFacebookClicked()");
+    if(isViewRunning()){
+      Log.d(TAG, "calling onBtnWebCliked()");
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToFacebook(getModel().getFacebook());
+
+    }
+
   }
 
   ///////////////////////////////////////////////////////////////////////////////////
