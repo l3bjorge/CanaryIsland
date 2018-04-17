@@ -429,9 +429,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     public void goToGoogleMaps(String url) {
         Log.d(TAG, "calling GoogleMaps");
         Uri uri = Uri.parse(url);
-
-
-
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
         mapIntent.setPackage("com.google.android.apps.maps");
         if (mapIntent.resolveActivity(getPackageManager()) != null) {
@@ -439,6 +436,25 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             startActivity(mapIntent);
         }
 
+
+    }
+
+    @Override
+    public void goToWeb(String url) {
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent();
+        intent.setData(uri);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    @Override
+    public void goToFacebook(String url) {
+
+    }
+
+    @Override
+    public void goToInstagram(String url) {
 
     }
 
@@ -471,5 +487,9 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class DescriptionState {
         boolean toolbarVisibility;
+        boolean locationBttnVisibility;
+        boolean webBttnVisibility;
+        boolean faceBttnVisibility;
+        boolean instaBttnVisibility;
     }
 }

@@ -58,6 +58,9 @@ public class DescriptionPresenter
     checkTittleVisibility();
     checkDescriptionVisibility();
     checkLocationBttnVisibility();
+    checkWebBttnVisibility();
+    checkFaceBttnVisibility();
+    checkInstaBttnVisibility();
     getView().setTittle(getModel().getTittle());
     getView().setDescription(getModel().getDescription());
 
@@ -135,6 +138,18 @@ public class DescriptionPresenter
     }
   }
 
+  @Override
+  public void onBtnWebCliked() {
+    Log.d(TAG, "calling onBtnWebCliked()");
+    if(isViewRunning()){
+      //String url = getModel().getLocation();
+
+      Log.d(TAG, "calling onBtnWebCliked()");
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToWeb(getModel().getWeb());
+
+    }
+  }
 
   ///////////////////////////////////////////////////////////////////////////////////
   // State /////////////////////////////////////////////////////////////////////////

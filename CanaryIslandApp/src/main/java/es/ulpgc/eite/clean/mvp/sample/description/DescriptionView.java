@@ -53,7 +53,7 @@ public class DescriptionView
     webBttn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-
+        getPresenter().onBtnWebCliked();
       }
     });
 

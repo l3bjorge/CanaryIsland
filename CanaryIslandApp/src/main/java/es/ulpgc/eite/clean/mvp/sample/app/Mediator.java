@@ -68,6 +68,9 @@ public interface Mediator {
     void goToNextScreen(Description.DescriptionTo presenter);
     void backToPreviousScreen(Description.DescriptionTo presenter);
     void goToGoogleMaps(String url);
+    void goToWeb(String url);
+    void goToFacebook(String url);
+    void goToInstagram(String url);
 
 
   }

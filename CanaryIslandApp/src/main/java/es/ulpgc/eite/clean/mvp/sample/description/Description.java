@@ -21,6 +21,7 @@ public interface Description {
     void setToolbarVisibility(boolean visible);
     void setTittleVisibility(boolean visible);
     void setDescriptionVisibility(boolean visible);
+
   }
 
   interface ToDescription extends State {
@@ -51,8 +52,11 @@ public interface Description {
    * Methods offered to VIEW to communicate with PRESENTER
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
-    void onButtonClicked();
+
     void onBtnLocationCliked();
+    void onBtnWebCliked();
+    void onButtonClicked();
+
   }
 
   /**
