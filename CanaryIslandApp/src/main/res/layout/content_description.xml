@@ -103,13 +103,15 @@
             android:scaleType="centerInside"
             app:srcCompat="@mipmap/web" />
 
+
         <ImageButton
             android:id="@+id/faceBttn"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:scaleType="centerInside"
-            app:srcCompat="@mipmap/facebookicon" />
+            android:scaleType="centerInside"/>
+            <!--app:srcCompat="@mipmap/faceicon"/>-->
+
 
         <ImageButton
             android:id="@+id/instaBttn"
@@ -117,7 +119,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:scaleType="centerInside"
-            app:srcCompat="@mipmap/instagram_icon" />
+            app:srcCompat="@mipmap/instagramicon" />
 
         <Space
             android:layout_width="wrap_content"
