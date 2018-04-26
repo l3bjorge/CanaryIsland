@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CanaryIsland.iml" filepath="$PROJECT_DIR$/.idea/CanaryIsland.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CanaryIsland.iml" filepath="$PROJECT_DIR$/CanaryIsland.iml" />
       <module fileurl="file://$PROJECT_DIR$/CanaryIslandApp/CanaryIslandApp.iml" filepath="$PROJECT_DIR$/CanaryIslandApp/CanaryIslandApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/CleanMvpLib/CleanMvpLib.iml" filepath="$PROJECT_DIR$/CleanMvpLib/CleanMvpLib.iml" />
     </modules>
