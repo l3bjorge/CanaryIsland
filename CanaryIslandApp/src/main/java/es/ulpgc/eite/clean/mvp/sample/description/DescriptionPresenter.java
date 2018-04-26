@@ -146,7 +146,7 @@ public class DescriptionPresenter
     if(isViewRunning()){
       Log.d(TAG, "calling onBtnFacebookClicked()");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToFacebook(getModel().getFacebook());
+      mediator.goToFacebook(getModel().getFacebook(), getModel().getIdFacebook());
 
     }
 

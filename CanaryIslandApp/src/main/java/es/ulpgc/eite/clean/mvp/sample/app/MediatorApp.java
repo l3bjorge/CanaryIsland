@@ -450,13 +450,22 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void goToFacebook(String url) {
-        Uri uri = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        //String facebookUrl = getFacebookPageURL(this);
-        intent.setData(uri);
+    public void goToFacebook(String url, String faceId) {
+        String facebookId = faceId;
+        String urlPage = url;
+        Intent intent = new Intent();
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        try {
+            Uri uri = Uri.parse(facebookId);
+            intent.setData(uri);
+            startActivity(intent);
+        } catch (Exception e) {
+            Log.e(TAG, "Aplicación no instalada.");
+            //Abre url de pagina.
+            Uri uri = Uri.parse(urlPage);
+            intent.setData(uri);
+            startActivity(intent);
+        }
     }
 
     @Override

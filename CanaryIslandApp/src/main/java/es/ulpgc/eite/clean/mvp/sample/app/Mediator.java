@@ -69,7 +69,7 @@ public interface Mediator {
     void backToPreviousScreen(Description.DescriptionTo presenter);
     void goToGoogleMaps(String url);
     void goToWeb(String url);
-    void goToFacebook(String url);
+    void goToFacebook(String url, String faceId);
     void goToInstagram(String url);
 
 

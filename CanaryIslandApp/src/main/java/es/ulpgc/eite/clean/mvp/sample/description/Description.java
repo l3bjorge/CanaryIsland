@@ -93,6 +93,7 @@ public interface Description {
     String getWeb();
     String getFacebook();
     String getInstagram();
+    String getIdFacebook();
   }
 
   /**
