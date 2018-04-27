@@ -28,6 +28,7 @@ public interface Home {
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
+    String checkLanguage();
     void onScreenResumed();
   }
 
@@ -38,7 +39,8 @@ public interface Home {
    * Methods offered to VIEW to communicate with PRESENTER
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
-    void onGoToIslandsMenuBtnClicked();
+    void onEnglishButtonClicked();
+    void onSpanishButtonClicked();
 
   }
 

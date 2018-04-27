@@ -17,7 +17,7 @@ public class HomeView
     implements Home.PresenterToView {
 
   private Toolbar toolbar;
-  private ImageButton buttoneng;
+  private ImageButton buttoneng, buttonspan;
   private TextView text;
 
   @Override
@@ -36,7 +36,15 @@ public class HomeView
     buttoneng.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-      getPresenter().onGoToIslandsMenuBtnClicked();
+        getPresenter().onEnglishButtonClicked();
+      }
+    });
+
+    buttonspan = (ImageButton) findViewById(R.id.ButtonSpain);
+    buttonspan.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().onSpanishButtonClicked();
       }
     });
   }

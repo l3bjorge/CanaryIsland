@@ -30,6 +30,12 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     private LocationsState toLocationsState, locationsToState;
     private DescriptionState toDescriptionState, descriptionToState;
 
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    private String language;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -130,12 +136,15 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void startingScreen(IslandsMenu.ToIslandsMenu presenter){
-        if(toHomeState != null) {
+        Log.d(TAG, "calling settingInitialState()"+language);
+        if(homeToState != null) {
             Log.d(TAG, "calling settingInitialState()");
-            presenter.setToolbarVisibility(toIslandsMenuState.toolbarVisibility);
+            presenter.setToolbarVisibility(homeToState.toolbarVisibility);
+            presenter.setLanguage(language);
+            Log.d(TAG, "calling settingInitialState()"+language);
 
             Log.d(TAG, "calling removingInitialState()");
-            toIslandsMenuState = null;
+            homeToState = null;
         }
 
         if(homeToState != null) {
@@ -324,7 +333,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         Log.d(TAG, "calling savingUpdatedState()");
         homeToState = new HomeState();
         homeToState.toolbarVisibility = presenter.isToolbarVisible();
-        //homeToState.textVisibility = presenter.isTextVisible();
+        setLanguage(presenter.checkLanguage());
         homeToState.textVisibility = false;
 
         Context view = presenter.getManagedContext();

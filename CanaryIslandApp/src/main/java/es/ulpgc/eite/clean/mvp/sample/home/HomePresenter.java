@@ -15,7 +15,7 @@ public class HomePresenter
         <Home.PresenterToView, Home.PresenterToModel, Home.ModelToPresenter, HomeModel>
     implements Home.ViewToPresenter, Home.ModelToPresenter, Home.HomeTo, Home.ToHome {
 
-  private boolean toolbarVisible;
+  private boolean toolbarVisible, englishButtonClicked, spanishButtonClicked;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -90,14 +90,27 @@ public class HomePresenter
 
 
   @Override
-  public void onGoToIslandsMenuBtnClicked() {
+  public void onSpanishButtonClicked() {
     Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
     if(isViewRunning()) {
+      spanishButtonClicked = true;
       MediatorApp mediator = new MediatorApp();
       mediator.goToIslandsMenuScreen(this);
     }
 
   }
+
+  @Override
+  public void onEnglishButtonClicked() {
+    Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
+    if(isViewRunning()) {
+      englishButtonClicked = true;
+      MediatorApp mediator = new MediatorApp();
+      mediator.goToIslandsMenuScreen(this);
+    }
+
+  }
+
 
 
 
@@ -129,7 +142,7 @@ public class HomePresenter
 
 
   ///////////////////////////////////////////////////////////////////////////////////
-  // Hello To //////////////////////////////////////////////////////////////////////
+  // Home To //////////////////////////////////////////////////////////////////////
 
 
   @Override
@@ -147,6 +160,16 @@ public class HomePresenter
   @Override
   public boolean isToolbarVisible() {
     return toolbarVisible;
+  }
+
+  @Override
+  public String checkLanguage() {
+    if(spanishButtonClicked){
+      return "Spanish";
+    } else if(englishButtonClicked){
+      return "English";
+    }
+    return "Error";
   }
 
 

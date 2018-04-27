@@ -18,6 +18,7 @@ public interface IslandsMenu {
 
   interface State {
     void setToolbarVisibility(boolean visible);
+    void setLanguage(String language);
   }
 
   interface ToIslandsMenu extends State {
@@ -55,7 +56,8 @@ public interface IslandsMenu {
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getTextaso(); // El presentador pide al modelo que le de el textaso
-;
+    void setLanguage(String language);
+
   }
 
   /**
