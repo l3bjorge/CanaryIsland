@@ -118,6 +118,9 @@ public class DescriptionPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
+  /**
+   *
+   */
   @Override
   public void onBtnLocationCliked() {
     Log.d(TAG, "calling onBtnLocationCliked()");
@@ -129,6 +132,9 @@ public class DescriptionPresenter
     }
   }
 
+  /**
+   *
+   */
   @Override
   public void onBtnWebCliked() {
     Log.d(TAG, "calling onBtnWebCliked()");
@@ -140,6 +146,9 @@ public class DescriptionPresenter
     }
   }
 
+  /**
+   *
+   */
   @Override
   public void onBtnFacebookClicked() {
     Log.d(TAG, "calling onBtnFacebookClicked()");
@@ -152,13 +161,16 @@ public class DescriptionPresenter
 
   }
 
+  /**
+   *
+   */
   @Override
   public void onBtnInstagramClicked() {
     Log.d(TAG, "calling onBtnInstagramClicked()");
     if(isViewRunning()){
       Log.d(TAG, "onBtnInstagramClicked()");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToInstagram(getModel().getInstagram());
+      mediator.goToInstagram(getModel().getIdInstagram(), getModel().getInstagram());
 
     }
   }
@@ -167,16 +179,28 @@ public class DescriptionPresenter
   // State /////////////////////////////////////////////////////////////////////////
 
 
+  /**
+   *
+   * @param visible
+   */
   @Override
   public void setToolbarVisibility(boolean visible) {
     toolbarVisible = visible;
   }
 
+  /**
+   *
+   * @param visible
+   */
   @Override
   public void setTittleVisibility(boolean visible) {
     tittleVisible = visible;
   }
 
+  /**
+   *
+   * @param visible
+   */
   @Override
   public void setDescriptionVisibility(boolean visible) {
     descriptionVisible = visible;
@@ -186,13 +210,18 @@ public class DescriptionPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // To Hello //////////////////////////////////////////////////////////////////////
 
+  /**
+   *
+   */
   @Override
   public void onScreenStarted() {
     Log.d(TAG, "calling onScreenStarted()");
     setCurrentState();
   }
 
-
+  /**
+   *
+   */
   @Override
   public void onScreenResumed() {
     Log.d(TAG, "calling onScreenResumed()");
@@ -203,16 +232,21 @@ public class DescriptionPresenter
 
   }
 
-
   ///////////////////////////////////////////////////////////////////////////////////
   // Hello To //////////////////////////////////////////////////////////////////////
 
-
+  /**
+   *
+   * @return
+   */
   @Override
   public Context getManagedContext(){
     return getActivityContext();
   }
 
+  /**
+   *
+   */
   @Override
   public void destroyView(){
     if(isViewRunning()) {
@@ -220,36 +254,64 @@ public class DescriptionPresenter
     }
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public boolean isToolbarVisible() {
     return toolbarVisible;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public boolean isTittleVisible() {
     return tittleVisible;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public boolean isDescriptionVisible() {
     return descriptionVisible;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public boolean isLocationBttnVisible() {
     return locationBttnVisibity;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public boolean isWebBttnVisible() {
     return webBttnVisibity;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public boolean isFaceBttnVisible() {
     return faceBttnVisibity;
   }
 
+  /**
+   *
+   * @return
+   */
   @Override
   public boolean isInstaBttnVisible() {
     return instaBttnVisibity;

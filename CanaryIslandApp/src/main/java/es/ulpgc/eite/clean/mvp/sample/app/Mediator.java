@@ -70,7 +70,7 @@ public interface Mediator {
     void goToGoogleMaps(String url);
     void goToWeb(String url);
     void goToFacebook(String url, String faceId);
-    void goToInstagram(String url);
+    void goToInstagram(String instagramId, String url);
 
 
   }

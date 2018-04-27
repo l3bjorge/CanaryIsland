@@ -10,7 +10,7 @@ public class DescriptionModel
     extends GenericModel<Description.ModelToPresenter> implements Description.PresenterToModel {
 
 
-  private String tittleText, descriptionText, location, web, facebook, idFacebook, instagram;
+  private String tittleText, descriptionText, location, web, facebook, idFacebook, instagram, idInstagram;
 
 
 
@@ -32,6 +32,7 @@ public class DescriptionModel
     facebook = /*null;*/ "https://es-es.facebook.com/periodicoCanarias7/";
     idFacebook = "fb://page/172572586147087";
     instagram = /*null;*/ "https://www.instagram.com/instagram/?hl=es";
+    idInstagram = "http://instagram.com/_u/instagram";
 
   }
 
@@ -104,6 +105,12 @@ public class DescriptionModel
   public String getInstagram() {
     return instagram;
   }
+
+  @Override
+  public String getIdInstagram() {
+    return idInstagram;
+  }
+
 
   /**
    *

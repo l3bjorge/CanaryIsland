@@ -478,16 +478,20 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void goToInstagram(String url) {
-        Uri uri = Uri.parse(url);
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.setPackage("com.instagram.android");
+    public void goToInstagram(String instagramId, String url) {
+        String urlPage = url;
+        String urlInstagram = instagramId;
+        Uri uri = Uri.parse(urlInstagram);
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+        likeIng.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        likeIng.setPackage("com.instagram.android");
         try {
-            startActivity(intent);
+
+            startActivity(likeIng);
         } catch (ActivityNotFoundException e) {
+            Log.e(TAG, "Aplicación no instalada.");
             startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse(url)));
+                    Uri.parse(urlPage)));
         }
     }
 
