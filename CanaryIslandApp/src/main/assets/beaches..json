@@ -7,6 +7,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -17,6 +21,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -27,6 +35,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -37,6 +49,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -47,6 +63,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -57,6 +77,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -67,6 +91,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -77,6 +105,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -87,6 +119,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   },
 
@@ -97,6 +133,10 @@
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
+    },
+    "category":  {
+      "id": 1,
+      "name": "Beaches"
     }
   }
 
