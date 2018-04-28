@@ -1,0 +1,104 @@
+[
+
+  {
+    "id": 1 ,
+    "name": "Las Canteras" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 2 ,
+    "name": "Alcaravaneras" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 3 ,
+    "name": "Playa del Inglés" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 4 ,
+    "name": "Playa del Faro" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 5 ,
+    "name": "Amadores" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 6 ,
+    "name": "Anfi del Mar" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 7 ,
+    "name": "Playa de Mogan" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 8 ,
+    "name": "Playa de San Agustín" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 9 ,
+    "name": "Playa de Güigüí" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  },
+
+  {
+    "id": 10 ,
+    "name": "Playa de las Burras" ,
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "island":  {
+      "id": 1,
+      "name": "Gran Canaria"
+    }
+  }
+
+
+]
