@@ -13,7 +13,7 @@ public class CategoryDbItem extends RealmObject{
   private String name;
 
 
-  private RealmList<IslandDbItem> players;
+  private RealmList<IslandDbItem> islands;
 
 
   public CategoryDbItem() {

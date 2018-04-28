@@ -13,6 +13,9 @@ public class BeachDbItem extends RealmObject{
   private String name;
 
 
+    private String description;
+
+
   private RealmList<IslandDbItem> islands;
 
 
@@ -36,7 +39,16 @@ public class BeachDbItem extends RealmObject{
     this.id = id;
   }
 
-  @Override
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+    @Override
   public boolean equals(Object obj) {
     if (obj instanceof BeachDbItem){
       BeachDbItem item = (BeachDbItem) obj;

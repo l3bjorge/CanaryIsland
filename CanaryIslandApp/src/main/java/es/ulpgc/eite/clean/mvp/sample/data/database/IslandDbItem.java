@@ -11,18 +11,18 @@ public class IslandDbItem extends RealmObject{
   private Integer id;
   private String name;
 
-  private BeachDbItem team;
-  private CategoryDbItem position;
+  private BeachDbItem beach;
+  private CategoryDbItem category;
 
   public IslandDbItem() {
   }
 
-  public BeachDbItem getTeam() {
-    return team;
+  public BeachDbItem getBeach() {
+    return beach;
   }
 
-  public CategoryDbItem getPosition() {
-    return position;
+  public CategoryDbItem getCategory() {
+    return category;
   }
 
   public String getName() {
