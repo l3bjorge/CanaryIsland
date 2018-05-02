@@ -228,6 +228,26 @@ public class DescriptionPresenter
     descriptionVisible = visible;
   }
 
+  @Override
+  public void setLocationBttnVisibility(boolean visible) {
+    locationBttnVisibity = visible;
+  }
+
+  @Override
+  public void setWebBttnVisiblity(boolean visible) {
+    webBttnVisibity = visible;
+  }
+
+  @Override
+  public void setFaceBttnVisiblity(boolean visible) {
+    faceBttnVisibity = visible;
+  }
+
+  @Override
+  public void setInstaBttnVisiblity(boolean visible) {
+    instaBttnVisibity = visible;
+  }
+
 
   ///////////////////////////////////////////////////////////////////////////////////
   // To Hello //////////////////////////////////////////////////////////////////////

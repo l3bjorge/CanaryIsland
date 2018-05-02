@@ -21,6 +21,10 @@ public interface Description {
     void setToolbarVisibility(boolean visible);
     void setTittleVisibility(boolean visible);
     void setDescriptionVisibility(boolean visible);
+    void setLocationBttnVisibility(boolean visible);
+    void setWebBttnVisiblity(boolean visible);
+    void setFaceBttnVisiblity(boolean visible);
+    void setInstaBttnVisiblity(boolean visible);
 
   }
 

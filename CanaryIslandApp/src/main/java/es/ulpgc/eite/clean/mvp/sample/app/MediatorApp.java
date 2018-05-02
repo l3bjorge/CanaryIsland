@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 
+
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView;
 import es.ulpgc.eite.clean.mvp.sample.category.Category;
+
 import es.ulpgc.eite.clean.mvp.sample.category.CategoryView;
 import es.ulpgc.eite.clean.mvp.sample.description.Description;
 import es.ulpgc.eite.clean.mvp.sample.description.DescriptionView;
@@ -25,7 +27,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private CanaryIslandState toCanaryIslandState, canaryislandToState;
     private HomeState toHomeState, homeToState;
-    private IslandsMenuState toIslandsMenuState, islandsmenuToState;
+    private IslandsMenuState toIslandsMenuState, islandsMenuToState;
     private CategoryState toCategoryState, categoryToState;
     private LocationsState toLocationsState, locationsToState;
     private DescriptionState toDescriptionState, descriptionToState;
@@ -98,7 +100,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(toHomeState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toHomeState.toolbarVisibility);
-
             Log.d(TAG, "calling removingInitialState()");
             toHomeState = null;
         }
@@ -106,7 +107,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(homeToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
             presenter.setToolbarVisibility(homeToState.toolbarVisibility);
-
             Log.d(TAG, "calling removingUpdateState()");
             homeToState = null;
         }
@@ -116,11 +116,10 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void resumingScreen(Home.HomeTo presenter){
-        if(canaryislandToState != null) {
+        if(homeToState != null) {
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(homeToState.toolbarVisibility);
-
             Log.d(TAG, "calling removingUpdatedState()");
             homeToState = null;
         }
@@ -133,28 +132,23 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void startingScreen(IslandsMenu.ToIslandsMenu presenter){
-
         Log.d(TAG, "calling startingScreen()");
         Log.d(TAG, "language:" + language);
-
-        if(homeToState != null) {
+        if(toIslandsMenuState != null) {
             Log.d(TAG, "calling settingInitialState()");
-            Log.d(TAG, "Hola");
-            presenter.setToolbarVisibility(homeToState.toolbarVisibility);
+            presenter.setToolbarVisibility(toIslandsMenuState.toolbarVisibility);
             presenter.setLanguage(language);
             Log.d(TAG, "calling settingInitialState()"+ language);
-
             Log.d(TAG, "calling removingInitialState()");
-            homeToState = null;
+            toIslandsMenuState = null;
         }
 
-        /*if(homeToState != null) {
+        if(islandsMenuToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
-            presenter.setToolbarVisibility(islandsmenuToState.toolbarVisibility);
-
+            presenter.setToolbarVisibility(islandsMenuToState.toolbarVisibility);
             Log.d(TAG, "calling removingUpdateState()");
-            islandsmenuToState = null;
-        }*/
+            islandsMenuToState = null;
+        }
 
         presenter.onScreenStarted();
     }
@@ -163,13 +157,12 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void resumingScreen(IslandsMenu.IslandsMenuTo presenter){
-        if(islandsmenuToState != null) {
+        if(islandsMenuToState != null) {
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
-            presenter.setToolbarVisibility(islandsmenuToState.toolbarVisibility);
-
+            presenter.setToolbarVisibility(islandsMenuToState.toolbarVisibility);
             Log.d(TAG, "calling removingUpdatedState()");
-            islandsmenuToState = null;
+            islandsMenuToState = null;
         }
 
         presenter.onScreenResumed();
@@ -177,21 +170,21 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     // Locations Screen
 
+    //TODO REVISAR
+
     @Override
     public void startingScreen(Locations.ToLocations presenter){
         if(categoryToState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setSelectedItem(categoryToState.selectedItem);
-
             Log.d(TAG, "calling removingInitialState()");
             categoryToState = null;
         }
 
-        if(categoryToState != null) {
+        if(locationsToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
-
             Log.d(TAG, "calling removingUpdateState()");
-            categoryToState = null;
+            locationsToState = null;
         }
 
         presenter.onScreenStarted();
@@ -204,7 +197,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(locationsToState.toolbarVisibility);
-
             Log.d(TAG, "calling removingUpdatedState()");
             locationsToState = null;
         }
@@ -220,17 +212,15 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             if(toCategoryState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toCategoryState.toolbarVisibility);
-
             Log.d(TAG, "calling removingInitialState()");
                 toCategoryState = null;
         }
 
-        if(locationsToState != null) {
+        if(categoryToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
-            presenter.setToolbarVisibility(toCategoryState.toolbarVisibility);
-
+            presenter.setToolbarVisibility(categoryToState.toolbarVisibility);
             Log.d(TAG, "calling removingUpdateState()");
-            toCategoryState = null;
+            categoryToState = null;
         }
 
         presenter.onScreenStarted();
@@ -243,7 +233,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(categoryToState.toolbarVisibility);
-
             Log.d(TAG, "calling removingUpdatedState()");
             categoryToState = null;
         }
@@ -257,8 +246,12 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(toDescriptionState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(toDescriptionState.toolbarVisibility);
-
-
+            presenter.setTittleVisibility(toDescriptionState.tittleVisibility);
+            presenter.setDescriptionVisibility(toDescriptionState.descriptionVisibility);
+            presenter.setLocationBttnVisibility(toDescriptionState.locationBttnVisibility);
+            presenter.setWebBttnVisiblity(toDescriptionState.webBttnVisibility);
+            presenter.setFaceBttnVisiblity(toDescriptionState.faceBttnVisibility);
+            presenter.setInstaBttnVisiblity(toDescriptionState.instaBttnVisibility);
             Log.d(TAG, "calling removingInitialState()");
             toDescriptionState = null;
         }
@@ -266,7 +259,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(descriptionToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
             presenter.setToolbarVisibility(descriptionToState.toolbarVisibility);
-
             Log.d(TAG, "calling removingUpdateState()");
             descriptionToState = null;
         }
@@ -280,9 +272,8 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling resumingScreen()");
             Log.d(TAG, "calling restoringUpdatedState()");
             presenter.setToolbarVisibility(descriptionToState.toolbarVisibility);
-
             Log.d(TAG, "calling removingUpdatedState()");
-            canaryislandToState = null;
+            descriptionToState = null;
         }
 
         presenter.onScreenResumed();
@@ -335,7 +326,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         homeToState = new HomeState();
         homeToState.toolbarVisibility = presenter.isToolbarVisible();
         setLanguage(presenter.checkLanguage());
-        //language = "---";
         Log.d(TAG, "language:" + language);
         homeToState.textVisibility = false;
 
@@ -348,8 +338,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             //presenter.destroyView();
         }
 
-
-
     }
 
     // IslandsMenu Screen
@@ -357,22 +345,22 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     @Override
     public void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter) {
         Log.d(TAG, "calling savingUpdatedState()");
-        islandsmenuToState = new IslandsMenuState();
-        islandsmenuToState.toolbarVisibility = false;
+        islandsMenuToState = new IslandsMenuState();
+        islandsMenuToState.toolbarVisibility = false;
     }
 
     @Override
     public void goToCategoryScreen(IslandsMenu.IslandsMenuTo presenter) {
         Log.d(TAG, "calling savingUpdatedState()");
-        islandsmenuToState = new IslandsMenuState();
-        islandsmenuToState.toolbarVisibility = presenter.isToolbarVisible();
+        islandsMenuToState = new IslandsMenuState();
+        islandsMenuToState.toolbarVisibility = presenter.isToolbarVisible();
 
         Context view = presenter.getManagedContext();
         if (view != null) {
             Log.d(TAG, "calling startingNextScreen()");
             view.startActivity(new Intent(view, CategoryView.class));
-            //Log.d(TAG, "calling finishingCurrentScreen()");
-            //presenter.destroyView();
+//            Log.d(TAG, "calling finishingCurrentScreen()");
+//            presenter.destroyView();
         }
     }
 
@@ -430,11 +418,6 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     //Description Screen
     @Override
-    public void goToNextScreen(Description.DescriptionTo presenter) {
-
-    }
-
-    @Override
     public void backToPreviousScreen(Description.DescriptionTo presenter) {
 
     }
@@ -464,18 +447,16 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToFacebook(String url, String faceId) {
-        String facebookId = faceId;
-        String urlPage = url;
         Intent intent = new Intent();
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         try {
-            Uri uri = Uri.parse(facebookId);
+            Uri uri = Uri.parse(faceId);
             intent.setData(uri);
             startActivity(intent);
         } catch (Exception e) {
             Log.e(TAG, "Aplicación no instalada.");
             //Abre url de pagina.
-            Uri uri = Uri.parse(urlPage);
+            Uri uri = Uri.parse(url);
             intent.setData(uri);
             startActivity(intent);
         }
@@ -483,9 +464,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToInstagram(String instagramId, String url) {
-        String urlPage = url;
-        String urlInstagram = instagramId;
-        Uri uri = Uri.parse(urlInstagram);
+        Uri uri = Uri.parse(instagramId);
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
         likeIng.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         likeIng.setPackage("com.instagram.android");
@@ -495,7 +474,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         } catch (ActivityNotFoundException e) {
             Log.e(TAG, "Aplicación no instalada.");
             startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse(urlPage)));
+                    Uri.parse(url)));
         }
     }
 
@@ -525,14 +504,18 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class LocationsState {
         boolean toolbarVisibility;
+        //ModelItem selectedItem;
     }
 
     private class DescriptionState {
         boolean toolbarVisibility;
+        boolean tittleVisibility;
+        boolean descriptionVisibility;
         boolean locationBttnVisibility;
         boolean webBttnVisibility;
         boolean faceBttnVisibility;
         boolean instaBttnVisibility;
+
     }
 
 
