@@ -41,7 +41,7 @@ public interface Home {
   interface ViewToPresenter extends Presenter<PresenterToView> {
     void onEnglishButtonClicked();
     void onSpanishButtonClicked();
-
+    void onGermanButtonClicked();
   }
 
   /**

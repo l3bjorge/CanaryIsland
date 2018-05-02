@@ -8,7 +8,7 @@ import es.ulpgc.eite.clean.mvp.GenericModel;
 public class IslandsMenuModel
     extends GenericModel<IslandsMenu.ModelToPresenter> implements IslandsMenu.PresenterToModel {
 
-  private String textaso, language;
+  private String tittle, language;
 
 
 
@@ -43,14 +43,16 @@ public class IslandsMenuModel
 
 
   @Override
-  public String getTextaso() {
+  public String getTittle() {
     setLanguage(getPresenter().getLanguage());
     if(language == "Spanish"){
-      textaso = "Escoge tu isla";
+      tittle = "Escoge tu isla";
     } else if (language == "English"){
-      textaso = "Choose your island";
+      tittle = "Choose your island";
+    } else if (language == "German"){
+      tittle = "Wähle deine Insel";
     }
-    return textaso;
+    return tittle;
   }
 
   @Override

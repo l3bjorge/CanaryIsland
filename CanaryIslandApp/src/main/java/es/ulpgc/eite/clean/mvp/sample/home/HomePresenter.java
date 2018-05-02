@@ -15,7 +15,7 @@ public class HomePresenter
         <Home.PresenterToView, Home.PresenterToModel, Home.ModelToPresenter, HomeModel>
     implements Home.ViewToPresenter, Home.ModelToPresenter, Home.HomeTo, Home.ToHome {
 
-  private boolean toolbarVisible, englishButtonClicked, spanishButtonClicked;
+  private boolean toolbarVisible, englishButtonClicked, spanishButtonClicked, germanButtonClicked;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -94,10 +94,22 @@ public class HomePresenter
     Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
     if(isViewRunning()) {
       spanishButtonClicked = true;
-      MediatorApp mediator = new MediatorApp();
-      mediator.goToIslandsMenuScreen(this);
+      /*MediatorApp mediator = new MediatorApp();
+      mediator.goToIslandsMenuScreen(this);*/
+      Mediator.Navigation media = (Mediator.Navigation) getApplication();
+      media.goToIslandsMenuScreen(this);
     }
 
+  }
+
+  @Override
+  public void onGermanButtonClicked() {
+    if(isViewRunning()) {
+      germanButtonClicked = true;
+      Mediator.Navigation media = (Mediator.Navigation) getApplication();
+      media.goToIslandsMenuScreen(this);
+
+    }
   }
 
   @Override
@@ -105,8 +117,10 @@ public class HomePresenter
     Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
     if(isViewRunning()) {
       englishButtonClicked = true;
-      MediatorApp mediator = new MediatorApp();
-      mediator.goToIslandsMenuScreen(this);
+      /*MediatorApp mediator = new MediatorApp();
+      mediator.goToIslandsMenuScreen(this);*/
+      Mediator.Navigation media = (Mediator.Navigation) getApplication();
+      media.goToIslandsMenuScreen(this);
     }
 
   }
@@ -168,6 +182,8 @@ public class HomePresenter
       return "Spanish";
     } else if(englishButtonClicked){
       return "English";
+    } else if (germanButtonClicked){
+      return "German";
     }
     return "Error";
   }

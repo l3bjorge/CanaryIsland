@@ -55,7 +55,7 @@ public interface IslandsMenu {
    * Methods offered to MODEL to communicate with PRESENTER
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
-    String getTextaso(); // El presentador pide al modelo que le de el textaso
+    String getTittle(); // El presentador pide al modelo que le de el textaso
     void setLanguage(String language);
 
 

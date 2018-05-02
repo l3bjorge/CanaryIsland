@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -17,7 +16,7 @@ public class HomeView
     implements Home.PresenterToView {
 
   private Toolbar toolbar;
-  private ImageButton buttoneng, buttonspan;
+  private ImageButton buttonEng, buttonSpa, buttonGer;
   private TextView text;
 
   @Override
@@ -32,19 +31,27 @@ public class HomeView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    buttoneng = (ImageButton) findViewById(R.id.ButtonEnglish);
-    buttoneng.setOnClickListener(new View.OnClickListener() {
+    buttonEng = (ImageButton) findViewById(R.id.ButtonEnglish);
+    buttonEng.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onEnglishButtonClicked();
       }
     });
 
-    buttonspan = (ImageButton) findViewById(R.id.ButtonSpain);
-    buttonspan.setOnClickListener(new View.OnClickListener() {
+    buttonSpa = (ImageButton) findViewById(R.id.ButtonSpain);
+    buttonSpa.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onSpanishButtonClicked();
+      }
+    });
+
+    buttonGer = (ImageButton) findViewById(R.id.ButtonGermany);
+    buttonGer.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().onGermanButtonClicked();
       }
     });
   }

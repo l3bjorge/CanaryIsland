@@ -31,7 +31,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     private DescriptionState toDescriptionState, descriptionToState;
 
 
-    private static String language;
+    private /*static*/ String language;
 
     @Override
     public void onCreate() {
