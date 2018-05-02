@@ -73,6 +73,7 @@ public interface Locations {
   interface ModelToPresenter {
     void onLoadItemsTaskFinished(List<ModelItem> items);
     void onLoadItemsTaskStarted();
+    String getLanguage();
   }
 
 }

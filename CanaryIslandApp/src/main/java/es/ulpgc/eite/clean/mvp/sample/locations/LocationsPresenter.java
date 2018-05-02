@@ -119,6 +119,13 @@ public class LocationsPresenter
     checkVisibility();
   }
 
+  @Override
+  public String getLanguage(){
+    Mediator.Navigation media = (Mediator.Navigation) getApplication();
+    String language = media.getLanguage();
+    return language;
+  }
+
 
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
@@ -148,6 +155,8 @@ public class LocationsPresenter
       mediator.goToDescriptionScreen(this, item);
     }
   }
+
+
 
 
   ///////////////////////////////////////////////////////////////////////////////////
