@@ -104,7 +104,7 @@ public interface Description {
    * Required PRESENTER methods available to MODEL
    */
   interface ModelToPresenter {
-
+    String getLanguage();
   }
 
 }
