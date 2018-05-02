@@ -30,11 +30,8 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     private LocationsState toLocationsState, locationsToState;
     private DescriptionState toDescriptionState, descriptionToState;
 
-    public void setLanguage(String language) {
-        this.language = language;
-    }
 
-    private String language;
+    private static String language;
 
     @Override
     public void onCreate() {
@@ -136,24 +133,28 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void startingScreen(IslandsMenu.ToIslandsMenu presenter){
-        Log.d(TAG, "calling settingInitialState()"+language);
+
+        Log.d(TAG, "calling startingScreen()");
+        Log.d(TAG, "language:" + language);
+
         if(homeToState != null) {
             Log.d(TAG, "calling settingInitialState()");
+            Log.d(TAG, "Hola");
             presenter.setToolbarVisibility(homeToState.toolbarVisibility);
             presenter.setLanguage(language);
-            Log.d(TAG, "calling settingInitialState()"+language);
+            Log.d(TAG, "calling settingInitialState()"+ language);
 
             Log.d(TAG, "calling removingInitialState()");
             homeToState = null;
         }
 
-        if(homeToState != null) {
+        /*if(homeToState != null) {
             Log.d(TAG, "calling settingUpdatedState()");
             presenter.setToolbarVisibility(islandsmenuToState.toolbarVisibility);
 
             Log.d(TAG, "calling removingUpdateState()");
             islandsmenuToState = null;
-        }
+        }*/
 
         presenter.onScreenStarted();
     }
@@ -334,7 +335,10 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         homeToState = new HomeState();
         homeToState.toolbarVisibility = presenter.isToolbarVisible();
         setLanguage(presenter.checkLanguage());
+        //language = "---";
+        Log.d(TAG, "language:" + language);
         homeToState.textVisibility = false;
+
 
         Context view = presenter.getManagedContext();
         if (view != null) {
@@ -511,6 +515,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class IslandsMenuState {
         boolean toolbarVisibility;
+
     }
 
     private class CategoryState {
@@ -529,4 +534,15 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         boolean faceBttnVisibility;
         boolean instaBttnVisibility;
     }
+
+
+    private void setLanguage(String language) {
+        this.language = language;
+    }
+
+    @Override
+    public String getLanguage(){
+        return language;
+    }
+
 }

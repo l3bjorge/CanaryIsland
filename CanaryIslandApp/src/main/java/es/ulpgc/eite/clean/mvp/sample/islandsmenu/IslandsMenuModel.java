@@ -22,7 +22,8 @@ public class IslandsMenuModel
   public void onCreate(IslandsMenu.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-    textaso = "Choose your island";
+
+
   }
 
   /**
@@ -43,6 +44,7 @@ public class IslandsMenuModel
 
   @Override
   public String getTextaso() {
+    setLanguage(getPresenter().getLanguage());
     if(language == "Spanish"){
       textaso = "Escoge tu isla";
     } else if (language == "English"){
@@ -55,7 +57,6 @@ public class IslandsMenuModel
   public void setLanguage(String language) {
     this.language = language;
   }
-
 
 
 

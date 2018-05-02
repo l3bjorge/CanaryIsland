@@ -55,6 +55,7 @@ public interface Mediator {
     //IslandsMenu
     void goToCategoryScreen(IslandsMenu.IslandsMenuTo presenter);
     void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter);
+    String getLanguage();
 
     //Category
     void goToLocationsScreen(Category.CategoryTo presenter);
@@ -74,4 +75,6 @@ public interface Mediator {
 
 
   }
+
+
 }

@@ -58,6 +58,7 @@ public interface IslandsMenu {
     String getTextaso(); // El presentador pide al modelo que le de el textaso
     void setLanguage(String language);
 
+
   }
 
   /**
@@ -65,6 +66,7 @@ public interface IslandsMenu {
    */
   interface ModelToPresenter {
 
+    String getLanguage();
   }
 
 }

@@ -9,6 +9,7 @@ import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
 
+
 public class IslandsMenuPresenter
     extends GenericPresenter
         <IslandsMenu.PresenterToView, IslandsMenu.PresenterToModel, IslandsMenu.ModelToPresenter, IslandsMenuModel>
@@ -30,9 +31,11 @@ public class IslandsMenuPresenter
     setView(view);
     Log.d(TAG, "calling onCreate()");
 
-    Log.d(TAG, "calling startingScreen()");
+    Log.d(TAG, "calling startingScreen()" + getLanguage());
     Mediator.Lifecycle mediator = (Mediator.Lifecycle) getApplication();
     mediator.startingScreen(this);
+
+
   }
 
   /**
@@ -161,6 +164,7 @@ public class IslandsMenuPresenter
 
     if(isViewRunning()) {
       getView().setTextaso(getModel().getTextaso());
+
     }
     checkToolbarVisibility();
   }
@@ -171,5 +175,12 @@ public class IslandsMenuPresenter
         getView().hideToolbar();
       }
     }
+  }
+
+  @Override
+  public String getLanguage(){
+      Mediator.Navigation media = (Mediator.Navigation) getApplication();
+      String language = media.getLanguage();
+      return language;
   }
 }
