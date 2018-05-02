@@ -1,5 +1,6 @@
 package es.ulpgc.eite.clean.mvp.sample.data.database;
 
+import io.realm.RealmList;
 import io.realm.RealmObject;
 
 /**
@@ -11,18 +12,9 @@ public class IslandDbItem extends RealmObject{
   private Integer id;
   private String name;
 
-  private BeachDbItem beach;
-  private CategoryDbItem category;
+  private RealmList<LocationDbItem> locations;
 
   public IslandDbItem() {
-  }
-
-  public BeachDbItem getBeach() {
-    return beach;
-  }
-
-  public CategoryDbItem getCategory() {
-    return category;
   }
 
   public String getName() {

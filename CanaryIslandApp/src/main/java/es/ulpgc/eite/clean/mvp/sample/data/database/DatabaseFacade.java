@@ -55,7 +55,7 @@ public class DatabaseFacade {
     }
 
     public static void deleteTeams(){
-        for(BeachDbItem item: getTeams()){
+        for(LocationDbItem item: getTeams()){
             deleteTeam(item);
         }
     }
@@ -79,12 +79,12 @@ public class DatabaseFacade {
     }
 
 
-    public static void deleteTeam(BeachDbItem item) {
+    public static void deleteTeam(LocationDbItem item) {
         final Integer id = item.getId();
         getDatabase().executeTransaction(new Realm.Transaction() {
             @Override
             public void execute(Realm realm) {
-                realm.where(BeachDbItem.class).equalTo("id", id)
+                realm.where(LocationDbItem.class).equalTo("id", id)
                         .findAll()
                         .deleteAllFromRealm();
             }
@@ -153,7 +153,7 @@ public class DatabaseFacade {
         getDatabase().executeTransaction(new Realm.Transaction() {
             @Override
             public void execute(Realm realm) {
-                realm.where(BeachDbItem.class).equalTo("id", idToRemove)
+                realm.where(LocationDbItem.class).equalTo("id", idToRemove)
                         .findAll()
                         .deleteAllFromRealm();
             }
@@ -179,8 +179,8 @@ public class DatabaseFacade {
     }
 
 
-    public static List<BeachDbItem> getTeams(){
-        return getDatabase().where(BeachDbItem.class).findAll();
+    public static List<LocationDbItem> getTeams(){
+        return getDatabase().where(LocationDbItem.class).findAll();
     }
 
     public static List<IslandDbItem> getPlayers(){
