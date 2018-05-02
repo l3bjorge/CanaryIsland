@@ -122,8 +122,7 @@ public class LocationsPresenter
   @Override
   public String getLanguage(){
     Mediator.Navigation media = (Mediator.Navigation) getApplication();
-    String language = media.getLanguage();
-    return language;
+    return media.getLanguage();
   }
 
 

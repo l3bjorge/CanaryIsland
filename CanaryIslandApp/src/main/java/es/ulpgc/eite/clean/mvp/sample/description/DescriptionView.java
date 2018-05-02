@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -104,7 +103,6 @@ public class DescriptionView
   public void displayShortMessage(String text) {
     Context context = getApplicationContext();
     int duration = Toast.LENGTH_SHORT;
-
     Toast toast = Toast.makeText(context, text, duration);
     toast.show();
   }

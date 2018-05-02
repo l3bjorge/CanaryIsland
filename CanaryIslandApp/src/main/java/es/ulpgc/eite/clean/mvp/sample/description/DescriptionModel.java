@@ -1,6 +1,6 @@
 package es.ulpgc.eite.clean.mvp.sample.description;
 
-import android.net.Uri;
+
 import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;

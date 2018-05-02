@@ -30,7 +30,7 @@ public interface Description {
 
   interface ToDescription extends State {
     void onScreenStarted();
-    //void setTextVisibility(boolean textVisibility);
+
     
   }
 
@@ -46,7 +46,7 @@ public interface Description {
     boolean isInstaBttnVisible();
     void onScreenResumed();
 
-    //void setTextVisibility(boolean textVisibility);
+
   }
 
   ///////////////////////////////////////////////////////////////////////////////////

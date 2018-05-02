@@ -424,7 +424,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToGoogleMaps(String url) {
-        Log.d(TAG, "calling GoogleMaps");
+        Log.d(TAG, "calling goToGoogleMaps()");
         Uri uri = Uri.parse(url);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
         mapIntent.setPackage("com.google.android.apps.maps");
@@ -438,6 +438,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToWeb(String url) {
+        Log.d(TAG, "calling goToWeb()");
         Uri uri = Uri.parse(url);
         Intent intent = new Intent();
         intent.setData(uri);
@@ -447,6 +448,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToFacebook(String url, String faceId) {
+        Log.d(TAG, "calling goToFacebook()");
         Intent intent = new Intent();
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         try {
@@ -464,6 +466,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToInstagram(String instagramId, String url) {
+        Log.d(TAG, "calling goToInstagram()");
         Uri uri = Uri.parse(instagramId);
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
         likeIng.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

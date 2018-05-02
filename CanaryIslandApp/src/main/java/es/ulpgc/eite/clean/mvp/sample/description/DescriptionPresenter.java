@@ -2,7 +2,6 @@ package es.ulpgc.eite.clean.mvp.sample.description;
 
 
 import android.content.Context;
-import android.net.Uri;
 import android.util.Log;
 
 import es.ulpgc.eite.clean.mvp.ContextView;
@@ -17,7 +16,7 @@ public class DescriptionPresenter
     implements Description.ViewToPresenter, Description.ModelToPresenter, Description.DescriptionTo, Description.ToDescription, Presenter<es.ulpgc.eite.clean.mvp.sample.description.Description.PresenterToView> {
 
   private boolean toolbarVisible;
-  private boolean tittleVisible, descriptionVisible, textVisibility, locationBttnVisibity, webBttnVisibity, faceBttnVisibity, instaBttnVisibity;
+  private boolean tittleVisible, descriptionVisible, locationBttnVisibity, webBttnVisibity, faceBttnVisibity, instaBttnVisibity;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -193,8 +192,7 @@ public class DescriptionPresenter
   @Override
   public String getLanguage(){
     Mediator.Navigation media = (Mediator.Navigation) getApplication();
-    String language = media.getLanguage();
-    return language;
+    return media.getLanguage();
   }
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -260,6 +258,7 @@ public class DescriptionPresenter
     Log.d(TAG, "calling onScreenStarted()");
     setCurrentState();
   }
+
 
   /**
    *
