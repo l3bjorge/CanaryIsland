@@ -56,6 +56,7 @@ public interface Description {
     void onBtnWebCliked();
     void onBtnFacebookClicked();
     void onBtnInstagramClicked();
+    void onBtnLikeCliked();
 
   }
 
@@ -63,6 +64,8 @@ public interface Description {
    * Required VIEW methods available to PRESENTER
    */
   interface PresenterToView extends ContextView {
+    void displayShortMessage(String text);
+
     void finishScreen();
     void hideToolbar();
     void hideTittle();

@@ -1,6 +1,7 @@
 package es.ulpgc.eite.clean.mvp.sample.description;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
@@ -37,7 +39,7 @@ public class DescriptionView
     likeBttn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-
+        getPresenter().onBtnLikeCliked();
       }
     });
 
@@ -98,6 +100,14 @@ public class DescriptionView
   }
 
 
+  @Override
+  public void displayShortMessage(String text) {
+    Context context = getApplicationContext();
+    int duration = Toast.LENGTH_SHORT;
+
+    Toast toast = Toast.makeText(context, text, duration);
+    toast.show();
+  }
   ///////////////////////////////////////////////////////////////////////////////////
   // Presenter To View /////////////////////////////////////////////////////////////
 

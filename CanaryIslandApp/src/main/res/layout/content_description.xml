@@ -45,16 +45,22 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <Space
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 
-            <ImageButton
+            <android.support.design.widget.FloatingActionButton
                 android:id="@+id/likeBttn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:clickable="true"
                 android:scaleType="centerInside"
+                app:backgroundTint="@android:color/background_light"
                 app:srcCompat="@mipmap/like" />
+
+
+
+
         </LinearLayout>
 
 
@@ -109,7 +115,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:scaleType="centerInside"/>
+            android:scaleType="centerInside" />
             <!--app:srcCompat="@mipmap/faceicon"/>-->
 
 

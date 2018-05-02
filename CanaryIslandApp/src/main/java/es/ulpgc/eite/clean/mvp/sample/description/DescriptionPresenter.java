@@ -175,6 +175,18 @@ public class DescriptionPresenter
     }
   }
 
+  @Override
+  public void onBtnLikeCliked() {
+    Log.d(TAG, "calling onBtnLikeCliked()");
+    if(isViewRunning()){
+      Log.d(TAG, "onBtnLikeCliked()");
+      String message = "Add Favorite Places";
+
+      getView().displayShortMessage(message);
+
+    }
+  }
+
   ///////////////////////////////////////////////////////////////////////////////////
   // State /////////////////////////////////////////////////////////////////////////
 

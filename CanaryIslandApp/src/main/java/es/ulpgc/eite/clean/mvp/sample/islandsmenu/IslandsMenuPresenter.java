@@ -31,7 +31,7 @@ public class IslandsMenuPresenter
     setView(view);
     Log.d(TAG, "calling onCreate()");
 
-    Log.d(TAG, "calling startingScreen()" + getLanguage());
+    Log.d(TAG, "calling startingScreen()");
     Mediator.Lifecycle mediator = (Mediator.Lifecycle) getApplication();
     mediator.startingScreen(this);
 

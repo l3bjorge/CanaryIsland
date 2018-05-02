@@ -25,10 +25,10 @@ public class IslandItem {
   }
 
   public String getDetails() {
-    String beach = dbItem.getBeach().getName();
-    String category = dbItem.getCategory().getName();
+    //String beach = dbItem.getBeach().getName();
+    //String category = dbItem.getCategory().getName();
 
-    return "Beach: " + beach + "\n" + "Category: " + category;
+    return "Beach: " /*+ beach + "\n" + "Category: " + category*/;
   }
 
   public String getId() {
