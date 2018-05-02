@@ -101,6 +101,15 @@ public class IslandsMenuPresenter
 
   }
 
+  /////////////////////////////////////////////////////////////////////////////////////
+  // Model To Presenter //////////////////////////////////////////////////////////////
+
+  @Override
+  public String getLanguage(){
+    Mediator.Navigation media = (Mediator.Navigation) getApplication();
+    String language = media.getLanguage();
+    return language;
+  }
 
   ///////////////////////////////////////////////////////////////////////////////////
   // State /////////////////////////////////////////////////////////////////////////
@@ -177,10 +186,4 @@ public class IslandsMenuPresenter
     }
   }
 
-  @Override
-  public String getLanguage(){
-      Mediator.Navigation media = (Mediator.Navigation) getApplication();
-      String language = media.getLanguage();
-      return language;
-  }
 }

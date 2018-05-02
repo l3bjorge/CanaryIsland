@@ -74,6 +74,7 @@ public interface Category {
   interface ModelToPresenter {
     void onLoadItemsTaskFinished(List<ModelItem> items);
     void onLoadItemsTaskStarted();
+    String getLanguage();
   }
 
 }
