@@ -18,6 +18,7 @@ public class IslandsMenuView
 
   private Toolbar toolbar;
   private ImageButton button;
+  private ImageButton buttonTnf;
   private TextView text;
 
   @Override
@@ -32,6 +33,14 @@ public class IslandsMenuView
     setSupportActionBar(toolbar);
 
     button = (ImageButton) findViewById(R.id.ButtonGranCa);
+    button.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().goToCategoryScreen();
+      }
+    });
+
+    button = (ImageButton) findViewById(R.id.ButtonTenerife);
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
