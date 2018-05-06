@@ -2,17 +2,18 @@ package es.ulpgc.eite.clean.mvp.sample.data;
 
 
 import es.ulpgc.eite.clean.mvp.sample.data.database.IslandDbItem;
+import es.ulpgc.eite.clean.mvp.sample.data.database.LocationDbItem;
 
-public class IslandItem {
+public class LocationItem {
 
-  private IslandDbItem dbItem;
+  private LocationDbItem dbItem;
 
   //  Disabling the default constructor
-  private IslandItem() {
+  private LocationItem() {
 
   }
 
-  public IslandItem(IslandDbItem dbItem) {
+  public LocationItem(LocationDbItem dbItem) {
     this.dbItem = dbItem;
   }
 
@@ -20,15 +21,15 @@ public class IslandItem {
     return dbItem.getName();
   }
 
-  public IslandDbItem getDbItem() {
+  public LocationDbItem getDbItem() {
     return dbItem;
   }
 
   public String getDetails() {
-    //String beach = dbItem.getBeach().getName();
-    //String category = dbItem.getCategory().getName();
+    String island = dbItem.getIsland().getName();
+    String category = dbItem.getCategory().getName();
 
-    return "Beach: " /*+ beach + "\n" + "Category: " + category*/;
+    return "Beach: " + island + "\n" + "Category: " + category;
   }
 
   public String getId() {
@@ -42,8 +43,8 @@ public class IslandItem {
 
   @Override
   public boolean equals(Object obj) {
-    if (obj instanceof IslandItem){
-      IslandItem item = (IslandItem) obj;
+    if (obj instanceof LocationItem){
+      LocationItem item = (LocationItem) obj;
       if(item.getId() == getId()){
         return true;
       }

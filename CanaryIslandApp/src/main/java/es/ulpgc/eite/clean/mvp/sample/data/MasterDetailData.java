@@ -8,14 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.sample.data.database.DatabaseFacade;
-import es.ulpgc.eite.clean.mvp.sample.data.database.IslandDbItem;
+import es.ulpgc.eite.clean.mvp.sample.data.database.LocationDbItem;
 
 public class MasterDetailData {
 
     private static final String TAG = "MasterDetailData";
 
     public static void deleteAllDatabaseItems(){
-        for(IslandItem item: getItemsFromDatabase()){
+        for(LocationItem item: getItemsFromDatabase()){
             deleteItem(item);
         }
     }
@@ -24,22 +24,22 @@ public class MasterDetailData {
 //        DatabaseFacade.deleteDatabaseItem(item.getDbItem());
 //    }
 
-    public static void deleteItem(IslandItem item) {
-        DatabaseFacade.deletePlayer(item.getDbItem());
+    public static void deleteItem(LocationItem item) {
+        DatabaseFacade.deleteLocation(item.getDbItem());
     }
 
-    public static List<IslandItem> getItemsFromDatabase(){
+    public static List<LocationItem> getItemsFromDatabase(){
         Log.d(TAG, "calling getItemsFromDatabase() method");
 
 
-        List<IslandDbItem> dbItems = DatabaseFacade.getPlayers();
+        List<LocationDbItem> dbItems = DatabaseFacade.getLocations();
         //Log.d(TAG, "items=" +  dbItems);
 
         // Adapt the contents of low-level ModelDbItems to high-level ModelItem components.
 
-        List<IslandItem> modelItems = new ArrayList();
-        for(IslandDbItem dbItem: dbItems) {
-            modelItems.add(new IslandItem(dbItem));
+        List<LocationItem> modelItems = new ArrayList();
+        for(LocationDbItem dbItem: dbItems) {
+            modelItems.add(new LocationItem(dbItem));
         }
 
         Log.d(TAG, "items=" +  modelItems);

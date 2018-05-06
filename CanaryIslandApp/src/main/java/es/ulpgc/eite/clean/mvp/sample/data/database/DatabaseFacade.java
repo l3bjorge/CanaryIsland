@@ -36,27 +36,13 @@ public class DatabaseFacade {
     }
 
     public static void deleteDatabase(){
-        deletePlayers();
-        deleteTeams();
-        deletePositions();
-    }
-
-    public static void deletePositions(){
-        for(CategoryDbItem item: getPositions()){
-            deletePosition(item);
-        }
+        deleteLocations();
     }
 
 
-    public static void deletePlayers(){
-        for(IslandDbItem item: getPlayers()){
-            deletePlayer(item);
-        }
-    }
-
-    public static void deleteTeams(){
-        for(LocationDbItem item: getTeams()){
-            deleteTeam(item);
+    public static void deleteLocations(){
+        for(LocationDbItem item: getLocations()){
+            deleteLocation(item);
         }
     }
 
@@ -66,20 +52,7 @@ public class DatabaseFacade {
 //        }
 //    }
 
-    public static void deletePlayer(IslandDbItem item) {
-        final Integer id = item.getId();
-        getDatabase().executeTransaction(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                realm.where(IslandDbItem.class).equalTo("id", id)
-                        .findAll()
-                        .deleteAllFromRealm();
-            }
-        });
-    }
-
-
-    public static void deleteTeam(LocationDbItem item) {
+    public static void deleteLocation(LocationDbItem item) {
         final Integer id = item.getId();
         getDatabase().executeTransaction(new Realm.Transaction() {
             @Override
@@ -90,20 +63,6 @@ public class DatabaseFacade {
             }
         });
     }
-
-
-    public static void deletePosition(CategoryDbItem item) {
-        final Integer id = item.getId();
-        getDatabase().executeTransaction(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                realm.where(CategoryDbItem.class).equalTo("id", id)
-                        .findAll()
-                        .deleteAllFromRealm();
-            }
-        });
-    }
-
 
 
 //    public static void deleteDatabaseItem(ModelDbItem item) {
@@ -132,7 +91,7 @@ public class DatabaseFacade {
 //        });
 //    }
 
-    public static void deletePlayer(Integer id) {
+    public static void deleteLocation(Integer id) {
         final Integer idToRemove = id;
         //  Required by Java because it is referenced from an inner class
 
@@ -146,45 +105,8 @@ public class DatabaseFacade {
         });
     }
 
-    public static void deleteTeam(Integer id) {
-        final Integer idToRemove = id;
-        //  Required by Java because it is referenced from an inner class
-
-        getDatabase().executeTransaction(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                realm.where(LocationDbItem.class).equalTo("id", idToRemove)
-                        .findAll()
-                        .deleteAllFromRealm();
-            }
-        });
-    }
-
-    public static void deletePosition(Integer id) {
-        final Integer idToRemove = id;
-        //  Required by Java because it is referenced from an inner class
-
-        getDatabase().executeTransaction(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                realm.where(CategoryDbItem.class).equalTo("id", idToRemove)
-                        .findAll()
-                        .deleteAllFromRealm();
-            }
-        });
-    }
-
-    public static List<CategoryDbItem> getPositions(){
-        return getDatabase().where(CategoryDbItem.class).findAll();
-    }
-
-
-    public static List<LocationDbItem> getTeams(){
+    public static List<LocationDbItem> getLocations(){
         return getDatabase().where(LocationDbItem.class).findAll();
-    }
-
-    public static List<IslandDbItem> getPlayers(){
-        return getDatabase().where(IslandDbItem.class).findAll();
     }
 
 //    public static List<ModelDbItem> getItemsFromDatabase(){
@@ -211,7 +133,7 @@ public class DatabaseFacade {
             getDatabase().beginTransaction();
 
             try {
-                getDatabase().createAllFromJson(IslandDbItem.class, stream);
+                getDatabase().createAllFromJson(LocationDbItem.class, stream);
                 getDatabase().commitTransaction();
 
             } catch (IOException e) {
@@ -269,7 +191,7 @@ public class DatabaseFacade {
         getDatabase().executeTransaction(new Realm.Transaction() {
             @Override
             public void execute(Realm realm) {
-                realm.createObjectFromJson(IslandDbItem.class, json);
+                realm.createObjectFromJson(LocationDbItem.class, json);
             }
         });
     }

@@ -8,6 +8,7 @@ import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
 
 
 public class LocationsModel
@@ -31,6 +32,7 @@ public class LocationsModel
   private List<List<ModelItem>> itemsSet = null;
   private String position = null;
   private boolean runningTask;
+  private boolean validDatabase;
   private ModelItem selecteditem;
   private String errorMsg;
 
@@ -82,6 +84,28 @@ public class LocationsModel
    */
   @Override
   public void loadItems() {
+    if(!validDatabase && !runningTask) {
+      startDelayedTask();
+
+    } else if(!runningTask){
+      Log.d(TAG, "calling onLoadItemsTaskFinished() method");
+      getPresenter().onLoadItemsTaskFinished(MasterDetailData.getItemsFromDatabase());
+
+    } else {
+      Log.d(TAG, "calling onLoadItemsTaskStarted() method");
+      getPresenter().onLoadItemsTaskStarted();
+    }
+  }
+
+
+
+  /**
+   * Llamado para recuperar los elementos a mostrar en la lista.
+   * Si el contenido ya ha sido fijado antes, se notificará inmediatamente al presentador y,
+   * sino es el caso, la notificación se realizará al finalizar la tarea que fija este contenido
+   */
+  /*@Override
+  public void loadItems() {
     if ( !runningTask) {
 
       startDelayedTask();
@@ -92,12 +116,33 @@ public class LocationsModel
         getPresenter().onLoadItemsTaskStarted();
       }
     }
-  }
+  }*/
 
   /////////////////////////////////////////////////////////////////////////////////////
 
+  /**
+   * Llamado para recuperar los elementos iniciales de la lista.
+   * En este caso siempre se llamará a la tarea asíncrona
+   */
+  @Override
+  public void reloadItems() {
+    MasterDetailData.deleteAllDatabaseItems();
+    validDatabase = false;
+    loadItems();
+  }
+
+  @Override
+  public void setDatabaseValidity(boolean valid) {
+    validDatabase = valid;
+  }
+
+  @Override
+  public String getErrorMessage() {
+    return errorMsg;
+  }
 
 
+/*
   private String makeDetails(int position) {
     StringBuilder builder = new StringBuilder();
     builder.append("Details about Item: ").append(position).append("\n");
@@ -239,14 +284,14 @@ public class LocationsModel
 
     itemsSet.add(culturalSpots);
 
-  }
+  }*/
 
   /**
    * Llamado para recuperar los elementos a mostrar en la lista.
    * Consiste en una tarea asíncrona que retrasa un tiempo la obtención del contenido.
    * El modelo notificará al presentador cuando se inicia y cuando finaliza esta tarea.
    */
-  private void startDelayedTask() {
+  /*private void startDelayedTask() {
     Log.d(TAG, "calling startDelayedTask()");
     runningTask = true;
     getPresenter().onLoadItemsTaskStarted();
@@ -262,6 +307,33 @@ public class LocationsModel
         getPresenter().onLoadItemsTaskFinished(itemsSet.get(Integer.parseInt(position)));
       }
     }, 1000);
+  }*/
+
+  private void startDelayedTask() {
+    Log.d(TAG, "calling startDelayedTask() method");
+    runningTask = true;
+    Log.d(TAG, "calling onLoadItemsTaskStarted() method");
+    getPresenter().onLoadItemsTaskStarted();
+
+    // Mock Hello: A handler to delay the answer
+    new Handler().postDelayed(new Runnable() {
+      @Override
+      public void run() {
+        Log.d(TAG, "calling loadItemsFromJsonFile() method");
+        MasterDetailData.loadItemsFromJsonFile
+                (getPresenter().getManagedContext(), "locations.json");
+
+        /*
+        MasterDetailData.loadItemsFromJsonFile
+                (getPresenter().getManagedContext(), "database.json");
+        */
+
+        runningTask = false;
+        validDatabase = true;
+        Log.d(TAG, "calling onLoadItemsTaskFinished() method");
+        getPresenter().onLoadItemsTaskFinished(MasterDetailData.getItemsFromDatabase());
+      }
+    }, 5000);
   }
 }
 

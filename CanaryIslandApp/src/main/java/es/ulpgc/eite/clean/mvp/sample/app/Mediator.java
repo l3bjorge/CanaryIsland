@@ -2,6 +2,7 @@ package es.ulpgc.eite.clean.mvp.sample.app;
 
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
 import es.ulpgc.eite.clean.mvp.sample.category.Category;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.description.Description;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
@@ -62,7 +63,7 @@ public interface Mediator {
     void backToPreviousScreen(Category.CategoryTo presenter);
 
     //Locations
-    void goToDescriptionScreen(Locations.LocationsTo presenter, ModelItem item);
+    void goToDescriptionScreen(Locations.LocationsTo presenter, LocationItem item);
     void backToPreviousScreen(Locations.LocationsTo presenter);
 
     //Description

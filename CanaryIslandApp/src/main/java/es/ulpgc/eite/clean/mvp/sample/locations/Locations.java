@@ -8,6 +8,7 @@ import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.Model;
 import es.ulpgc.eite.clean.mvp.Presenter;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 
 /**
  * Created by Luis on 12/11/16.
@@ -42,7 +43,7 @@ public interface Locations {
    * Methods offered to VIEW to communicate with PRESENTER
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
-    void goToDescriptionScreen(ModelItem item);
+    void goToDescriptionScreen(LocationItem item);
     void onResumingContent();
   }
 
@@ -55,7 +56,7 @@ public interface Locations {
     void showError(String msg);
     void showProgress();
     void setActionBarTitle(String title);
-    void setRecyclerAdapterContent(List<ModelItem> items);
+    void setRecyclerAdapterContent(List<LocationItem> items);
   }
 
   /**
@@ -65,13 +66,17 @@ public interface Locations {
     String getLabel();
     void loadItems();
     void setItem(ModelItem item);
+    void reloadItems();
+    String getErrorMessage();
+    void setDatabaseValidity(boolean valid);
   }
 
   /**
    * Required PRESENTER methods available to MODEL
    */
   interface ModelToPresenter {
-    void onLoadItemsTaskFinished(List<ModelItem> items);
+    Context getManagedContext();
+    void onLoadItemsTaskFinished(List<LocationItem> items);
     void onLoadItemsTaskStarted();
     String getLanguage();
   }

@@ -21,6 +21,7 @@ import java.util.List;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 
 import static android.support.v7.widget.RecyclerView.VERTICAL;
 
@@ -121,7 +122,7 @@ public class LocationsView
   }
 
   @Override
-  public void setRecyclerAdapterContent(List<ModelItem> items) {
+  public void setRecyclerAdapterContent(List<LocationItem> items) {
     Log.d(TAG, "calling setRecyclerAdapterContent()");
 
     if (recyclerView != null) {
@@ -138,13 +139,13 @@ public class LocationsView
   private class ModelItemRecyclerViewAdapter
           extends RecyclerView.Adapter<LocationsView.ModelItemRecyclerViewAdapter.ViewHolder> {
 
-    private List<ModelItem> items;
+    private List<LocationItem> items;
 
     public ModelItemRecyclerViewAdapter() {
       items = new ArrayList<>();
     }
 
-    public void setItemList(List<ModelItem> items) {
+    public void setItemList(List<LocationItem> items) {
       this.items = items;
       notifyDataSetChanged();
     }
@@ -177,7 +178,7 @@ public class LocationsView
     public class ViewHolder extends RecyclerView.ViewHolder {
       public final View itemView;
       public final TextView contentView;
-      public ModelItem item;
+      public LocationItem item;
 
       public ViewHolder(View view) {
         super(view);

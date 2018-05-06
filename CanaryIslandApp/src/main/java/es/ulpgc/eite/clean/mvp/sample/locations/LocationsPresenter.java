@@ -12,6 +12,7 @@ import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 
 public class LocationsPresenter
     extends GenericPresenter
@@ -97,7 +98,7 @@ public class LocationsPresenter
    * @param items como contenido de la lista a mostrar en pantalla
    */
   @Override
-  public void onLoadItemsTaskFinished(List<ModelItem> items) {
+  public void onLoadItemsTaskFinished(List<LocationItem> items) {
     Log.d(TAG, "calling onLoadItemsTaskFinished()");
 
     // Una vez finaliza la tarea para la obtención del contenido de la lista,
@@ -147,7 +148,7 @@ public class LocationsPresenter
 
 
   @Override
-  public void goToDescriptionScreen(ModelItem item) {
+  public void goToDescriptionScreen(LocationItem item) {
     Log.d(TAG, "calling goToDescriptionScreen()");
     if(isViewRunning()) {
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();

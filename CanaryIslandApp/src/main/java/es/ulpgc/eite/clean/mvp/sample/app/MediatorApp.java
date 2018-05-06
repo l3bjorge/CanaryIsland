@@ -13,6 +13,7 @@ import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView;
 import es.ulpgc.eite.clean.mvp.sample.category.Category;
 
 import es.ulpgc.eite.clean.mvp.sample.category.CategoryView;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.description.Description;
 import es.ulpgc.eite.clean.mvp.sample.description.DescriptionView;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
@@ -20,6 +21,7 @@ import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuView;
 import es.ulpgc.eite.clean.mvp.sample.locations.Locations;
 import es.ulpgc.eite.clean.mvp.sample.locations.LocationsView;
+import io.realm.Realm;
 
 public class MediatorApp extends Application implements Mediator.Lifecycle, Mediator.Navigation {
 
@@ -38,6 +40,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     @Override
     public void onCreate() {
         super.onCreate();
+        Realm.init(this);
         Log.d(TAG, "calling onCreate()");
 
         Log.d(TAG, "calling creatingInitialState()");
@@ -47,6 +50,13 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
 
         Log.d(TAG, "calling creatingInitialHelloState()");
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+
+        Realm.getDefaultInstance().close();
     }
 
     ///////////////////////////////////////////////////////////////////////////////////
@@ -402,7 +412,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
 
     @Override
-        public void goToDescriptionScreen(Locations.LocationsTo presenter, ModelItem item) {
+        public void goToDescriptionScreen(Locations.LocationsTo presenter, LocationItem item) {
             Log.d(TAG, "calling savingUpdatedState()");
             locationsToState = new LocationsState();
             locationsToState.toolbarVisibility = presenter.isToolbarVisible();
