@@ -25,11 +25,10 @@ public class LocationItem {
     return dbItem;
   }
 
-  public String getDetails() {
-    String island = dbItem.getIsland().getName();
+  public String getCategory() {
     String category = dbItem.getCategory().getName();
 
-    return "Beach: " + island + "\n" + "Category: " + category;
+    return category;
   }
 
   public String getId() {

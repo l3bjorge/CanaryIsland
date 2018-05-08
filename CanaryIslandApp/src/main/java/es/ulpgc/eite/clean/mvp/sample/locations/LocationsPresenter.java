@@ -13,6 +13,8 @@ import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
+import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
+import io.realm.Realm;
 
 public class LocationsPresenter
     extends GenericPresenter
@@ -106,7 +108,14 @@ public class LocationsPresenter
     // y actualizamos el contenido de la lista
     hideProgress = true;
     checkVisibility();
+    for ( int i = 0; i < items.size(); i++){
+      if (!items.get(i).getCategory().equals(selectedItem.getContent())){
+        items.remove(i);
+        i = i-1;
+      }
+    }
     getView().setRecyclerAdapterContent(items);
+    Realm.getDefaultInstance().close(); //this is provisional, not supposed to be here at all
   }
 
   /**
