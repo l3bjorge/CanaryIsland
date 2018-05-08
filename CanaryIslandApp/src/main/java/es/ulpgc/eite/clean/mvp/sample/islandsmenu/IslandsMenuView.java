@@ -40,8 +40,8 @@ public class IslandsMenuView
       }
     });
 
-    button = (ImageButton) findViewById(R.id.ButtonTenerife);
-    button.setOnClickListener(new View.OnClickListener() {
+    buttonTnf = (ImageButton) findViewById(R.id.ButtonTenerife);
+    buttonTnf.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().goToCategoryScreen();
