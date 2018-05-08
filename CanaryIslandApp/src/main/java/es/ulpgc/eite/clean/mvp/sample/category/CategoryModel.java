@@ -132,6 +132,20 @@ public class CategoryModel
       addItem(new ModelItem(String.valueOf(8), "Puntos Culturales"));
       addItem(new ModelItem(String.valueOf(9), "Actividades"));
 
+    } else
+    if (language == "German") {
+
+      addItem(new ModelItem(String.valueOf(0), "Strände"));
+      addItem(new ModelItem(String.valueOf(1), "Parks"));
+      addItem(new ModelItem(String.valueOf(2), "Einkaufszentren"));
+      addItem(new ModelItem(String.valueOf(3), "Museen"));
+      addItem(new ModelItem(String.valueOf(4), "Gaststätte"));
+      addItem(new ModelItem(String.valueOf(5), "Touristenpunkte"));
+      addItem(new ModelItem(String.valueOf(6), "Nachtclubs"));
+      addItem(new ModelItem(String.valueOf(7), "Theater"));
+      addItem(new ModelItem(String.valueOf(8), "Kulturelle Punkte"));
+      addItem(new ModelItem(String.valueOf(9), "Aktivitäten"));
+
     }
 
   }
