@@ -21,6 +21,7 @@ public interface Category {
 
   interface State {
     void setToolbarVisibility(boolean visible);
+    void setLanguage(String language);
   }
 
   interface ToCategory extends State {
@@ -63,6 +64,7 @@ public interface Category {
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getLabel();
+    void setLanguage(String language);
     void loadItems();
     void reloadItems();
     String getErrorMessage();
@@ -75,6 +77,7 @@ public interface Category {
     void onLoadItemsTaskFinished(List<ModelItem> items);
     void onLoadItemsTaskStarted();
     String getLanguage();
+
   }
 
 }

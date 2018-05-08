@@ -13,12 +13,8 @@ import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 public class CategoryModel
     extends GenericModel<Category.ModelToPresenter> implements Category.PresenterToModel {
 
-  private static final int ITEM_COUNT = 9;
-
   private String label;
-  private String buttonBeach;
-  private String buttonRest;
-  private String buttonTourist;
+  private String language;
   public List<ModelItem> items = null;
   private boolean runningTask;
   private String errorMsg;
@@ -35,7 +31,6 @@ public class CategoryModel
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
     label = "Choose your category";
-    buttonBeach = "Beaches";
   }
 
   /**
@@ -58,6 +53,11 @@ public class CategoryModel
   public String getLabel() {
     return label;
   }
+
+  public void setLanguage(String language) {
+    this.language = language;
+  }
+
 
   /**
    * Llamado para recuperar los elementos a mostrar en la lista.
@@ -99,31 +99,40 @@ public class CategoryModel
   }
 
   private ModelItem createItem(int position) {
-    return new ModelItem(String.valueOf(position), "Category " + position, makeDetails(position));
-  }
-
-  private String makeDetails(int position) {
-    StringBuilder builder = new StringBuilder();
-    builder.append("Details about Item: ").append(position).append("\n");
-    for (int count = 0; count < position; count++) {
-      builder.append("\nMore details information here.");
-    }
-    return builder.toString();
+    return new ModelItem(String.valueOf(position), "Category ");
   }
 
   private void setItems(){
     items = new ArrayList();
 
-      addItem(new ModelItem(String.valueOf(0), "Beaches", makeDetails(0)));
-      addItem(new ModelItem(String.valueOf(1), "Parks", makeDetails(1)));
-      addItem(new ModelItem(String.valueOf(2), "Shopping Centers", makeDetails(2)));
-      addItem(new ModelItem(String.valueOf(3), "Museums", makeDetails(3)));
-      addItem(new ModelItem(String.valueOf(4), "Restaurants", makeDetails(4)));
-      addItem(new ModelItem(String.valueOf(5), "Touristic Spots", makeDetails(5)));
-      addItem(new ModelItem(String.valueOf(6), "Night Clubs", makeDetails(6)));
-      addItem(new ModelItem(String.valueOf(7), "Theaters", makeDetails(7)));
-      addItem(new ModelItem(String.valueOf(8), "Cultural Spots", makeDetails(8)));
-      addItem(new ModelItem(String.valueOf(9), "Activities", makeDetails(9)));
+    if (language == "English") {
+
+      addItem(new ModelItem(String.valueOf(0), "Beaches"));
+      addItem(new ModelItem(String.valueOf(1), "Parks"));
+      addItem(new ModelItem(String.valueOf(2), "Shopping Centers"));
+      addItem(new ModelItem(String.valueOf(3), "Museums"));
+      addItem(new ModelItem(String.valueOf(4), "Restaurants"));
+      addItem(new ModelItem(String.valueOf(5), "Touristic Spots"));
+      addItem(new ModelItem(String.valueOf(6), "Night Clubs"));
+      addItem(new ModelItem(String.valueOf(7), "Theaters"));
+      addItem(new ModelItem(String.valueOf(8), "Cultural Spots"));
+      addItem(new ModelItem(String.valueOf(9), "Activities"));
+
+    } else
+    if (language == "Spanish") {
+
+      addItem(new ModelItem(String.valueOf(0), "Playas"));
+      addItem(new ModelItem(String.valueOf(1), "Parques"));
+      addItem(new ModelItem(String.valueOf(2), "Centros Comerciales"));
+      addItem(new ModelItem(String.valueOf(3), "Museos"));
+      addItem(new ModelItem(String.valueOf(4), "Restaurantes"));
+      addItem(new ModelItem(String.valueOf(5), "Puntos Turísticos"));
+      addItem(new ModelItem(String.valueOf(6), "Discotecas"));
+      addItem(new ModelItem(String.valueOf(7), "Teatros"));
+      addItem(new ModelItem(String.valueOf(8), "Puntos Culturales"));
+      addItem(new ModelItem(String.valueOf(9), "Actividades"));
+
+    }
 
   }
 

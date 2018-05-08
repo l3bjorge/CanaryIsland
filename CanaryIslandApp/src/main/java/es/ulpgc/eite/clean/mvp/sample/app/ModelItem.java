@@ -8,20 +8,10 @@ public class ModelItem {
 
   private String id;
   private String content;
-  private String details;
 
-  public ModelItem(String id, String content, String details) {
+  public ModelItem(String id, String content) {
     this.id = id;
     this.content = content;
-    this.details = details;
-  }
-
-  public String getDetails() {
-    return details;
-  }
-
-  public void setDetails(String details) {
-    this.details = details;
   }
 
   public String getId() {
