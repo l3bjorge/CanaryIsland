@@ -94,6 +94,8 @@ public class HomePresenter
     Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
     if(isViewRunning()) {
       spanishButtonClicked = true;
+      englishButtonClicked = false;
+      germanButtonClicked = false;
       /*MediatorApp mediator = new MediatorApp();
       mediator.goToIslandsMenuScreen(this);*/
       Mediator.Navigation media = (Mediator.Navigation) getApplication();
@@ -106,6 +108,8 @@ public class HomePresenter
   public void onGermanButtonClicked() {
     if(isViewRunning()) {
       germanButtonClicked = true;
+      englishButtonClicked = false;
+      spanishButtonClicked = false;
       Mediator.Navigation media = (Mediator.Navigation) getApplication();
       media.goToIslandsMenuScreen(this);
 
@@ -117,6 +121,8 @@ public class HomePresenter
     Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
     if(isViewRunning()) {
       englishButtonClicked = true;
+      spanishButtonClicked = false;
+      germanButtonClicked = false;
       /*MediatorApp mediator = new MediatorApp();
       mediator.goToIslandsMenuScreen(this);*/
       Mediator.Navigation media = (Mediator.Navigation) getApplication();
