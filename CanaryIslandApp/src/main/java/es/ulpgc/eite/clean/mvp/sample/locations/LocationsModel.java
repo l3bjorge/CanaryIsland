@@ -8,6 +8,7 @@ import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
 import io.realm.Realm;
 import io.realm.RealmList;
@@ -137,6 +138,7 @@ public class LocationsModel
   public void setDatabaseValidity(boolean valid) {
     validDatabase = valid;
   }
+
 
   @Override
   public String getErrorMessage() {
@@ -330,8 +332,15 @@ public class LocationsModel
         runningTask = false;
         validDatabase = true;
         Log.d(TAG, "calling onLoadItemsTaskFinished() method");
-        getPresenter().onLoadItemsTaskFinished(MasterDetailData.getItemsFromDatabase());
-        Log.d(TAG, "calling onLoadItemsTaskFinished() method " + MasterDetailData.getItemsFromDatabase().size());
+        List<LocationItem> items = MasterDetailData.getItemsFromDatabase();
+        for ( int i = 0; i < items.size(); i++){
+      if (!items.get(i).getCategory().equals(selecteditem.getContent())){
+        items.remove(i);
+        i = i-1;
+      }
+    }
+        getPresenter().onLoadItemsTaskFinished(items);
+
       }
     }, 1000);
   }
