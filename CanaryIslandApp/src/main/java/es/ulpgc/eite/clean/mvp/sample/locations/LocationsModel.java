@@ -22,21 +22,12 @@ public class LocationsModel
 
   private String label;
   private List<LocationItem> items;
-  private List<ModelItem> beaches = null;
-  private List<ModelItem> parks = null;
-  private List<ModelItem> shoppingCenters = null;
-  private List<ModelItem> museums = null;
-  private List<ModelItem> restaurants = null;
-  private List<ModelItem> touristicSpots = null;
-  private List<ModelItem> nightClubs = null;
-  private List<ModelItem> theates = null;
-  private List<ModelItem> culturalSpots = null;
-
 
   private List<List<ModelItem>> itemsSet = null;
   private String position = null;
   private boolean runningTask;
   private boolean validDatabase;
+  public String language;
   private ModelItem selecteditem;
   private String errorMsg;
 
@@ -80,8 +71,13 @@ public class LocationsModel
     selecteditem = item;
   }
 
+  public void setLanguage(String language) {
+        this.language = language;
+    }
 
-  /**
+
+
+    /**
    * Llamado para recuperar los elementos a mostrar en la lista.
    * Si el contenido ya ha sido fijado antes, se notificará inmediatamente al presentador y,
    * sino es el caso, la notificación se realizará al finalizar la tarea que fija este contenido
@@ -146,7 +142,7 @@ public class LocationsModel
         Log.d(TAG, "calling onLoadItemsTaskFinished() method");
         items = MasterDetailData.getItemsFromDatabase();
         for ( int i = 0; i < items.size(); i++){
-      if (!items.get(i).getCategory().equals(selecteditem.getContent())){
+      if (!items.get(i).getCategory(language).equals(selecteditem.getContent())){
         items.remove(i);
         i = i-1;
       }

@@ -25,8 +25,17 @@ public class LocationItem {
     return dbItem;
   }
 
-  public String getCategory() {
-    String category = dbItem.getCategory().getName();
+  public String getCategory(String language) {
+
+    String category = "";
+
+    if (language.equals("English")) {
+      category = dbItem.getCategory().getEnglishname();
+    } else if(language.equals("Spanish")){
+      category = dbItem.getCategory().getSpanishname();
+    } else if(language.equals("German")){
+      category = dbItem.getCategory().getGermanname();
+    }
 
     return category;
   }

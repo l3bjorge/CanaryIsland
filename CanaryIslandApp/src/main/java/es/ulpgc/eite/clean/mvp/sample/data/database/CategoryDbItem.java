@@ -10,7 +10,9 @@ import io.realm.RealmObject;
 public class CategoryDbItem extends RealmObject{
 
   private Integer id;
-  private String name;
+  private String englishname;
+  private String spanishname;
+  private String germanname;
 
 
   private RealmList<LocationDbItem> locations;
@@ -20,12 +22,28 @@ public class CategoryDbItem extends RealmObject{
   }
 
 
-  public String getName() {
-    return name;
+  public String getEnglishname( ) {
+    return englishname;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setEnglishname(String name) {
+    this.englishname = name;
+  }
+
+  public String getSpanishname() {
+    return spanishname;
+  }
+
+  public void setSpanishname(String name) {
+    this.spanishname = name;
+  }
+
+  public String getGermanname() {
+    return germanname;
+  }
+
+  public void setGermanname(String name) {
+    this.germanname = name;
   }
 
   public Integer getId() {

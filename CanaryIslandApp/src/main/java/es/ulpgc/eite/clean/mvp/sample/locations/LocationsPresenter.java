@@ -178,6 +178,11 @@ public class LocationsPresenter
   }
 
   @Override
+  public void setLanguage(String language) {
+    getModel().setLanguage(language);
+  }
+
+  @Override
   public void setSelectedItem(ModelItem item) {
     selectedItem = item;
     getModel().setItem(item);

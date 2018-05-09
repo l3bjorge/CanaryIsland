@@ -23,6 +23,7 @@ public interface Locations {
   interface State {
     void setToolbarVisibility(boolean visible);
     void setSelectedItem(ModelItem item);
+    void setLanguage(String language);
   }
 
   interface ToLocations extends State {
@@ -67,6 +68,7 @@ public interface Locations {
     String getLabel();
     void loadItems();
     void setItem(ModelItem item);
+    void setLanguage(String language);
     void reloadItems();
     String getErrorMessage();
     void setDatabaseValidity(boolean valid);
