@@ -25,8 +25,6 @@ public class DescriptionModel
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
 
-    tittleText = "Las Canteras";
-    descriptionText = "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.";
     location = "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0";
     web = /*null;*/ "http://miplayadelascanteras.com/";
     facebook = /*null;*/ "https://es-es.facebook.com/periodicoCanarias7/";
