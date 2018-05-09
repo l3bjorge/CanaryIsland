@@ -21,6 +21,7 @@ public class LocationsModel
   private static final int ITEM_COUNT = 9;
 
   private String label;
+  private List<LocationItem> items;
   private List<ModelItem> beaches = null;
   private List<ModelItem> parks = null;
   private List<ModelItem> shoppingCenters = null;
@@ -92,7 +93,7 @@ public class LocationsModel
 
     } else if(!runningTask){
       Log.d(TAG, "calling onLoadItemsTaskFinished() method");
-      getPresenter().onLoadItemsTaskFinished(MasterDetailData.getItemsFromDatabase());
+      getPresenter().onLoadItemsTaskFinished(items);
 
     } else {
       Log.d(TAG, "calling onLoadItemsTaskStarted() method");
@@ -332,7 +333,7 @@ public class LocationsModel
         runningTask = false;
         validDatabase = true;
         Log.d(TAG, "calling onLoadItemsTaskFinished() method");
-        List<LocationItem> items = MasterDetailData.getItemsFromDatabase();
+        items = MasterDetailData.getItemsFromDatabase();
         for ( int i = 0; i < items.size(); i++){
       if (!items.get(i).getCategory().equals(selecteditem.getContent())){
         items.remove(i);
