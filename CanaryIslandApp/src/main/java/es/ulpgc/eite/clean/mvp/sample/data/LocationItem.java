@@ -31,6 +31,12 @@ public class LocationItem {
     return category;
   }
 
+  public String getDescription() {
+    String description = dbItem.getDescription();
+
+    return description;
+  }
+
   public String getId() {
     return dbItem.getId().toString();
   }
