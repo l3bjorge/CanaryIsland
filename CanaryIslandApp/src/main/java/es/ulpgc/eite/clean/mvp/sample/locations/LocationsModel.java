@@ -9,6 +9,8 @@ import java.util.List;
 import es.ulpgc.eite.clean.mvp.GenericModel;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
+import io.realm.Realm;
+import io.realm.RealmList;
 
 
 public class LocationsModel
@@ -320,20 +322,18 @@ public class LocationsModel
       @Override
       public void run() {
         Log.d(TAG, "calling loadItemsFromJsonFile() method");
-        MasterDetailData.loadItemsFromJsonFile
-                (getPresenter().getManagedContext(), "locations.json");
-
-        /*
-        MasterDetailData.loadItemsFromJsonFile
-                (getPresenter().getManagedContext(), "database.json");
-        */
+        if (MasterDetailData.getItemsFromDatabase().size() == 0) {
+          MasterDetailData.loadItemsFromJsonFile
+                  (getPresenter().getManagedContext(), "locations.json");
+        }
 
         runningTask = false;
         validDatabase = true;
         Log.d(TAG, "calling onLoadItemsTaskFinished() method");
         getPresenter().onLoadItemsTaskFinished(MasterDetailData.getItemsFromDatabase());
+        Log.d(TAG, "calling onLoadItemsTaskFinished() method " + MasterDetailData.getItemsFromDatabase().size());
       }
-    }, 5000);
+    }, 1000);
   }
 }
 

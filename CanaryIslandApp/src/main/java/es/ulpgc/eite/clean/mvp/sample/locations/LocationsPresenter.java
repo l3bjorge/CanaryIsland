@@ -108,14 +108,13 @@ public class LocationsPresenter
     // y actualizamos el contenido de la lista
     hideProgress = true;
     checkVisibility();
-    for ( int i = 0; i < items.size(); i++){
+    /*for ( int i = 0; i < items.size(); i++){
       if (!items.get(i).getCategory().equals(selectedItem.getContent())){
         items.remove(i);
         i = i-1;
       }
-    }
+    }*/
     getView().setRecyclerAdapterContent(items);
-    Realm.getDefaultInstance().close(); //this is provisional, not supposed to be here at all
   }
 
   /**
