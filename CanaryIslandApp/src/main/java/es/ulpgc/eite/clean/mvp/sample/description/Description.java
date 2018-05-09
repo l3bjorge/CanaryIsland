@@ -6,6 +6,7 @@ import android.net.Uri;
 import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.Model;
 import es.ulpgc.eite.clean.mvp.Presenter;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 
 /**
  * Created by Luis on 12/11/16.
@@ -25,6 +26,7 @@ public interface Description {
     void setWebBttnVisiblity(boolean visible);
     void setFaceBttnVisiblity(boolean visible);
     void setInstaBttnVisiblity(boolean visible);
+    void setSelectedItem(LocationItem selectedItem);
 
   }
 

@@ -9,6 +9,7 @@ import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.Presenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
+import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 
 public class DescriptionPresenter
     extends GenericPresenter
@@ -16,6 +17,7 @@ public class DescriptionPresenter
     implements Description.ViewToPresenter, Description.ModelToPresenter, Description.DescriptionTo, Description.ToDescription, Presenter<es.ulpgc.eite.clean.mvp.sample.description.Description.PresenterToView> {
 
   private boolean toolbarVisible;
+  private LocationItem selectedItem;
   private boolean tittleVisible, descriptionVisible, locationBttnVisibity, webBttnVisibity, faceBttnVisibity, instaBttnVisibity;
 
   /**
@@ -206,6 +208,11 @@ public class DescriptionPresenter
   @Override
   public void setToolbarVisibility(boolean visible) {
     toolbarVisible = visible;
+  }
+
+  @Override
+  public void setSelectedItem(LocationItem selectedItem) {
+    this.selectedItem = selectedItem;
   }
 
   /**

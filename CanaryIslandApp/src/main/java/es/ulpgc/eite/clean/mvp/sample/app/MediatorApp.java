@@ -236,6 +236,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         if(locationsToDescriptionState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(locationsToDescriptionState.toolbarVisibility);
+            presenter.setSelectedItem(locationsToDescriptionState.selectedItem);
             /*presenter.setTittleVisibility(locationsToDescriptionState.tittleVisibility);
             presenter.setDescriptionVisibility(locationsToDescriptionState.descriptionVisibility);
             presenter.setLocationBttnVisibility(locationsToDescriptionState.locationBttnVisibility);
