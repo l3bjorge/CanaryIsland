@@ -16,7 +16,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -36,7 +38,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -56,7 +60,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -76,7 +82,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -96,7 +104,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -116,7 +126,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -136,7 +148,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -156,7 +170,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -176,7 +192,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -196,7 +214,9 @@
     },
     "category":  {
       "id": 1,
-      "name": "Beaches"
+      "englishname": "Beaches",
+      "spanishname": "Playas",
+      "germanname": "Strände"
     }
   },
 
@@ -216,7 +236,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -236,7 +258,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -256,7 +280,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -276,7 +302,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -296,7 +324,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -316,7 +346,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -336,7 +368,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -356,7 +390,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -376,7 +412,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -396,7 +434,9 @@
     },
     "category":  {
       "id": 2,
-      "name": "Parks"
+      "englishname": "Parks",
+      "spanishname": "Parques",
+      "germanname": "Parks"
     }
   },
 
@@ -416,7 +456,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -436,7 +478,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -456,7 +500,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -476,7 +522,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -496,7 +544,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -516,7 +566,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -536,7 +588,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -556,7 +610,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -576,7 +632,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -596,7 +654,9 @@
     },
     "category":  {
       "id": 3,
-      "name": "Shopping Centers"
+      "englishname": "Shopping Centers",
+      "spanishname": "Centros Comerciales",
+      "germanname": "Einkaufszentren"
     }
   },
 
@@ -616,7 +676,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -636,7 +698,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -656,7 +720,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -676,7 +742,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -696,7 +764,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -716,7 +786,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -736,7 +808,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -756,7 +830,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -776,7 +852,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -796,7 +874,9 @@
     },
     "category":  {
       "id": 4,
-      "name": "Museums"
+      "englishname": "Museum",
+      "spanishname": "Museos",
+      "germanname": "Museen"
     }
   },
 
@@ -816,7 +896,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -836,7 +918,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -856,7 +940,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -876,7 +962,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -896,7 +984,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -916,7 +1006,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -936,7 +1028,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -956,7 +1050,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -976,7 +1072,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -996,7 +1094,9 @@
     },
     "category":  {
       "id": 5,
-      "name": "Restaurants"
+      "englishname": "Restaurants",
+      "spanishname": "Restaurantes",
+      "germanname": "Gaststätte"
     }
   },
 
@@ -1016,7 +1116,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1036,7 +1138,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1056,7 +1160,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1076,7 +1182,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1096,7 +1204,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1116,7 +1226,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1136,7 +1248,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1156,7 +1270,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1176,7 +1292,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1196,7 +1314,9 @@
     },
     "category":  {
       "id": 6,
-      "name": "Touristic Spots"
+      "englishname": "Touristic Points",
+      "spanishname": "Puntos Turísticos",
+      "germanname": "Touristenpunkte"
     }
   },
 
@@ -1216,7 +1336,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1236,7 +1358,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1256,7 +1380,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1276,7 +1402,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1296,7 +1424,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1316,7 +1446,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1336,7 +1468,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1356,7 +1490,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1376,7 +1512,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1396,7 +1534,9 @@
     },
     "category":  {
       "id": 7,
-      "name": "Night Clubs"
+      "englishname": "Night Clubs",
+      "spanishname": "Discotecas",
+      "germanname": "Nachtclubs"
     }
   },
 
@@ -1416,7 +1556,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1436,7 +1578,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1456,7 +1600,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1476,7 +1622,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1496,7 +1644,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1516,7 +1666,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1536,7 +1688,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1556,7 +1710,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1576,7 +1732,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1596,7 +1754,9 @@
     },
     "category":  {
       "id": 8,
-      "name": "Theatres"
+      "englishname": "Theatre",
+      "spanishname": "Teatreo",
+      "germanname": "Theater"
     }
   },
 
@@ -1616,7 +1776,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1636,7 +1798,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1656,7 +1820,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1676,7 +1842,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1696,7 +1864,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1716,7 +1886,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1736,7 +1908,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1756,7 +1930,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1776,7 +1952,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1796,7 +1974,9 @@
     },
     "category":  {
       "id": 9,
-      "name": "Cultural Spots"
+      "englishname": "Cultural Points",
+      "spanishname": "Puntos Culturales",
+      "germanname": "Kulturelle Punkte"
     }
   },
 
@@ -1816,7 +1996,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1836,7 +2018,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1856,7 +2040,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1876,7 +2062,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1896,7 +2084,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1916,7 +2106,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1936,7 +2128,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1956,7 +2150,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1976,7 +2172,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   },
 
@@ -1996,7 +2194,9 @@
     },
     "category":  {
       "id": 10,
-      "name": "Activities"
+      "englishname": "Activities",
+      "spanishname": "Actividades",
+      "germanname": "Aktivitäten"
     }
   }
 
