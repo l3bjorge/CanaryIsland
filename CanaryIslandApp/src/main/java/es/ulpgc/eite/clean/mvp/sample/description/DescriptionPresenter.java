@@ -62,7 +62,7 @@ public class DescriptionPresenter
     checkWebBttnVisibility();
     checkFaceBttnVisibility();
     checkInstaBttnVisibility();
-    getView().setTittle(getModel().getTittle());
+    getView().setTittle(selectedItem.getTitle());
     getView().setDescription(getModel().getDescription());
 
   }

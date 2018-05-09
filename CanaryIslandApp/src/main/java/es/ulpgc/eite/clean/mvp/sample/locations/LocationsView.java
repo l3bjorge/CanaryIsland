@@ -161,7 +161,7 @@ public class LocationsView
     @Override
     public void onBindViewHolder(final LocationsView.ModelItemRecyclerViewAdapter.ViewHolder holder, int position) {
       holder.item = items.get(position);
-      holder.contentView.setText(items.get(position).getContent());
+      holder.contentView.setText(items.get(position).getTitle());
       holder.itemView.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {

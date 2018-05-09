@@ -17,7 +17,7 @@ public class LocationItem {
     this.dbItem = dbItem;
   }
 
-  public String getContent() {
+  public String getTitle() {
     return dbItem.getName();
   }
 
@@ -37,7 +37,7 @@ public class LocationItem {
 
   @Override
   public String toString() {
-    return this.getContent();
+    return this.getTitle();
   }
 
   @Override
