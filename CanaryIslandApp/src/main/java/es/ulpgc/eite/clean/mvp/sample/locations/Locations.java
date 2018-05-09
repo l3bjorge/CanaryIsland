@@ -34,6 +34,7 @@ public interface Locations {
     void destroyView();
     boolean isToolbarVisible();
     void onScreenResumed();
+    LocationItem getLocation();
   }
 
   ///////////////////////////////////////////////////////////////////////////////////

@@ -384,10 +384,11 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
 
     @Override
-        public void goToDescriptionScreen(Locations.LocationsTo presenter, LocationItem item) {
+        public void goToDescriptionScreen(Locations.LocationsTo presenter) {
             Log.d(TAG, "calling savingUpdatedState()");
             locationsToDescriptionState = new LocationsState();
             locationsToDescriptionState.toolbarVisibility = presenter.isToolbarVisible();
+            locationsToDescriptionState.selectedItem = presenter.getLocation();
 
             Context view = presenter.getManagedContext();
             if (view != null) {
@@ -489,7 +490,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class LocationsState {
         boolean toolbarVisibility;
-        //ModelItem selectedItem;
+        LocationItem selectedItem;
     }
 
     private class DescriptionState {

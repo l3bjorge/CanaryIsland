@@ -23,6 +23,7 @@ public class LocationsPresenter
 
   private boolean hideToolbar, hideProgress;
   private ModelItem selectedItem;
+  private LocationItem location;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -128,6 +129,11 @@ public class LocationsPresenter
     return media.getLanguage();
   }
 
+    @Override
+    public LocationItem getLocation(){
+       return location;
+    }
+
 
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
@@ -152,9 +158,10 @@ public class LocationsPresenter
   @Override
   public void goToDescriptionScreen(LocationItem item) {
     Log.d(TAG, "calling goToDescriptionScreen()");
+    location = item;
     if(isViewRunning()) {
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.goToDescriptionScreen(this, item);
+      mediator.goToDescriptionScreen(this);
     }
   }
 
