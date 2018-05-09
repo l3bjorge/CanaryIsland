@@ -36,13 +36,19 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/tittle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/screen_text"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Scrollview
+                android:layout_height="150dp"
+                android:layout_width="wrap_content">
+                <TextView
+                    android:id="@+id/tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/screen_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </Scrollview>
+
 
             <Space
             android:layout_width="wrap_content"
