@@ -20,6 +20,8 @@ public class IslandsMenuView
   private ImageButton button;
   private ImageButton buttonTnf;
   private ImageButton buttonFtv;
+  private ImageButton buttonLanz;
+
   private TextView text;
 
   @Override
@@ -56,6 +58,15 @@ public class IslandsMenuView
         getPresenter().onFtvButtonClicked();
       }
     });
+
+    buttonLanz = (ImageButton) findViewById(R.id.ButtonLanzarote);
+    buttonLanz.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().onFtvButtonClicked();
+      }
+    });
+
   }
 
   /**
