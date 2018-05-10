@@ -23,6 +23,7 @@ public interface IslandsMenu {
 
   interface ToIslandsMenu extends State {
     void onScreenStarted();
+
   }
 
   interface IslandsMenuTo extends State{
@@ -30,6 +31,7 @@ public interface IslandsMenu {
     void destroyView();
     boolean isToolbarVisible();
     void onScreenResumed();
+    String checkIsland();
   }
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -39,7 +41,13 @@ public interface IslandsMenu {
    * Methods offered to VIEW to communicate with PRESENTER
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
-    void goToCategoryScreen();
+    void onGcButtonClicked();
+    void onTnfButtonClicked();
+    void onLnzButtonClicked();
+    void onFtvButtonClicked();
+    void onPlmButtonClicked();
+    void onGmrButtonClicked();
+    void onHrrButtonClicked();
   }
 
   /**

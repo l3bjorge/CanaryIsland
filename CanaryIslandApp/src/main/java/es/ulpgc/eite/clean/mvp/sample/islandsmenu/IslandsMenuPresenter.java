@@ -16,6 +16,7 @@ public class IslandsMenuPresenter
     implements IslandsMenu.ViewToPresenter, IslandsMenu.ModelToPresenter, IslandsMenu.IslandsMenuTo, IslandsMenu.ToIslandsMenu {
 
   private boolean toolbarVisible;
+  private boolean gcButtonClicked, tnfButtonClicked, lnzButtonClicked, ftvButtonClicked, plmButtonClicked, gmrButtonClicked, hrrButtonClicked;
 
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
@@ -90,15 +91,119 @@ public class IslandsMenuPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
+
   @Override
-  public void goToCategoryScreen() {
-    Log.d(TAG, "calling goToCategoryScreen()");
+  public void onGcButtonClicked() {
+    Log.d(TAG, "calling onGcButtonClicked()");
     if(isViewRunning()) {
+      gcButtonClicked = true;
+      tnfButtonClicked = false;
+      lnzButtonClicked = false;
+      ftvButtonClicked = false;
+      plmButtonClicked = false;
+      gmrButtonClicked = false;
+      hrrButtonClicked = false;
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
       mediator.goToCategoryScreen(this);
     }
 
 
+  }
+
+  @Override
+  public void onTnfButtonClicked() {
+    Log.d(TAG, "calling onTnfButtonClicked()");
+    if(isViewRunning()) {
+      gcButtonClicked = false;
+      tnfButtonClicked = true;
+      lnzButtonClicked = false;
+      ftvButtonClicked = false;
+      plmButtonClicked = false;
+      gmrButtonClicked = false;
+      hrrButtonClicked = false;
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToCategoryScreen(this);
+    }
+  }
+
+  @Override
+  public void onLnzButtonClicked() {
+    Log.d(TAG, "calling onLnzButtonClicked()");
+    if(isViewRunning()) {
+      gcButtonClicked = false;
+      tnfButtonClicked = false;
+      lnzButtonClicked = true;
+      ftvButtonClicked = false;
+      plmButtonClicked = false;
+      gmrButtonClicked = false;
+      hrrButtonClicked = false;
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToCategoryScreen(this);
+    }
+  }
+
+  @Override
+  public void onFtvButtonClicked() {
+    Log.d(TAG, "calling onFtvButtonClicked()");
+    if(isViewRunning()) {
+      gcButtonClicked = false;
+      tnfButtonClicked = false;
+      lnzButtonClicked = false;
+      ftvButtonClicked = true;
+      plmButtonClicked = false;
+      gmrButtonClicked = false;
+      hrrButtonClicked = false;
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToCategoryScreen(this);
+    }
+  }
+
+  @Override
+  public void onPlmButtonClicked() {
+    Log.d(TAG, "calling onPlmButtonClicked()");
+    if(isViewRunning()) {
+      gcButtonClicked = false;
+      tnfButtonClicked = false;
+      lnzButtonClicked = false;
+      ftvButtonClicked = false;
+      plmButtonClicked = true;
+      gmrButtonClicked = false;
+      hrrButtonClicked = false;
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToCategoryScreen(this);
+    }
+  }
+
+  @Override
+  public void onGmrButtonClicked() {
+    Log.d(TAG, "calling onGmrButtonClicked()");
+    if(isViewRunning()) {
+      gcButtonClicked = false;
+      tnfButtonClicked = false;
+      lnzButtonClicked = false;
+      ftvButtonClicked = false;
+      plmButtonClicked = false;
+      gmrButtonClicked = true;
+      hrrButtonClicked = false;
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToCategoryScreen(this);
+    }
+  }
+
+  @Override
+  public void onHrrButtonClicked() {
+    Log.d(TAG, "calling onHrrButtonClicked()");
+    if(isViewRunning()) {
+      gcButtonClicked = false;
+      tnfButtonClicked = false;
+      lnzButtonClicked = false;
+      ftvButtonClicked = false;
+      plmButtonClicked = false;
+      gmrButtonClicked = false;
+      hrrButtonClicked = true;
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.goToCategoryScreen(this);
+    }
   }
 
   /////////////////////////////////////////////////////////////////////////////////////
@@ -142,6 +247,25 @@ public class IslandsMenuPresenter
     setCurrentState();
   }
 
+  @Override
+  public String checkIsland() {
+    if (gcButtonClicked){
+      return "GranCanaria";
+    } else if (tnfButtonClicked){
+      return "Tenerife";
+    } else if (lnzButtonClicked){
+      return "Lanzarote";
+    } else if (ftvButtonClicked){
+      return "Fuerteventura";
+    } else if (plmButtonClicked){
+      return "LaPalma";
+    } else if (gmrButtonClicked){
+      return "LaGomera";
+    } else if (hrrButtonClicked){
+      return "ElHierro";
+    }
+    return "Error";
+  }
 
   ///////////////////////////////////////////////////////////////////////////////////
   // Hello To //////////////////////////////////////////////////////////////////////
@@ -185,5 +309,6 @@ public class IslandsMenuPresenter
       }
     }
   }
+
 
 }

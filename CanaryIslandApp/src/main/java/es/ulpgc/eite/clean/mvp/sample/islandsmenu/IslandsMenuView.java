@@ -37,7 +37,7 @@ public class IslandsMenuView
     button.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().goToCategoryScreen();
+        getPresenter().onGcButtonClicked();
       }
     });
 
@@ -45,7 +45,7 @@ public class IslandsMenuView
     buttonTnf.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().goToCategoryScreen();
+        getPresenter().onTnfButtonClicked();
       }
     });
 
@@ -53,7 +53,7 @@ public class IslandsMenuView
     buttonFtv.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().goToCategoryScreen();
+        getPresenter().onFtvButtonClicked();
       }
     });
   }

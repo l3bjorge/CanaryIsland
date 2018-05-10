@@ -35,7 +35,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     private DescriptionState descriptionToState;
 
 
-    private /*static*/ String language;
+    private /*static*/ String language, island;
 
     @Override
     public void onCreate() {
@@ -206,12 +206,13 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void startingScreen(Category.ToCategory presenter){
-            if(islandsMenuToCategoryState != null) {
+        Log.d(TAG, "island: " + island);
+        if(islandsMenuToCategoryState != null) {
             Log.d(TAG, "calling settingInitialState()");
             presenter.setToolbarVisibility(islandsMenuToCategoryState.toolbarVisibility);
             presenter.setLanguage(language);
             Log.d(TAG, "calling removingInitialState()");
-                islandsMenuToCategoryState = null;
+            islandsMenuToCategoryState = null;
         }
 
         presenter.onScreenStarted();
@@ -332,6 +333,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         Log.d(TAG, "calling savingUpdatedState()");
         islandsMenuToCategoryState = new IslandsMenuState();
         islandsMenuToCategoryState.toolbarVisibility = presenter.isToolbarVisible();
+        setIsland(presenter.checkIsland());
 
         Context view = presenter.getManagedContext();
         if (view != null) {
@@ -461,6 +463,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
 
+
     ///////////////////////////////////////////////////////////////////////////////////
     // State /////////////////////////////////////////////////////////////////////////
 
@@ -505,9 +508,15 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         this.language = language;
     }
 
+    private void setIsland(String island) {
+        this.island = island;
+    }
+
     @Override
     public String getLanguage(){
         return language;
     }
+
+
 
 }
