@@ -81,6 +81,34 @@ public class DescriptionPresenter
 
     Mediator.Lifecycle mediator = (Mediator.Lifecycle) getApplication();
     mediator.resumingScreen(this);
+
+    tittleVisible = true;
+    descriptionVisible = true;
+
+    if (getModel().getLocation() != null){
+      locationBttnVisibity = true;
+    }
+
+    if (getModel().getWeb() != null){
+      webBttnVisibity = true;
+    }
+
+    if (getModel().getFacebook() != null){
+      faceBttnVisibity = true;
+    }
+
+    if (getModel().getInstagram() != null){
+      instaBttnVisibity = true;
+    }
+
+    checkTittleVisibility();
+    checkDescriptionVisibility();
+    checkLocationBttnVisibility();
+    checkWebBttnVisibility();
+    checkFaceBttnVisibility();
+    checkInstaBttnVisibility();
+    getView().setTittle(selectedItem.getTitle());
+    getView().setDescription(selectedItem.getDescription());
   }
 
   /**
