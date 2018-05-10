@@ -212,8 +212,7 @@ public class IslandsMenuPresenter
   @Override
   public String getLanguage(){
     Mediator.Navigation media = (Mediator.Navigation) getApplication();
-    String language = media.getLanguage();
-    return language;
+    return media.getLanguage();
   }
 
   ///////////////////////////////////////////////////////////////////////////////////
