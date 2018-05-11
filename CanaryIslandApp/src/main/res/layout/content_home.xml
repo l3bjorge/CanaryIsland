@@ -33,8 +33,7 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_height="50dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,10 +46,11 @@
                 android:layout_weight="1"/>
 
             <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:scaleType="centerCrop"
                 android:id="@+id/ButtonSpain"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="centerCrop"
                 app:srcCompat="@mipmap/es" />
 
             <Space
@@ -59,11 +59,12 @@
                 android:layout_weight="1"/>
 
             <ImageButton
-                android:layout_width="50dp"
+                android:layout_width="70dp"
                 android:layout_height="50dp"
                 android:scaleType="centerCrop"
                 android:id="@+id/ButtonEnglish"
-                app:srcCompat="@mipmap/gb" />
+                app:srcCompat="@mipmap/gb"
+                android:background="?android:selectableItemBackground"/>
 
             <Space
                 android:layout_width="wrap_content"
@@ -72,11 +73,12 @@
 
 
             <ImageButton
-                android:layout_width="50dp"
+                android:layout_width="70dp"
                 android:layout_height="50dp"
                 android:scaleType="centerCrop"
                 android:id="@+id/ButtonGermany"
-                app:srcCompat="@mipmap/de" />
+                app:srcCompat="@mipmap/de"
+                android:background="?android:selectableItemBackground"/>
 
             <Space
                 android:layout_width="wrap_content"
