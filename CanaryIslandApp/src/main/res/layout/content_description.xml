@@ -101,7 +101,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:scaleType="centerInside"
-                app:srcCompat="@mipmap/location"
+                app:srcCompat="@mipmap/address"
                 android:background="?android:selectableItemBackground"/>
 
             <Space
