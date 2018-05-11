@@ -517,6 +517,9 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         return language;
     }
 
-
+    @Override
+    public String getIsland(){
+        return island;
+    }
 
 }

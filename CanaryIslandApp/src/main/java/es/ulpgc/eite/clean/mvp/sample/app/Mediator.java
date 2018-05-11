@@ -52,11 +52,12 @@ public interface Mediator {
     //Home
     void goToIslandsMenuScreen(Home.HomeTo presenter);
     void backToPreviousScreen(Home.HomeTo presenter);
+    String getLanguage();
 
     //IslandsMenu
     void goToCategoryScreen(IslandsMenu.IslandsMenuTo presenter);
     void backToPreviousScreen(IslandsMenu.IslandsMenuTo presenter);
-    String getLanguage();
+    String getIsland();
 
     //Category
     void goToLocationsScreen(Category.CategoryTo presenter);
@@ -72,6 +73,7 @@ public interface Mediator {
     void goToWeb(String url);
     void goToFacebook(String url, String faceId);
     void goToInstagram(String instagramId, String url);
+
 
 
   }
