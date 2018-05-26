@@ -5,11 +5,11 @@
     "name": "Las Canteras" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -25,13 +25,13 @@
   {
     "id": 2 ,
     "name": "Alcaravaneras" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -47,13 +47,13 @@
   {
     "id": 3 ,
     "name": "Playa del Inglés" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -69,13 +69,13 @@
   {
     "id": 4 ,
     "name": "Playa del Faro" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -91,13 +91,13 @@
   {
     "id": 5 ,
     "name": "Amadores" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -113,13 +113,13 @@
   {
     "id": 6 ,
     "name": "Anfi del Mar" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -135,13 +135,13 @@
   {
     "id": 7 ,
     "name": "Playa de Mogan" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -157,13 +157,13 @@
   {
     "id": 8 ,
     "name": "Playa de San Agustín" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -179,13 +179,13 @@
   {
     "id": 9 ,
     "name": "Playa de Güigüí" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -201,13 +201,13 @@
   {
     "id": 10 ,
     "name": "Playa de las Burras" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -223,13 +223,13 @@
   {
     "id": 10 ,
     "name": "Las Rehoyas" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -245,13 +245,13 @@
   {
     "id": 11 ,
     "name": "Juan Pablo II" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -267,13 +267,13 @@
   {
     "id": 12 ,
     "name": "Doramas" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -289,13 +289,13 @@
   {
     "id": 13 ,
     "name": "Parque Sur " ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -311,13 +311,13 @@
   {
     "id": 14 ,
     "name": "San Telmo" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -333,13 +333,13 @@
   {
     "id": 15 ,
     "name": "Santa Catalina" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -355,13 +355,13 @@
   {
     "id": 16 ,
     "name": "Palmitos Park" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -377,13 +377,13 @@
   {
     "id": 17 ,
     "name": "San Cristóbal" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -399,13 +399,13 @@
   {
     "id": 18 ,
     "name": "Parque Romano" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -421,13 +421,13 @@
   {
     "id": 19 ,
     "name": "Parque Natural Pilancones" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -443,13 +443,13 @@
   {
     "id": 20 ,
     "name": "Las Arenas" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -487,13 +487,13 @@
   {
     "id": 22 ,
     "name": "El Mirador" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -509,13 +509,13 @@
   {
     "id": 23 ,
     "name": "Atlantico Vecindario " ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -531,13 +531,13 @@
   {
     "id": 24 ,
     "name": "El Tablero" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -553,13 +553,13 @@
   {
     "id": 25 ,
     "name": "Los Alisios" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -575,13 +575,13 @@
   {
     "id": 26 ,
     "name": "La Ballena" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -597,13 +597,13 @@
   {
     "id": 27 ,
     "name": "El Muelle" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -619,13 +619,13 @@
   {
     "id": 28 ,
     "name": "7 Palmas" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -641,13 +641,13 @@
   {
     "id": 29 ,
     "name": "Las Ramblas" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -663,13 +663,13 @@
   {
     "id": 30 ,
     "name": "Pérez Galdós" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -685,13 +685,13 @@
   {
     "id": 31 ,
     "name": "Casa de Colón" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -707,13 +707,13 @@
   {
     "id": 32 ,
     "name": "Leon y Castillo" ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -729,13 +729,13 @@
   {
     "id": 33 ,
     "name": "Cueva Pintada " ,
-    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
-    "facebook": "http://miplayadelascanteras.com/",
-    "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
-    "instagram": "fb://page/172572586147087",
-    "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "web": "http://miplayadelascanteras.com/",
+    "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
+    "faceurl": "fb://page/172572586147087",
+    "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
