@@ -36,6 +36,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private /*static*/ String language, island;
 
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -532,11 +533,19 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         this.island = island;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String getLanguage(){
         return language;
     }
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String getIsland(){
         return island;

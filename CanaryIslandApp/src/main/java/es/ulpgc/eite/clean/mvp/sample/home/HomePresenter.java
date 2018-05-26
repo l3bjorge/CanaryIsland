@@ -88,6 +88,10 @@ public class HomePresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
+  /**
+   * Method that we call when we click on the button of Spanish to choose language,
+   * in this method, Spanish is set as the language of the application and it takes us to the screen to choose an island.
+   */
 
   @Override
   public void onSpanishButtonClicked() {
@@ -104,6 +108,10 @@ public class HomePresenter
 
   }
 
+  /**
+   * Method that we call when we click on the button of German to choose language,
+   * in this method, German is set as the language of the application and it takes us to the screen to choose an island.
+   */
   @Override
   public void onGermanButtonClicked() {
     if(isViewRunning()) {
@@ -116,6 +124,10 @@ public class HomePresenter
     }
   }
 
+  /**
+   * Method that we call when we click on the button of English to choose language,
+   * in this method, English is set as the language of the application and it takes us to the screen to choose an island.
+   */
   @Override
   public void onEnglishButtonClicked() {
     Log.d(TAG, "calling onGoToIslandsMenuBtnClicked()");
@@ -137,6 +149,11 @@ public class HomePresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // State /////////////////////////////////////////////////////////////////////////
 
+  /**
+   * Method that establishes the visibility of the toolbar
+   *
+   * @param visible is a boolean that if true the toolbar will be visible and if the false is not visible
+   */
 
   @Override
   public void setToolbarVisibility(boolean visible) {
@@ -145,14 +162,20 @@ public class HomePresenter
 
 
   ///////////////////////////////////////////////////////////////////////////////////
-  // To Hello //////////////////////////////////////////////////////////////////////
+  // To Home //////////////////////////////////////////////////////////////////////
 
+  /**
+   * Method that defines what to do when creating the screen
+   */
   @Override
   public void onScreenStarted() {
     Log.d(TAG, "calling onScreenStarted()");
     setCurrentState();
   }
 
+  /**
+   * Method that defines what to do when resuming the screen
+   */
   @Override
   public void onScreenResumed() {
     Log.d(TAG, "calling onScreenResumed()");
@@ -164,12 +187,18 @@ public class HomePresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // Home To //////////////////////////////////////////////////////////////////////
 
-
+  /**
+   *
+   * @return
+   */
   @Override
   public Context getManagedContext(){
     return getActivityContext();
   }
 
+  /**
+   * Method that defines what to do when destroy the screen
+   */
   @Override
   public void destroyView(){
     if(isViewRunning()) {
@@ -177,11 +206,21 @@ public class HomePresenter
     }
   }
 
+  /**
+   * Method that defines the visibility of the toolbar
+   *
+   * @return if the toolbar is visible
+   */
   @Override
   public boolean isToolbarVisible() {
     return toolbarVisible;
   }
 
+  /**
+   * Method that gives us the chosen language when clicking on any of the languages
+   *
+   * @return the selected language
+   */
   @Override
   public String checkLanguage() {
     if(spanishButtonClicked){
@@ -207,6 +246,7 @@ public class HomePresenter
     }
     checkToolbarVisibility();
   }
+
 
   private void checkToolbarVisibility(){
     if(isViewRunning()) {

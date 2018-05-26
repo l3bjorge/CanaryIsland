@@ -39,6 +39,13 @@ public class HomeModel
   ///////////////////////////////////////////////////////////////////////////////////
   // Presenter To Model ////////////////////////////////////////////////////////////
 
+
+  /**
+   * Method to get the value of the "label" parameter that it the title of our app
+   *
+   * @return the value of the "label" parameter with the title of the app
+   */
+
   @Override
   public String getLabel() {
     return label;
