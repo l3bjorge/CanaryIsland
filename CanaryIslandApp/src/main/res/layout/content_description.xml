@@ -16,10 +16,10 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
         android:orientation="vertical">
 
         <ImageView
@@ -27,8 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/canteras"
-            />
+            app:srcCompat="@mipmap/canteras" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,7 +55,6 @@
                 android:layout_weight="1" />
 
 
-
         </LinearLayout>
 
 
@@ -68,8 +66,7 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="225dp"
-            >
+            android:layout_height="225dp">
 
             <TextView
                 android:id="@+id/description"
@@ -100,49 +97,49 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:background="?android:selectableItemBackground"
                 android:scaleType="centerInside"
-                app:srcCompat="@mipmap/address"
-                android:background="?android:selectableItemBackground"/>
+                app:srcCompat="@mipmap/address" />
 
             <Space
                 android:layout_width="10dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <ImageButton
                 android:id="@+id/webBttn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:background="?android:selectableItemBackground"
                 android:scaleType="centerInside"
-                app:srcCompat="@mipmap/web"
-                android:background="?android:selectableItemBackground"/>
+                app:srcCompat="@mipmap/web" />
 
             <Space
                 android:layout_width="10dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <ImageButton
                 android:id="@+id/faceBttn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:background="?android:selectableItemBackground"
                 android:scaleType="centerInside"
-                app:srcCompat="@mipmap/face"
-                android:background="?android:selectableItemBackground"/>
+                app:srcCompat="@mipmap/face" />
             <!--app:srcCompat="@mipmap/faceicon"/>-->
 
             <Space
                 android:layout_width="10dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
             <ImageButton
                 android:id="@+id/instaBttn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:background="?android:selectableItemBackground"
                 android:scaleType="centerInside"
-                app:srcCompat="@mipmap/instagramicon"
-                android:background="?android:selectableItemBackground"/>
+                app:srcCompat="@mipmap/instagramicon" />
 
             <Space
                 android:layout_width="wrap_content"
