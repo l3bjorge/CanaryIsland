@@ -216,6 +216,17 @@ public class DescriptionPresenter
     }
   }
 
+  @Override
+  public void onBtnShareClicked(){
+    Log.d(TAG, "calling onBtnShareClicked()");
+
+    if(isViewRunning()){
+      Log.d(TAG, "calling onBtnShareClicked()");
+      Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
+      mediator.share(getModel().getTittle());
+    }
+  }
+
   /////////////////////////////////////////////////////////////////////////////////////
   // Model To Presenter //////////////////////////////////////////////////////////////
 

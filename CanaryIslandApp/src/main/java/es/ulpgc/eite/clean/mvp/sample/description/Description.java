@@ -64,6 +64,7 @@ public interface Description {
     void onBtnInstagramClicked();
     void onBtnLikeCliked();
 
+      void onBtnShareClicked();
   }
 
   /**

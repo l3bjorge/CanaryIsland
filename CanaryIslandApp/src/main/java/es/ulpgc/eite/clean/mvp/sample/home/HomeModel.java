@@ -8,7 +8,6 @@ import es.ulpgc.eite.clean.mvp.GenericModel;
 public class HomeModel
     extends GenericModel<Home.ModelToPresenter> implements Home.PresenterToModel {
 
-
   private String label;
 
 
@@ -22,7 +21,7 @@ public class HomeModel
   public void onCreate(Home.ModelToPresenter presenter) {
     super.onCreate(presenter);
     Log.d(TAG, "calling onCreate()");
-    label = "Canary Island";
+    label = "Canary Islands";
   }
 
   /**

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
 
-
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
 import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView;
 import es.ulpgc.eite.clean.mvp.sample.category.Category;
@@ -462,6 +461,27 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
         }
     }
 
+    @Override
+    public void share(String location) {
+        Log.d(TAG, "calling share()");
+        String message = null;
+        if(language.equals("Spanish")){
+            message = "Vista este lugar" + location;
+        } else if (language.equals("English")){
+            message = "View this place" + location;
+        } else if (language.equals("German")){
+            message = "Sehen Sie sich diesen Ort an: " + location;
+        }
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, message);
+        sendIntent.setType("text/plain");
+        sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(sendIntent);
+
+
+
+    }
 
 
     ///////////////////////////////////////////////////////////////////////////////////

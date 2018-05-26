@@ -18,7 +18,7 @@ public class DescriptionView
         implements Description.PresenterToView {
 
   private Toolbar toolbar;
-  private ImageButton likeBttn, locationBttn, webBttn, faceBttn, instaBttn;
+  private ImageButton likeBttn, locationBtn, webBtn, faceBtn, instaBtn, shareBtn;
   private TextView tittle, description;
 
   @Override
@@ -34,7 +34,7 @@ public class DescriptionView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    likeBttn = (ImageButton) findViewById(R.id.likeBttn);
+    likeBttn = (ImageButton) findViewById(R.id.likeBtn);
     likeBttn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -42,32 +42,40 @@ public class DescriptionView
       }
     });
 
-    locationBttn = (ImageButton) findViewById(R.id.locationBttn);
-    locationBttn.setOnClickListener(new View.OnClickListener() {
+    shareBtn = (ImageButton) findViewById(R.id.shareBtn);
+    shareBtn.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().onBtnShareClicked();
+      }
+    });
+
+    locationBtn = (ImageButton) findViewById(R.id.locationBtn);
+    locationBtn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onBtnLocationCliked();
       }
     });
 
-    webBttn = (ImageButton) findViewById(R.id.webBttn);
-    webBttn.setOnClickListener(new View.OnClickListener() {
+    webBtn = (ImageButton) findViewById(R.id.webBtn);
+    webBtn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onBtnWebCliked();
       }
     });
 
-    faceBttn = (ImageButton) findViewById(R.id.faceBttn);
-    faceBttn.setOnClickListener(new View.OnClickListener() {
+    faceBtn = (ImageButton) findViewById(R.id.faceBtn);
+    faceBtn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onBtnFacebookClicked();
       }
     });
 
-    instaBttn = (ImageButton) findViewById(R.id.instaBttn);
-    instaBttn.setOnClickListener(new View.OnClickListener() {
+    instaBtn = (ImageButton) findViewById(R.id.instaBtn);
+    instaBtn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onBtnInstagramClicked();
@@ -152,42 +160,42 @@ public class DescriptionView
 
   @Override
   public void hideLocationBttn() {
-    locationBttn.setVisibility(View.INVISIBLE);
+    locationBtn.setVisibility(View.INVISIBLE);
   }
 
   @Override
   public void showLocationBttn() {
-    locationBttn.setVisibility(View.VISIBLE);
+    locationBtn.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void hideWebBttn() {
-    webBttn.setVisibility(View.GONE);
+    webBtn.setVisibility(View.GONE);
   }
 
   @Override
   public void showWebBttn() {
-    webBttn.setVisibility(View.VISIBLE);
+    webBtn.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void hideFaceBttn() {
-    faceBttn.setVisibility(View.GONE);
+    faceBtn.setVisibility(View.GONE);
   }
 
   @Override
   public void showFaceBttn() {
-    faceBttn.setVisibility(View.VISIBLE);
+    faceBtn.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void hideInstaBttn() {
-    instaBttn.setVisibility(View.GONE);
+    instaBtn.setVisibility(View.GONE);
   }
 
   @Override
   public void showInstaBttn() {
-    instaBttn.setVisibility(View.VISIBLE);
+    instaBtn.setVisibility(View.VISIBLE);
   }
 
 }
