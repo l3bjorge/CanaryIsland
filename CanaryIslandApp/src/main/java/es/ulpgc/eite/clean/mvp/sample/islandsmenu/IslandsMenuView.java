@@ -20,6 +20,9 @@ public class IslandsMenuView
   private ImageButton buttonTnf;
   private ImageButton buttonFtv;
   private ImageButton buttonLanz;
+  private ImageButton buttonPalm;
+  private ImageButton buttonHierr;
+  private ImageButton buttonGom;
 
   private TextView text;
 
@@ -60,6 +63,30 @@ public class IslandsMenuView
 
     buttonLanz = (ImageButton) findViewById(R.id.ButtonLanzarote);
     buttonLanz.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().onFtvButtonClicked();
+      }
+    });
+
+    buttonPalm = (ImageButton) findViewById(R.id.ButtonPalma);
+    buttonPalm.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().onFtvButtonClicked();
+      }
+    });
+
+    buttonHierr = (ImageButton) findViewById(R.id.ButtonHierro);
+    buttonHierr.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getPresenter().onFtvButtonClicked();
+      }
+    });
+
+    buttonGom = (ImageButton) findViewById(R.id.ButtonGomera);
+    buttonGom.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onFtvButtonClicked();
