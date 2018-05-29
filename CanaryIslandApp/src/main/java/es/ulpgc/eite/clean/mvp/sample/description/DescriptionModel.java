@@ -38,7 +38,8 @@ public class DescriptionModel
     instagram = "";
     idInstagram = "";
 
-  }
+
+}
 
   /**
    * Called by layer PRESENTER when VIEW pass for a reconstruction/destruction.

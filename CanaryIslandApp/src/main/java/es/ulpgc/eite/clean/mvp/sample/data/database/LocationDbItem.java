@@ -14,7 +14,7 @@ public class LocationDbItem extends RealmObject{
 
 
     private String description;
-    private String maps;
+    private String map;
     private String web;
     private String facebook;
     private String faceurl;
@@ -61,12 +61,12 @@ public class LocationDbItem extends RealmObject{
         this.description = description;
     }
 
-  public String getMaps() {
-    return maps;
+  public String getMap() {
+    return map;
   }
 
-  public void setMaps(String maps) {
-    this.maps = maps;
+  public void setMap(String map) {
+    this.map = map;
   }
 
   public String getWeb() {

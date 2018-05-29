@@ -241,6 +241,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             presenter.setSelectedItem(locationsToDescriptionState.selectedItem);
             Log.d(TAG, "calling removingInitialState()");
             locationsToDescriptionState = null;
+
         }
         presenter.onScreenStarted();
     }
@@ -405,7 +406,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToGoogleMaps(String url) {
-        Log.d(TAG, "calling goToGoogleMaps()");
+        Log.d(TAG, "calling goToGoogleMaps()" + url);
         Uri uri = Uri.parse(url);
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, uri);
         mapIntent.setPackage("com.google.android.apps.maps");
@@ -429,7 +430,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToFacebook(String url, String faceId) {
-        Log.d(TAG, "calling goToFacebook()");
+        Log.d(TAG, "calling goToFacebook()" + faceId + url);
         Intent intent = new Intent();
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         try {
@@ -447,7 +448,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void goToInstagram(String instagramId, String url) {
-        Log.d(TAG, "calling goToInstagram()");
+        Log.d(TAG, "calling goToInstagram()" + instagramId + url);
         Uri uri = Uri.parse(instagramId);
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
         likeIng.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -464,12 +465,12 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     @Override
     public void share(String location) {
-        Log.d(TAG, "calling share()");
+        Log.d(TAG, "calling share()" );
         String message = null;
         if(language.equals("Spanish")){
-            message = "Vista este lugar" + location;
+            message = "Vista este lugar: " + location;
         } else if (language.equals("English")){
-            message = "View this place" + location;
+            message = "View this place: " + location;
         } else if (language.equals("German")){
             message = "Sehen Sie sich diesen Ort an: " + location;
         }
