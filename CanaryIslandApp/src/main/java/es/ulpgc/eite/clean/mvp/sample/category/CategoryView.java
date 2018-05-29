@@ -22,6 +22,7 @@ import java.util.List;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 
 import static android.support.v7.widget.RecyclerView.HORIZONTAL;
 import static android.support.v7.widget.RecyclerView.VERTICAL;
@@ -33,6 +34,7 @@ public class CategoryView
   private Toolbar toolbar;
   private ProgressBar progressView;
   private RecyclerView recyclerView;
+  private String language;
 
 
   @Override
@@ -123,8 +125,10 @@ public class CategoryView
   }*/
 
   @Override
-  public void setRecyclerAdapterContent(List<ModelItem> items) {
+  public void setRecyclerAdapterContent(List<CategoryItem> items, String language) {
     Log.d(TAG, "calling setRecyclerAdapterContent()");
+
+    this.language = language;
 
     if (recyclerView != null) {
       ModelItemRecyclerViewAdapter recyclerAdapter =
@@ -140,13 +144,13 @@ public class CategoryView
   private class ModelItemRecyclerViewAdapter
           extends RecyclerView.Adapter<ModelItemRecyclerViewAdapter.ViewHolder> {
 
-    private List<ModelItem> items;
+    private List<CategoryItem> items;
 
     public ModelItemRecyclerViewAdapter() {
       items = new ArrayList<>();
     }
 
-    public void setItemList(List<ModelItem> items) {
+    public void setItemList(List<CategoryItem> items) {
       this.items = items;
       notifyDataSetChanged();
     }
@@ -162,7 +166,15 @@ public class CategoryView
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
       holder.item = items.get(position);
-      holder.contentView.setText(items.get(position).getContent());
+      if ( language.equals("Spanish")) {
+        holder.contentView.setText(items.get(position).getSpanishName());
+      }
+      if ( language.equals("English")) {
+        holder.contentView.setText(items.get(position).getEnglishName());
+      }
+      if ( language.equals("German")) {
+        holder.contentView.setText(items.get(position).getGermanName());
+      }
       holder.itemView.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -179,7 +191,7 @@ public class CategoryView
     public class ViewHolder extends RecyclerView.ViewHolder {
       public final View itemView;
       public final TextView contentView;
-      public ModelItem item;
+      public CategoryItem item;
 
       public ViewHolder(View view) {
         super(view);

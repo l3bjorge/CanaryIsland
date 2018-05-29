@@ -8,6 +8,8 @@ import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
+import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
 
 
 public class CategoryModel
@@ -16,6 +18,7 @@ public class CategoryModel
   private String label;
   private String language;
   public List<ModelItem> items = null;
+  private List<CategoryItem> categoryItems;
   private boolean runningTask;
   private String errorMsg;
 
@@ -66,15 +69,32 @@ public class CategoryModel
    */
   @Override
   public void loadItems() {
-    if(items == null && !runningTask) {
-      startDelayedTask();
-    } else {
-      if(!runningTask){
-        getPresenter().onLoadItemsTaskFinished(items);
-      } else {
-        getPresenter().onLoadItemsTaskStarted();
-      }
+//    if (items == null && !runningTask) {
+//      startDelayedTask();
+//    } else {
+//      if (!runningTask) {
+//        getPresenter().onLoadItemsTaskFinished(items);
+//      } else {
+//        getPresenter().onLoadItemsTaskStarted();
+//      }
+//    }
+  }
+
+  @Override
+  public void loadItemsFromDatabase() {
+    categoryItems = MasterDetailData.getCategoryItemsFromDatabase();
+    //categoryItems will have a list of 100 Items
+    //We only need one category for each type of location
+    for ( int i = 0; i < categoryItems.size() - 1; i++){
+
+        if (categoryItems.get(i).getSpanishName().equals(categoryItems.get(i + 1).getSpanishName())) {
+          categoryItems.remove(i + 1);
+          i = i - 1;
+        }
+
+
     }
+    getPresenter().onLoadItemsTaskFinished(categoryItems, language);
   }
 
   /**
@@ -102,7 +122,7 @@ public class CategoryModel
     return new ModelItem(String.valueOf(position), "Category ");
   }
 
-  private void setItems(){
+  private void setItems() {
     items = new ArrayList();
 
     if (language == "English") {
@@ -118,8 +138,7 @@ public class CategoryModel
       addItem(new ModelItem(String.valueOf(8), "Cultural Spots"));
       addItem(new ModelItem(String.valueOf(9), "Activities"));
 
-    } else
-    if (language == "Spanish") {
+    } else if (language == "Spanish") {
 
       addItem(new ModelItem(String.valueOf(0), "Playas"));
       addItem(new ModelItem(String.valueOf(1), "Parques"));
@@ -132,8 +151,7 @@ public class CategoryModel
       addItem(new ModelItem(String.valueOf(8), "Puntos Culturales"));
       addItem(new ModelItem(String.valueOf(9), "Actividades"));
 
-    } else
-    if (language == "German") {
+    } else if (language == "German") {
 
       addItem(new ModelItem(String.valueOf(0), "Strände"));
       addItem(new ModelItem(String.valueOf(1), "Parks"));
@@ -156,19 +174,20 @@ public class CategoryModel
    * El modelo notificará al presentador cuando se inicia y cuando finaliza esta tarea.
    */
   private void startDelayedTask() {
-    Log.d(TAG, "calling startDelayedTask()");
-    runningTask = true;
-    getPresenter().onLoadItemsTaskStarted();
+//    Log.d(TAG, "calling startDelayedTask()");
+//    runningTask = true;
+//    getPresenter().onLoadItemsTaskStarted();
+//
+//    // Mock Hello: A handler to delay the answer
+//    new Handler().postDelayed(new Runnable() {
+//      @Override
+//      public void run() {
+//        setItems();
+//        runningTask = false;
+//        getPresenter().onLoadItemsTaskFinished(items);
+//      }
+//    }, 1000);
+//  }
 
-    // Mock Hello: A handler to delay the answer
-    new Handler().postDelayed(new Runnable() {
-      @Override
-      public void run() {
-        setItems();
-        runningTask = false;
-        getPresenter().onLoadItemsTaskFinished(items);
-      }
-    }, 1000);
   }
-
 }

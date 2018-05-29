@@ -12,6 +12,7 @@ import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 
 public class CategoryPresenter
     extends GenericPresenter
@@ -19,7 +20,7 @@ public class CategoryPresenter
     implements Category.ViewToPresenter, Category.ModelToPresenter, Category.CategoryTo, Category.ToCategory {
 
   private boolean toolbarVisible;
-  private ModelItem selectedItem;
+  private CategoryItem selectedItem;
   private boolean hideProgress;
 
   /**
@@ -106,12 +107,12 @@ public class CategoryPresenter
     // el contenido estará disponible inmediatamente, sino habrá que esperar su finalización.
     // En cualquier caso, el presentador será notificado desde el modelo
     Log.d(TAG, "calling loadItems()");
-    getModel().loadItems();
+    getModel().loadItemsFromDatabase();
   }
 
 
   @Override
-  public void goToLocationsScreen(ModelItem item) {
+  public void goToLocationsScreen(CategoryItem item) {
     Log.d(TAG, "calling goToLocationsScreen()");
     selectedItem = item;
     if(isViewRunning()) {
@@ -129,7 +130,7 @@ public class CategoryPresenter
    * @param items como contenido de la lista a mostrar en pantalla
    */
   @Override
-  public void onLoadItemsTaskFinished(List<ModelItem> items) {
+  public void onLoadItemsTaskFinished(List<CategoryItem> items, String language) {
     Log.d(TAG, "calling onLoadItemsTaskFinished()");
 
     // Una vez finaliza la tarea para la obtención del contenido de la lista,
@@ -137,7 +138,7 @@ public class CategoryPresenter
     // y actualizamos el contenido de la lista
     hideProgress = true;
     checkVisibility();
-    getView().setRecyclerAdapterContent(items);
+    getView().setRecyclerAdapterContent(items, language);
   }
 
   /**
@@ -225,7 +226,7 @@ public class CategoryPresenter
    * @return item seleccionado en la lista al hacer click
    */
   @Override
-  public ModelItem getSelectedItem() {
+  public CategoryItem getSelectedItem() {
     return selectedItem;
   }
 

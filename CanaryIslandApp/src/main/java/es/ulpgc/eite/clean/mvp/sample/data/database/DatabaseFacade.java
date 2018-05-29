@@ -109,6 +109,10 @@ public class DatabaseFacade {
         return getDatabase().where(LocationDbItem.class).findAll();
     }
 
+    public static List<CategoryDbItem> getCategories(){
+        return getDatabase().where(CategoryDbItem.class).findAll();
+    }
+
 //    public static List<ModelDbItem> getItemsFromDatabase(){
 //        return getDatabase().where(ModelDbItem.class).findAll();
 //    }

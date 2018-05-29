@@ -192,9 +192,7 @@ public class DescriptionPresenter
       Log.d(TAG, "calling onBtnFacebookClicked()");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
       mediator.goToFacebook(getModel().getFacebook(), getModel().getIdFacebook());
-
     }
-
   }
 
   /**

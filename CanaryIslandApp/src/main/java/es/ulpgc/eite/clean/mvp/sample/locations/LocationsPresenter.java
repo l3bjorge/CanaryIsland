@@ -12,6 +12,7 @@ import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
 import io.realm.Realm;
@@ -22,7 +23,7 @@ public class LocationsPresenter
     implements Locations.ViewToPresenter, Locations.ModelToPresenter, Locations.LocationsTo, Locations.ToLocations {
 
   private boolean hideToolbar, hideProgress;
-  private ModelItem selectedItem;
+  private CategoryItem selectedItem;
   private LocationItem location;
 
   /**
@@ -183,7 +184,7 @@ public class LocationsPresenter
   }
 
   @Override
-  public void setSelectedItem(ModelItem item) {
+  public void setSelectedItem(CategoryItem item) {
     selectedItem = item;
     getModel().setItem(item);
   }
@@ -241,7 +242,7 @@ public class LocationsPresenter
 
   private void setCurrentState() {
     Log.d(TAG, "calling setCurrentState()");
-    getView().setActionBarTitle(selectedItem.getContent());
+    getView().setActionBarTitle(selectedItem.getSpanishName());
     checkVisibility();
   }
 

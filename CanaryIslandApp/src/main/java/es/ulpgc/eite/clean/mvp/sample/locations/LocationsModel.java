@@ -8,6 +8,7 @@ import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
 import io.realm.Realm;
@@ -28,7 +29,7 @@ public class LocationsModel
   private boolean runningTask;
   private boolean validDatabase;
   public String language;
-  private ModelItem selecteditem;
+  private CategoryItem selecteditem;
   private String errorMsg;
 
 
@@ -67,7 +68,7 @@ public class LocationsModel
   }
 
   @Override
-  public void setItem(ModelItem item) {
+  public void setItem(CategoryItem item) {
     selecteditem = item;
   }
 
@@ -142,10 +143,25 @@ public class LocationsModel
         Log.d(TAG, "calling onLoadItemsTaskFinished() method");
         items = MasterDetailData.getItemsFromDatabase();
         for ( int i = 0; i < items.size(); i++){
-      if (!items.get(i).getCategory(language).equals(selecteditem.getContent())){
-        items.remove(i);
-        i = i-1;
-      }
+            //This if statement makes sure we only the elements from the category selected
+          if(language.equals("Spanish")) {
+            if (!items.get(i).getCategory(language).equals(selecteditem.getSpanishName())) {
+              items.remove(i);
+              i = i - 1;
+            }
+          }
+          if(language.equals("English")) {
+            if (!items.get(i).getCategory(language).equals(selecteditem.getEnglishName())) {
+              items.remove(i);
+              i = i - 1;
+            }
+          }
+          if(language.equals("German")) {
+            if (!items.get(i).getCategory(language).equals(selecteditem.getGermanName())) {
+              items.remove(i);
+              i = i - 1;
+            }
+          }
     }
         getPresenter().onLoadItemsTaskFinished(items);
 

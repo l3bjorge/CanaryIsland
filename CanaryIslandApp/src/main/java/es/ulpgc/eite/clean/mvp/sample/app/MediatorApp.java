@@ -12,6 +12,7 @@ import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView;
 import es.ulpgc.eite.clean.mvp.sample.category.Category;
 
 import es.ulpgc.eite.clean.mvp.sample.category.CategoryView;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.description.Description;
 import es.ulpgc.eite.clean.mvp.sample.description.DescriptionView;
@@ -506,7 +507,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
 
     private class CategoryState {
         boolean toolbarVisibility;
-        ModelItem selectedItem;
+        CategoryItem selectedItem;
     }
 
     private class LocationsState {

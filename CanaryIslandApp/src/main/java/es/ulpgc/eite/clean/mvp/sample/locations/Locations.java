@@ -8,6 +8,7 @@ import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.Model;
 import es.ulpgc.eite.clean.mvp.Presenter;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 
 /**
@@ -22,7 +23,7 @@ public interface Locations {
 
   interface State {
     void setToolbarVisibility(boolean visible);
-    void setSelectedItem(ModelItem item);
+    void setSelectedItem(CategoryItem item);
     void setLanguage(String language);
   }
 
@@ -67,7 +68,7 @@ public interface Locations {
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getLabel();
     void loadItems();
-    void setItem(ModelItem item);
+    void setItem(CategoryItem item);
     void setLanguage(String language);
     void reloadItems();
     String getErrorMessage();

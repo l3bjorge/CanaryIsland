@@ -7,6 +7,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
+import es.ulpgc.eite.clean.mvp.sample.data.database.CategoryDbItem;
 import es.ulpgc.eite.clean.mvp.sample.data.database.DatabaseFacade;
 import es.ulpgc.eite.clean.mvp.sample.data.database.LocationDbItem;
 
@@ -40,6 +41,24 @@ public class MasterDetailData {
         List<LocationItem> modelItems = new ArrayList();
         for(LocationDbItem dbItem: dbItems) {
             modelItems.add(new LocationItem(dbItem));
+        }
+
+        Log.d(TAG, "items=" +  modelItems);
+        return modelItems;
+    }
+
+    public static List<CategoryItem> getCategoryItemsFromDatabase(){
+        Log.d(TAG, "calling getCategoryItemsFromDatabase() method");
+
+
+        List<CategoryDbItem> dbItems = DatabaseFacade.getCategories();
+        //Log.d(TAG, "items=" +  dbItems);
+
+        // Adapt the contents of low-level ModelDbItems to high-level ModelItem components.
+
+        List<CategoryItem> modelItems = new ArrayList();
+        for(CategoryDbItem dbItem: dbItems) {
+            modelItems.add(new CategoryItem(dbItem));
         }
 
         Log.d(TAG, "items=" +  modelItems);

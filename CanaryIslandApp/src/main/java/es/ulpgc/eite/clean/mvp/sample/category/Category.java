@@ -8,6 +8,7 @@ import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.Model;
 import es.ulpgc.eite.clean.mvp.Presenter;
 import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
+import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 
 /**
  * Created by Luis on 12/11/16.
@@ -33,7 +34,7 @@ public interface Category {
     void destroyView();
     boolean isToolbarVisible();
     void onScreenResumed();
-    ModelItem getSelectedItem();
+    CategoryItem getSelectedItem();
   }
 
   ///////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +44,7 @@ public interface Category {
    * Methods offered to VIEW to communicate with PRESENTER
    */
   interface ViewToPresenter extends Presenter<PresenterToView> {
-    void goToLocationsScreen(ModelItem item);
+    void goToLocationsScreen(CategoryItem item);
     void onResumingContent();
   }
 
@@ -56,7 +57,7 @@ public interface Category {
     void showError(String msg);
     void showProgress();
     //void setLabel(String txt);
-    void setRecyclerAdapterContent(List<ModelItem> items);
+    void setRecyclerAdapterContent(List<CategoryItem> items, String language);
   }
 
   /**
@@ -66,6 +67,9 @@ public interface Category {
     String getLabel();
     void setLanguage(String language);
     void loadItems();
+
+    void loadItemsFromDatabase();
+
     void reloadItems();
     String getErrorMessage();
   }
@@ -74,7 +78,7 @@ public interface Category {
    * Required PRESENTER methods available to MODEL
    */
   interface ModelToPresenter {
-    void onLoadItemsTaskFinished(List<ModelItem> items);
+    void onLoadItemsTaskFinished(List<CategoryItem> items, String language);
     void onLoadItemsTaskStarted();
     String getLanguage();
 
