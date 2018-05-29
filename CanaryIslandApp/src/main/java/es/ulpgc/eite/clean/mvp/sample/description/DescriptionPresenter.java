@@ -64,6 +64,12 @@ public class DescriptionPresenter
     checkInstaBttnVisibility();
     getView().setTittle(selectedItem.getTitle());
     getView().setDescription(selectedItem.getDescription());
+    getModel().setFacebook(selectedItem.getDbItem().getFaceurl());
+    getModel().setIdFacebook(selectedItem.getDbItem().getFacebook());
+    getModel().setInstagram(selectedItem.getDbItem().getInstagramurl());
+    getModel().setIdInstagram(selectedItem.getDbItem().getInstagram());
+    getModel().setWeb(selectedItem.getDbItem().getWeb());
+    getModel().setLocation(selectedItem.getDbItem().getMaps());
 
   }
 

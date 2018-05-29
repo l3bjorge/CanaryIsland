@@ -13,8 +13,7 @@ public class DescriptionModel
   private String tittleText, descriptionText, location, web, facebook, idFacebook, instagram, idInstagram;
 
 
-
-  /**
+    /**
    * Method that recovers a reference to the PRESENTER
    * You must ALWAYS call {@link super#onCreate(Object)} here
    *
@@ -31,6 +30,13 @@ public class DescriptionModel
 //    idFacebook = "fb://page/172572586147087";
 //    instagram = /*null;*/ "https://www.instagram.com/instagram/?hl=es";
 //    idInstagram = "http://instagram.com/_u/instagram";
+
+    location = "";
+    web = "";
+    facebook = "";
+    idFacebook = "";
+    instagram = "";
+    idInstagram = "";
 
   }
 
@@ -118,6 +124,38 @@ public class DescriptionModel
   public String getIdFacebook() {
     return idFacebook;
   }
+
+
+    @Override
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    @Override
+    public void setWeb(String web) {
+        this.web = web;
+    }
+
+    @Override
+    public void setFacebook(String facebook) {
+        this.facebook = facebook;
+    }
+
+    @Override
+    public void setIdFacebook(String idFacebook) {
+        this.idFacebook = idFacebook;
+    }
+
+    @Override
+    public void setInstagram(String instagram) {
+        this.instagram = instagram;
+    }
+
+    @Override
+    public void setIdInstagram(String idInstagram) {
+        this.idInstagram = idInstagram;
+    }
+
 
 
 }

@@ -105,6 +105,13 @@ public interface Description {
     String getInstagram();
     String getIdInstagram();
     String getIdFacebook();
+
+    void setLocation(String location);
+    void setWeb(String web);
+    void setFacebook(String facebook);
+    void setIdFacebook(String idFacebook);
+    void setInstagram(String instagram);
+    void setIdInstagram(String idInstagram);
   }
 
   /**
