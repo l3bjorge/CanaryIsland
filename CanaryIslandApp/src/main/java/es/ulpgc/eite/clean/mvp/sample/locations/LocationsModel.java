@@ -31,6 +31,7 @@ public class LocationsModel
   public String language;
   private CategoryItem selecteditem;
   private String errorMsg;
+  private String island;
 
 
   /**
@@ -72,8 +73,13 @@ public class LocationsModel
     selecteditem = item;
   }
 
+    @Override
   public void setLanguage(String language) {
         this.language = language;
+    }
+    @Override
+  public void setIsland(String island) {
+        this.island = island;
     }
 
 
@@ -143,6 +149,12 @@ public class LocationsModel
         Log.d(TAG, "calling onLoadItemsTaskFinished() method");
         items = MasterDetailData.getItemsFromDatabase();
         for ( int i = 0; i < items.size(); i++){
+            //This if statement removes all the locations from the islands that were not selected
+            if (!items.get(i).getDbItem().getIsland().getName().equals(island)){
+                items.remove(i);
+                i = i-1;
+            }
+
             //This if statement makes sure we only the elements from the category selected
           if(language.equals("Spanish")) {
             if (!items.get(i).getCategory(language).equals(selecteditem.getSpanishName())) {

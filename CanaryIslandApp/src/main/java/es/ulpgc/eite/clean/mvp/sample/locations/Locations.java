@@ -25,6 +25,7 @@ public interface Locations {
     void setToolbarVisibility(boolean visible);
     void setSelectedItem(CategoryItem item);
     void setLanguage(String language);
+    void setIsland(String island);
   }
 
   interface ToLocations extends State {
@@ -35,7 +36,10 @@ public interface Locations {
     Context getManagedContext();
     void destroyView();
     boolean isToolbarVisible();
-    void onScreenResumed();
+
+
+
+      void onScreenResumed();
     LocationItem getLocation();
   }
 
@@ -67,6 +71,9 @@ public interface Locations {
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getLabel();
+
+    void setIsland(String island);
+
     void loadItems();
     void setItem(CategoryItem item);
     void setLanguage(String language);

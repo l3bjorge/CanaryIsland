@@ -82,6 +82,11 @@ public class CategoryModel
 
   @Override
   public void loadItemsFromDatabase() {
+    if (MasterDetailData.getItemsFromDatabase().size() == 0) {
+      MasterDetailData.loadItemsFromJsonFile
+              (getPresenter().getManagedContext(), "locations.json");
+    }
+
     categoryItems = MasterDetailData.getCategoryItemsFromDatabase();
     //categoryItems will have a list of 100 Items
     //We only need one category for each type of location

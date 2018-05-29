@@ -175,6 +175,7 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
             Log.d(TAG, "calling settingInitialState()");
             presenter.setSelectedItem(categoryToLocationsState.selectedItem);
             presenter.setLanguage(language);
+            presenter.setIsland(island);
             Log.d(TAG, "calling removingInitialState()");
             categoryToLocationsState = null;
         }

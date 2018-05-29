@@ -81,6 +81,7 @@ public interface Category {
     void onLoadItemsTaskFinished(List<CategoryItem> items, String language);
     void onLoadItemsTaskStarted();
     String getLanguage();
+    Context getManagedContext();
 
   }
 

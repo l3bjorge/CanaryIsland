@@ -184,6 +184,11 @@ public class LocationsPresenter
   }
 
   @Override
+  public void setIsland(String island) {
+    getModel().setIsland(island);
+  }
+
+  @Override
   public void setSelectedItem(CategoryItem item) {
     selectedItem = item;
     getModel().setItem(item);
