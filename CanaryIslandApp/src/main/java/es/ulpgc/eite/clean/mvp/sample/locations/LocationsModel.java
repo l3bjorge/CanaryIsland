@@ -155,25 +155,27 @@ public class LocationsModel
                 i = i-1;
             }
 
-            //This if statement makes sure we only the elements from the category selected
-          if(language.equals("Spanish")) {
-            if (!items.get(i).getCategory(language).equals(selecteditem.getSpanishName())) {
-              items.remove(i);
-              i = i - 1;
+            if(items.size()!=0) {
+              //This if statement makes sure we only the elements from the category selected
+              if (language.equals("Spanish")) {
+                if (!items.get(i).getCategory(language).equals(selecteditem.getSpanishName())) {
+                  items.remove(i);
+                  i = i - 1;
+                }
+              }
+              if (language.equals("English")) {
+                if (!items.get(i).getCategory(language).equals(selecteditem.getEnglishName())) {
+                  items.remove(i);
+                  i = i - 1;
+                }
+              }
+              if (language.equals("German")) {
+                if (!items.get(i).getCategory(language).equals(selecteditem.getGermanName())) {
+                  items.remove(i);
+                  i = i - 1;
+                }
+              }
             }
-          }
-          if(language.equals("English")) {
-            if (!items.get(i).getCategory(language).equals(selecteditem.getEnglishName())) {
-              items.remove(i);
-              i = i - 1;
-            }
-          }
-          if(language.equals("German")) {
-            if (!items.get(i).getCategory(language).equals(selecteditem.getGermanName())) {
-              items.remove(i);
-              i = i - 1;
-            }
-          }
     }
         getPresenter().onLoadItemsTaskFinished(items);
 

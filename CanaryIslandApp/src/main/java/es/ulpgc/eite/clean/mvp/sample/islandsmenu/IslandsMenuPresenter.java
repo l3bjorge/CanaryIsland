@@ -249,7 +249,7 @@ public class IslandsMenuPresenter
   @Override
   public String checkIsland() {
     if (gcButtonClicked){
-      return "GranCanaria";
+      return "Gran Canaria";
     } else if (tnfButtonClicked){
       return "Tenerife";
     } else if (lnzButtonClicked){
@@ -261,7 +261,7 @@ public class IslandsMenuPresenter
     } else if (gmrButtonClicked){
       return "LaGomera";
     } else if (hrrButtonClicked){
-      return "ElHierro";
+      return "El Hierro";
     }
     return "Error";
   }
