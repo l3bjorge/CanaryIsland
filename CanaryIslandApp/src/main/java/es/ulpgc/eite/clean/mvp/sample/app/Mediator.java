@@ -1,8 +1,6 @@
 package es.ulpgc.eite.clean.mvp.sample.app;
 
-import es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIsland;
 import es.ulpgc.eite.clean.mvp.sample.category.Category;
-import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.description.Description;
 import es.ulpgc.eite.clean.mvp.sample.home.Home;
 import es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu;
@@ -15,10 +13,6 @@ import es.ulpgc.eite.clean.mvp.sample.locations.Locations;
 public interface Mediator {
 
   interface Lifecycle {
-
-    //Canary Island
-    void startingScreen(CanaryIsland.ToCanaryIsland presenter);
-    void resumingScreen(CanaryIsland.CanaryIslandTo presenter);
 
     //Home
     void startingScreen(Home.ToHome presenter);
@@ -44,10 +38,6 @@ public interface Mediator {
   }
 
   interface Navigation {
-
-    //Canary Island
-    void goToNextScreen(CanaryIsland.CanaryIslandTo presenter);
-    void backToPreviousScreen(CanaryIsland.CanaryIslandTo presenter);
 
     //Home
     void goToIslandsMenuScreen(Home.HomeTo presenter);
