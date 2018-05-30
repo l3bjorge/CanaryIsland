@@ -296,7 +296,7 @@ public class IslandsMenuPresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-      getView().setTextaso(getModel().getTittle(), getModel().getTextFtv(), getModel().getTextLanz());
+      getView().setTextaso(getModel().getTittle(), getModel().getTextFtv(), getModel().getTextLanz(), getModel().getTextGranca(), getModel().getTextTnf());
 
     }
     checkToolbarVisibility();

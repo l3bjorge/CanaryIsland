@@ -137,6 +137,13 @@
             android:layout_gravity="center"
             android:layout_weight="1" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
         <ImageButton
             android:id="@+id/ButtonGranCa"
             android:layout_width="90dp"
@@ -146,12 +153,29 @@
             android:scaleType="centerCrop"
             app:srcCompat="@mipmap/granca" />
 
+            <TextView
+                android:id="@+id/textGranca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
 
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
 
         <ImageButton
             android:id="@+id/ButtonTenerife"
@@ -161,6 +185,16 @@
             android:background="?android:selectableItemBackground"
             android:scaleType="centerCrop"
             android:src="@mipmap/tnfe" />
+
+            <TextView
+                android:id="@+id/textTnf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
 
 
         <Space

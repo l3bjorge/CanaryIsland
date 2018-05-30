@@ -8,7 +8,7 @@ import es.ulpgc.eite.clean.mvp.GenericModel;
 public class IslandsMenuModel
     extends GenericModel<IslandsMenu.ModelToPresenter> implements IslandsMenu.PresenterToModel {
 
-  private String tittle, language, textFtv, textLanz;
+  private String tittle, language, textFtv, textLanz, textGranca, textTnf;
 
 
 
@@ -73,11 +73,16 @@ public class IslandsMenuModel
     return textFtv;
   }
 
- /* @Override
-  public String getTextLanz(){
-    textLanz = "Lanzarote";
-    return textLanz;
-  }*/
+  @Override
+  public String getTextGranca(){
+    textGranca = "Gran Canaria";
+    return textGranca;
+  }
 
+  @Override
+  public String getTextTnf(){
+    textTnf = "Tenerife";
+    return textTnf;
+  }
 
 }
