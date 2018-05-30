@@ -22,10 +22,10 @@ public interface Description {
     void setToolbarVisibility(boolean visible);
     void setTittleVisibility(boolean visible);
     void setDescriptionVisibility(boolean visible);
-    void setLocationBttnVisibility(boolean visible);
-    void setWebBttnVisiblity(boolean visible);
-    void setFaceBttnVisiblity(boolean visible);
-    void setInstaBttnVisiblity(boolean visible);
+    void setLocationBtnVisibility(boolean visible);
+    void setWebBtnVisiblity(boolean visible);
+    void setFaceBtnVisiblity(boolean visible);
+    void setInstaBtnVisiblity(boolean visible);
     void setSelectedItem(LocationItem selectedItem);
 
   }
@@ -42,10 +42,10 @@ public interface Description {
     boolean isToolbarVisible();
     boolean isTittleVisible();
     boolean isDescriptionVisible();
-    boolean isLocationBttnVisible();
-    boolean isWebBttnVisible();
-    boolean isFaceBttnVisible();
-    boolean isInstaBttnVisible();
+    boolean isLocationBtnVisible();
+    boolean isWebBtnVisible();
+    boolean isFaceBtnVisible();
+    boolean isInstaBtnVisible();
     void onScreenResumed();
 
 
@@ -81,14 +81,14 @@ public interface Description {
     void hideDescription();
     void showDescription();
     void setDescription(String txt);
-    void hideLocationBttn();
-    void showLocationBttn();
-    void hideWebBttn();
-    void showWebBttn();
-    void hideFaceBttn();
-    void showFaceBttn();
-    void hideInstaBttn();
-    void showInstaBttn();
+    void hideLocationBtn();
+    void showLocationBtn();
+    void hideWebBtn();
+    void showWebBtn();
+    void hideFaceBtn();
+    void showFaceBtn();
+    void hideInstaBtn();
+    void showInstaBtn();
 
 
     void setImage(String image);

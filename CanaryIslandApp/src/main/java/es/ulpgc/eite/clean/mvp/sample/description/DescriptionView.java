@@ -22,7 +22,7 @@ public class DescriptionView
         implements Description.PresenterToView {
 
   private Toolbar toolbar;
-  private ImageButton likeBttn, locationBtn, webBtn, faceBtn, instaBtn, shareBtn;
+  private ImageButton likeBtn, locationBtn, webBtn, faceBtn, instaBtn, shareBtn;
   private TextView tittle, description;
   private ImageView image;
   private String url;/*"https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png";*/
@@ -41,8 +41,8 @@ public class DescriptionView
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    likeBttn = (ImageButton) findViewById(R.id.likeBtn);
-    likeBttn.setOnClickListener(new View.OnClickListener() {
+    likeBtn = (ImageButton) findViewById(R.id.likeBtn);
+    likeBtn.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         getPresenter().onBtnLikeCliked();
@@ -171,42 +171,42 @@ public class DescriptionView
   }
 
   @Override
-  public void hideLocationBttn() {
+  public void hideLocationBtn() {
     locationBtn.setVisibility(View.INVISIBLE);
   }
 
   @Override
-  public void showLocationBttn() {
+  public void showLocationBtn() {
     locationBtn.setVisibility(View.VISIBLE);
   }
 
   @Override
-  public void hideWebBttn() {
+  public void hideWebBtn() {
     webBtn.setVisibility(View.GONE);
   }
 
   @Override
-  public void showWebBttn() {
+  public void showWebBtn() {
     webBtn.setVisibility(View.VISIBLE);
   }
 
   @Override
-  public void hideFaceBttn() {
+  public void hideFaceBtn() {
     faceBtn.setVisibility(View.GONE);
   }
 
   @Override
-  public void showFaceBttn() {
+  public void showFaceBtn() {
     faceBtn.setVisibility(View.VISIBLE);
   }
 
   @Override
-  public void hideInstaBttn() {
+  public void hideInstaBtn() {
     instaBtn.setVisibility(View.GONE);
   }
 
   @Override
-  public void showInstaBttn() {
+  public void showInstaBtn() {
     instaBtn.setVisibility(View.VISIBLE);
   }
 

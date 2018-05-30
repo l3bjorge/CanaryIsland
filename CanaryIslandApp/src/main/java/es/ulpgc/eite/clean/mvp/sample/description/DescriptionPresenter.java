@@ -18,7 +18,7 @@ public class DescriptionPresenter
 
   private boolean toolbarVisible;
   private LocationItem selectedItem;
-  private boolean tittleVisible, descriptionVisible, locationBttnVisibity, webBttnVisibity, faceBttnVisibity, instaBttnVisibity;
+  private boolean tittleVisible, descriptionVisible, locationBtnVisibity, webBtnVisibity, faceBtnVisibity, instaBtnVisibity;
 
 
 
@@ -41,23 +41,24 @@ public class DescriptionPresenter
     mediator.startingScreen(this);
     tittleVisible = true;
     descriptionVisible = true;
+    faceBtnVisibity = true;
 
 
 
-    if (getModel().getLocation() != null){
-      locationBttnVisibity = true;
+    if (selectedItem.getDbItem().getMap() == null){
+      locationBtnVisibity = true;
     }
 
-    if (getModel().getWeb() != null){
-      webBttnVisibity = true;
+    if (selectedItem.getDbItem().getWeb() == null){
+      webBtnVisibity = true;
     }
 
-    if (getModel().getFacebook() != null){
-      faceBttnVisibity = true;
+    if (selectedItem.getDbItem().getFacebook() == null){
+      faceBtnVisibity = false;
     }
 
-    if (getModel().getInstagram() != null){
-      instaBttnVisibity = true;
+    if (selectedItem.getDbItem().getInstagram() == null){
+      instaBtnVisibity = true;
     }
 
     String language = getLanguage();
@@ -66,10 +67,10 @@ public class DescriptionPresenter
 
     checkTittleVisibility();
     checkDescriptionVisibility();
-    checkLocationBttnVisibility();
-    checkWebBttnVisibility();
-    checkFaceBttnVisibility();
-    checkInstaBttnVisibility();
+    checkLocationBtnVisibility();
+    checkWebBtnVisibility();
+    checkFaceBtnVisibility();
+    checkInstaBtnVisibility();
     getView().setTittle(selectedItem.getTitle());
 
     getModel().setFacebook(selectedItem.getDbItem().getFacebook());
@@ -104,27 +105,27 @@ public class DescriptionPresenter
     descriptionVisible = true;
 
     if (getModel().getLocation() != null){
-      locationBttnVisibity = true;
+      locationBtnVisibity = true;
     }
 
     if (getModel().getWeb() != null){
-      webBttnVisibity = true;
+      webBtnVisibity = true;
     }
 
     if (getModel().getFacebook() != null){
-      faceBttnVisibity = true;
+      faceBtnVisibity = true;
     }
 
     if (getModel().getInstagram() != null){
-      instaBttnVisibity = true;
+      instaBtnVisibity = true;
     }
 
     checkTittleVisibility();
     checkDescriptionVisibility();
-    checkLocationBttnVisibility();
-    checkWebBttnVisibility();
-    checkFaceBttnVisibility();
-    checkInstaBttnVisibility();
+    checkLocationBtnVisibility();
+    checkWebBtnVisibility();
+    checkFaceBtnVisibility();
+    checkInstaBtnVisibility();
     getView().setTittle(selectedItem.getTitle());
     String language = getLanguage();
     getView().setDescription(selectedItem.getDescription(language));
@@ -315,23 +316,23 @@ public class DescriptionPresenter
   }
 
   @Override
-  public void setLocationBttnVisibility(boolean visible) {
-    locationBttnVisibity = visible;
+  public void setLocationBtnVisibility(boolean visible) {
+    locationBtnVisibity = visible;
   }
 
   @Override
-  public void setWebBttnVisiblity(boolean visible) {
-    webBttnVisibity = visible;
+  public void setWebBtnVisiblity(boolean visible) {
+    webBtnVisibity = visible;
   }
 
   @Override
-  public void setFaceBttnVisiblity(boolean visible) {
-    faceBttnVisibity = visible;
+  public void setFaceBtnVisiblity(boolean visible) {
+    faceBtnVisibity = visible;
   }
 
   @Override
-  public void setInstaBttnVisiblity(boolean visible) {
-    instaBttnVisibity = visible;
+  public void setInstaBtnVisiblity(boolean visible) {
+    instaBtnVisibity = visible;
   }
 
 
@@ -419,8 +420,8 @@ public class DescriptionPresenter
    * @return
    */
   @Override
-  public boolean isLocationBttnVisible() {
-    return locationBttnVisibity;
+  public boolean isLocationBtnVisible() {
+    return locationBtnVisibity;
   }
 
   /**
@@ -428,8 +429,8 @@ public class DescriptionPresenter
    * @return
    */
   @Override
-  public boolean isWebBttnVisible() {
-    return webBttnVisibity;
+  public boolean isWebBtnVisible() {
+    return webBtnVisibity;
   }
 
   /**
@@ -437,8 +438,8 @@ public class DescriptionPresenter
    * @return
    */
   @Override
-  public boolean isFaceBttnVisible() {
-    return faceBttnVisibity;
+  public boolean isFaceBtnVisible() {
+    return faceBtnVisibity;
   }
 
   /**
@@ -446,8 +447,8 @@ public class DescriptionPresenter
    * @return
    */
   @Override
-  public boolean isInstaBttnVisible() {
-    return instaBttnVisibity;
+  public boolean isInstaBtnVisible() {
+    return instaBtnVisibity;
   }
 
 
@@ -463,10 +464,10 @@ public class DescriptionPresenter
     checkToolbarVisibility();
     checkTittleVisibility();
     checkDescriptionVisibility();
-    checkLocationBttnVisibility();
-    checkWebBttnVisibility();
-    checkFaceBttnVisibility();
-    checkInstaBttnVisibility();
+    checkLocationBtnVisibility();
+    checkWebBtnVisibility();
+    checkFaceBtnVisibility();
+    checkInstaBtnVisibility();
   }
 
   private void checkDescriptionVisibility() {
@@ -497,42 +498,42 @@ public class DescriptionPresenter
     }
   }
 
-  private void checkLocationBttnVisibility(){
+  private void checkLocationBtnVisibility(){
     if(isViewRunning()) {
-      if(!locationBttnVisibity) {
-        getView().hideLocationBttn();
+      if(!locationBtnVisibity) {
+        getView().hideLocationBtn();
       } else {
-        getView().showLocationBttn();
+        getView().showLocationBtn();
       }
     }
   }
 
-  private void checkWebBttnVisibility(){
+  private void checkWebBtnVisibility(){
     if(isViewRunning()) {
-      if(!webBttnVisibity) {
-        getView().hideWebBttn();
+      if(!webBtnVisibity) {
+        getView().hideWebBtn();
       } else {
-        getView().showWebBttn();
+        getView().showWebBtn();
       }
     }
   }
 
-  private void checkFaceBttnVisibility(){
+  private void checkFaceBtnVisibility(){
     if(isViewRunning()) {
-      if(!faceBttnVisibity) {
-        getView().hideFaceBttn();
+      if(!faceBtnVisibity) {
+        getView().hideFaceBtn();
       } else {
-        getView().showFaceBttn();
+        getView().showFaceBtn();
       }
     }
   }
 
-  private void checkInstaBttnVisibility(){
+  private void checkInstaBtnVisibility(){
     if(isViewRunning()) {
-      if(!instaBttnVisibity) {
-        getView().hideInstaBttn();
+      if(!instaBtnVisibity) {
+        getView().hideInstaBtn();
       } else {
-        getView().showInstaBttn();
+        getView().showInstaBtn();
       }
     }
   }

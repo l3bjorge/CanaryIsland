@@ -30,7 +30,7 @@ public class DescriptionModel
   @Override
   public void onCreate(Description.ModelToPresenter presenter) {
     super.onCreate(presenter);
-    Log.d(TAG, "calling onCreate()" + image);
+    Log.d(TAG, "calling onCreate()");
 
 //    location = "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0";
 //    web = /*null;*/ "http://miplayadelascanteras.com/";
