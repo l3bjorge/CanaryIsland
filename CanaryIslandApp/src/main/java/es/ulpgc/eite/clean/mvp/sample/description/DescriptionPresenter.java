@@ -20,6 +20,7 @@ public class DescriptionPresenter
   private LocationItem selectedItem;
   private boolean tittleVisible, descriptionVisible, locationBttnVisibity, webBttnVisibity, faceBttnVisibity, instaBttnVisibity;
 
+
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
    * Responsible to initialize MODEL.
@@ -39,6 +40,8 @@ public class DescriptionPresenter
     mediator.startingScreen(this);
     tittleVisible = true;
     descriptionVisible = true;
+
+
 
     if (getModel().getLocation() != null){
       locationBttnVisibity = true;
@@ -155,7 +158,7 @@ public class DescriptionPresenter
   // View To Presenter /////////////////////////////////////////////////////////////
 
   /**
-   *
+   *Method that open google Maps when clicked to show the location
    */
   @Override
   public void onBtnLocationCliked() {
@@ -169,7 +172,7 @@ public class DescriptionPresenter
   }
 
   /**
-   *
+   *Method that open a web browser when clicked to show the web page of the location
    */
   @Override
   public void onBtnWebCliked() {
@@ -183,7 +186,7 @@ public class DescriptionPresenter
   }
 
   /**
-   *
+   *Method that open facebook app or a web browser when clicked to show the facebook page of the location
    */
   @Override
   public void onBtnFacebookClicked() {
@@ -196,7 +199,7 @@ public class DescriptionPresenter
   }
 
   /**
-   *
+   *Method that open instagram app or a web browser when clicked to show the instagram page of the location
    */
   @Override
   public void onBtnInstagramClicked() {
@@ -209,18 +212,39 @@ public class DescriptionPresenter
     }
   }
 
+  /**
+   * Method that show a task that this location is add to
+   */
   @Override
   public void onBtnLikeCliked() {
     Log.d(TAG, "calling onBtnLikeCliked()");
     if(isViewRunning()){
       Log.d(TAG, "onBtnLikeCliked()");
-      String message = "Add Favorite Places";
 
-      getView().displayShortMessage(message);
+      String language = getLanguage();
+      String message;
+
+      if(language.equals("Spanish")){
+        message = "Lugar Añadido a Favoritos";
+        getView().displayShortMessage(message);
+      } else if (language.equals("English")){
+        message = "Add Favorite Places";
+        getView().displayShortMessage(message);
+      } else if (language.equals("German")){
+
+      }
+
+
+
+
+
 
     }
   }
 
+    /**
+     * Method that share this location
+     */
   @Override
   public void onBtnShareClicked(){
     Log.d(TAG, "calling onBtnShareClicked()");
@@ -235,6 +259,10 @@ public class DescriptionPresenter
   /////////////////////////////////////////////////////////////////////////////////////
   // Model To Presenter //////////////////////////////////////////////////////////////
 
+    /**
+     * Method that get the language that is select in the home screen
+     * @return language select in the home screen
+     */
   @Override
   public String getLanguage(){
     Mediator.Navigation media = (Mediator.Navigation) getApplication();

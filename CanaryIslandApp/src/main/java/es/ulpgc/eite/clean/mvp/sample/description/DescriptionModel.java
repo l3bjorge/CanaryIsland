@@ -7,13 +7,13 @@ import es.ulpgc.eite.clean.mvp.GenericModel;
 
 
 public class DescriptionModel
-    extends GenericModel<Description.ModelToPresenter> implements Description.PresenterToModel {
+        extends GenericModel<Description.ModelToPresenter> implements Description.PresenterToModel {
 
 
   private String tittleText, descriptionText, location, web, facebook, idFacebook, instagram, idInstagram;
 
 
-    /**
+  /**
    * Method that recovers a reference to the PRESENTER
    * You must ALWAYS call {@link super#onCreate(Object)} here
    *
@@ -39,7 +39,7 @@ public class DescriptionModel
     idInstagram = "";
 
 
-}
+  }
 
   /**
    * Called by layer PRESENTER when VIEW pass for a reconstruction/destruction.
@@ -58,7 +58,7 @@ public class DescriptionModel
 
 
   /**
-   *
+   *Method that get the tittle of the location
    * @return tittle of the location
    */
   @Override
@@ -67,7 +67,7 @@ public class DescriptionModel
   }
 
   /**
-   *
+   *Method that get the description of the location
    * @return description of the location
    */
   @Override
@@ -76,7 +76,7 @@ public class DescriptionModel
   }
 
   /**
-   *
+   *Method that get the location in googleMaps
    * @return location of the location
    */
   @Override
@@ -85,7 +85,7 @@ public class DescriptionModel
   }
 
   /**
-   *
+   *Method that get the url of the location
    * @return url of the location
    */
   @Override
@@ -94,7 +94,7 @@ public class DescriptionModel
   }
 
   /**
-   *
+   *Method that get the facebook page of the location to open it in web browser
    * @return url facebook of the location
    */
   @Override
@@ -103,7 +103,7 @@ public class DescriptionModel
   }
 
   /**
-   *
+   *Method that get the instagram page of the location to open it in web browser
    * @return url instagram of the location
    */
   @Override
@@ -111,6 +111,10 @@ public class DescriptionModel
     return instagram;
   }
 
+  /**
+   * Method that get the facebook id of the location to open it in the facebook app
+   * @return id instagram of the location
+   */
   @Override
   public String getIdInstagram() {
     return idInstagram;
@@ -118,7 +122,7 @@ public class DescriptionModel
 
 
   /**
-   *
+   *Method that get the instagram id of the location to open it in the instagram app
    * @return id facebook of the location
    */
   @Override
@@ -126,36 +130,59 @@ public class DescriptionModel
     return idFacebook;
   }
 
+  /**
+   * Method that set the location for googleMaps
+   * @param location Value that is assigned to the location variable
+   */
+  @Override
+  public void setLocation(String location) {
+    this.location = location;
+  }
 
-    @Override
-    public void setLocation(String location) {
-        this.location = location;
-    }
+  /**
+   * Method that set the web of the location
+   * @param web Value that is assigned to the web variable
+   */
+  @Override
+  public void setWeb(String web) {
+    this.web = web;
+  }
 
-    @Override
-    public void setWeb(String web) {
-        this.web = web;
-    }
+  /**
+   * Method that set the facebook page of the location to open in web browser
+   * @param facebook Value that is assigned to the facebook variable
+   */
+  @Override
+  public void setFacebook(String facebook) {
+    this.facebook = facebook;
+  }
 
-    @Override
-    public void setFacebook(String facebook) {
-        this.facebook = facebook;
-    }
+  /**
+   * Method that set the facebook id of the location to open in facebook app
+   * @param idFacebook Value that is assigned to the idFacebook variable
+   */
+  @Override
+  public void setIdFacebook(String idFacebook) {
+    this.idFacebook = idFacebook;
+  }
 
-    @Override
-    public void setIdFacebook(String idFacebook) {
-        this.idFacebook = idFacebook;
-    }
+  /**
+   * Method that set the instagram page of the location to open in web browser
+   * @param instagram Value that is assigned to the instagram variable
+   */
+  @Override
+  public void setInstagram(String instagram) {
+    this.instagram = instagram;
+  }
 
-    @Override
-    public void setInstagram(String instagram) {
-        this.instagram = instagram;
-    }
-
-    @Override
-    public void setIdInstagram(String idInstagram) {
-        this.idInstagram = idInstagram;
-    }
+  /**
+   * Method that set the facebook page of the location to open in web browser
+   * @param idInstagram Value that is assigned to the idInstagram variable
+   */
+  @Override
+  public void setIdInstagram(String idInstagram) {
+    this.idInstagram = idInstagram;
+  }
 
 
 
