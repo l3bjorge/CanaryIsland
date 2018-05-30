@@ -76,9 +76,6 @@ public interface Locations {
     void loadItems();
     void setItem(CategoryItem item);
     void setLanguage(String language);
-    void reloadItems();
-    String getErrorMessage();
-    void setDatabaseValidity(boolean valid);
   }
 
   /**

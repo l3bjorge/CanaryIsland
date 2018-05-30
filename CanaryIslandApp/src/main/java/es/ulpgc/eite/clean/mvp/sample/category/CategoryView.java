@@ -160,6 +160,8 @@ public class CategoryView
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
       holder.item = items.get(position);
+
+      //Taking the labels for the selected language
       if ( language.equals("Spanish")) {
         holder.contentView.setText(items.get(position).getSpanishName());
       }
