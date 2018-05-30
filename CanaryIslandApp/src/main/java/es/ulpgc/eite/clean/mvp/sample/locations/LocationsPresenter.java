@@ -20,6 +20,7 @@ public class LocationsPresenter
     implements Locations.ViewToPresenter, Locations.ModelToPresenter, Locations.LocationsTo, Locations.ToLocations {
 
   private boolean hideToolbar, hideProgress;
+  private String language;
   private CategoryItem selectedItem;
   private LocationItem location;
 
@@ -177,6 +178,7 @@ public class LocationsPresenter
 
   @Override
   public void setLanguage(String language) {
+    this.language = language;
     getModel().setLanguage(language);
   }
 
@@ -244,7 +246,15 @@ public class LocationsPresenter
 
   private void setCurrentState() {
     Log.d(TAG, "calling setCurrentState()");
-    getView().setActionBarTitle(selectedItem.getSpanishName());
+    if (this.language.equals("Spanish")) {
+      getView().setActionBarTitle(selectedItem.getSpanishName());
+    }
+    if (this.language.equals("English")) {
+      getView().setActionBarTitle(selectedItem.getEnglishName());
+    }
+    if (this.language.equals("German")) {
+      getView().setActionBarTitle(selectedItem.getGermanName());
+    }
     checkVisibility();
   }
 
