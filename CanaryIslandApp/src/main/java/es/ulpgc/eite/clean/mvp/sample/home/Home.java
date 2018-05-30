@@ -50,7 +50,7 @@ public interface Home {
   interface PresenterToView extends ContextView {
     void finishScreen();
     void hideToolbar();
-    void setLabel(String txt);
+    void setLabel(String txt, String textoEspa, String textoEngl, String textoDeut);
   }
 
   /**
@@ -58,6 +58,10 @@ public interface Home {
    */
   interface PresenterToModel extends Model<ModelToPresenter> {
     String getLabel();
+
+    String getTextEspa();
+    String getTextEngl();
+    String getTextDeut();
   }
 
   /**

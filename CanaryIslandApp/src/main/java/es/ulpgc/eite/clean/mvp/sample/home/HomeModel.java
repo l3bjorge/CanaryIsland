@@ -8,7 +8,7 @@ import es.ulpgc.eite.clean.mvp.GenericModel;
 public class HomeModel
     extends GenericModel<Home.ModelToPresenter> implements Home.PresenterToModel {
 
-  private String label;
+  private String label, textEspa, textEngl, textDeut;
 
 
   /**
@@ -49,6 +49,21 @@ public class HomeModel
   @Override
   public String getLabel() {
     return label;
+  }
+
+  public String getTextEspa(){
+    textEspa = "Español";
+    return textEspa;
+  }
+
+  public String getTextEngl(){
+    textEngl = "English";
+    return textEngl;
+  }
+
+  public String getTextDeut(){
+    textDeut = "Deutsch";
+    return textDeut;
   }
 
 

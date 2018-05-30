@@ -242,7 +242,7 @@ public class HomePresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-      getView().setLabel(getModel().getLabel());
+      getView().setLabel(getModel().getLabel(), getModel().getTextEspa(), getModel().getTextEngl(), getModel().getTextDeut());
     }
     checkToolbarVisibility();
   }

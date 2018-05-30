@@ -18,7 +18,7 @@ public class HomeView
 
   private Toolbar toolbar;
   private ImageButton buttonEng, buttonSpa, buttonGer;
-  private TextView text;
+  private TextView text, textEspa, textEngl, textDeut;
 
 
   @Override
@@ -30,6 +30,9 @@ public class HomeView
     Log.d(TAG, "calling onCreate()");
 
     text = (TextView) findViewById(R.id.text);
+    textEspa = (TextView) findViewById(R.id.textEspa);
+    textEngl = (TextView) findViewById(R.id.textEngl);
+    textDeut = (TextView) findViewById(R.id.textDeut);
 
 
     toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -114,7 +117,11 @@ public class HomeView
    * @param title
    */
   @Override
-  public void setLabel(String title) {
+  public void setLabel(String title, String TextoEspa, String TextoEngl, String TextoDeut) {
     text.setText(title);
+    textEspa.setText(TextoEspa);
+    textEngl.setText(TextoEngl);
+    textDeut.setText(TextoDeut);
+
   }
 }

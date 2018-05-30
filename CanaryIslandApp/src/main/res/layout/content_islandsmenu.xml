@@ -75,7 +75,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/screen_text"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -108,7 +109,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/screen_text"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -162,7 +164,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/screen_text"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -195,7 +198,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/screen_text"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -251,7 +255,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/screen_text"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -284,7 +289,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/screen_text"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
@@ -317,7 +323,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/screen_text"
                 android:textAlignment="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
