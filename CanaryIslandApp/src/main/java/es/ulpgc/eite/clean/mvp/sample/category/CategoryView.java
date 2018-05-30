@@ -107,11 +107,6 @@ public class CategoryView
   }
 
   @Override
-  public void showError(String msg) {
-    Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_SHORT);
-  }
-
-  @Override
   public void showProgress() {
     progressView.setVisibility(View.VISIBLE);
     recyclerView.setVisibility(View.GONE);
