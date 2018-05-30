@@ -33,7 +33,74 @@
 
         <Space
             android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+
+
+        <ImageButton
+            android:id="@+id/ButtonFuerteventura"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ftvv" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/ButtonLanzarote"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/lanza" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1" />
 
         <ImageButton
@@ -68,55 +135,23 @@
             android:layout_gravity="center"
             android:layout_weight="1" />
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/ButtonFuerteventura"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center"
-            android:background="?android:selectableItemBackground"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ftvv" />
-
+    </LinearLayout>
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/ButtonLanzarote"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center"
-            android:background="?android:selectableItemBackground"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/lanza" />
+            android:layout_height="50dp"
+            android:layout_gravity="center" />
 
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="1" />
-
-        <ImageButton
-            android:id="@+id/ButtonPalma"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_gravity="center"
-            android:background="?android:selectableItemBackground"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/palma" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
 
-        <Space
+    <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -131,6 +166,21 @@
             android:scaleType="centerCrop"
             android:src="@mipmap/hierro" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:id="@+id/ButtonPalma"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/palma" />
 
         <Space
             android:layout_width="wrap_content"
@@ -147,12 +197,13 @@
             android:scaleType="centerCrop"
             android:src="@mipmap/gomera" />
 
-
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1" />
+
+    </LinearLayout>
 
 
     </LinearLayout>
