@@ -122,7 +122,8 @@ public class DescriptionPresenter
     checkFaceBttnVisibility();
     checkInstaBttnVisibility();
     getView().setTittle(selectedItem.getTitle());
-//    getView().setDescription(selectedItem.getDescription());
+    String language = getLanguage();
+    getView().setDescription(selectedItem.getDescription(language));
   }
 
   /**
