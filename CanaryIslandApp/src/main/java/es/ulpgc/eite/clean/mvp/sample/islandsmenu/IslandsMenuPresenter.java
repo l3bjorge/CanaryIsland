@@ -258,9 +258,9 @@ public class IslandsMenuPresenter
     } else if (ftvButtonClicked){
       return "Fuerteventura";
     } else if (plmButtonClicked){
-      return "LaPalma";
+      return "La Palma";
     } else if (gmrButtonClicked){
-      return "LaGomera";
+      return "La Gomera";
     } else if (hrrButtonClicked){
       return "El Hierro";
     }
