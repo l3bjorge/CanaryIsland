@@ -140,17 +140,6 @@ public class CategoryPresenter
     getView().setRecyclerAdapterContent(items, language);
   }
 
-  /**
-   * Llamado desde el modelo cuando comienza la tarea para la obtención del contenido de la lista
-   */
-  @Override
-  public void onLoadItemsTaskStarted() {
-    Log.d(TAG, "calling onLoadItemsTaskStarted()");
-
-    hideProgress = false;
-    checkVisibility();
-  }
-
   @Override
   public String getLanguage() {
     return null;
