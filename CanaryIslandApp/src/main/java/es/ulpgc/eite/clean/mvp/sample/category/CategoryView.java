@@ -1,6 +1,7 @@
 package es.ulpgc.eite.clean.mvp.sample.category;
 
 import android.annotation.SuppressLint;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.DividerItemDecoration;
@@ -39,6 +40,7 @@ public class CategoryView
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_category);
     Log.d(TAG, "calling onCreate()");

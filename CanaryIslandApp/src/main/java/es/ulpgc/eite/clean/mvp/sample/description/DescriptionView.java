@@ -2,6 +2,7 @@ package es.ulpgc.eite.clean.mvp.sample.description;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -23,6 +24,7 @@ public class DescriptionView
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_description);
     Log.d(TAG, "calling onCreate()");

@@ -1,6 +1,7 @@
 package es.ulpgc.eite.clean.mvp.sample.canaryisland;
 
 import android.annotation.SuppressLint;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -21,6 +22,7 @@ public class CanaryIslandView
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_canaryisland);
     Log.d(TAG, "calling onCreate()");

@@ -1,6 +1,7 @@
 package es.ulpgc.eite.clean.mvp.sample.home;
 
 import android.annotation.SuppressLint;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -22,8 +23,10 @@ public class HomeView
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_home);
+
     Log.d(TAG, "calling onCreate()");
 
     text = (TextView) findViewById(R.id.text);
