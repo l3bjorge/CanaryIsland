@@ -207,8 +207,9 @@
 
         <Space
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="center" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
 
 
     <LinearLayout
@@ -225,6 +226,13 @@
             android:layout_gravity="center"
             android:layout_weight="1" />
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
         <ImageButton
             android:id="@+id/ButtonHierro"
             android:layout_width="90dp"
@@ -234,11 +242,28 @@
             android:scaleType="centerCrop"
             android:src="@mipmap/hierro" />
 
+            <TextView
+                android:id="@+id/textHierr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
 
 
         <ImageButton
@@ -250,11 +275,29 @@
             android:scaleType="centerCrop"
             android:src="@mipmap/palma" />
 
+            <TextView
+                android:id="@+id/textPalma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
 
         <ImageButton
             android:id="@+id/ButtonGomera"
@@ -264,6 +307,16 @@
             android:background="?android:selectableItemBackground"
             android:scaleType="centerCrop"
             android:src="@mipmap/gomera" />
+
+            <TextView
+                android:id="@+id/textGome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screen_text"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
 
         <Space
             android:layout_width="wrap_content"

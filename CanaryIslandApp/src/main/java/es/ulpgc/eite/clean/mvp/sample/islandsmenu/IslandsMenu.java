@@ -56,7 +56,7 @@ public interface IslandsMenu {
   interface PresenterToView extends ContextView {
     void finishScreen();
     void hideToolbar();
-    void setTextaso(String textaso, String textasoFtv, String textasoLanz, String textasoGranca, String textasoTnf);
+    void setTextaso(String textaso, String textasoFtv, String textasoLanz, String textasoGranca, String textasoTnf, String textasoHierr, String textasoPalma, String textasoGome);
   }
 
   /**
@@ -71,6 +71,9 @@ public interface IslandsMenu {
     String getTextLanz();
     String getTextGranca();
     String getTextTnf();
+    String getTextHierr();
+    String getTextPalma();
+    String getTextGome();
   }
 
   /**

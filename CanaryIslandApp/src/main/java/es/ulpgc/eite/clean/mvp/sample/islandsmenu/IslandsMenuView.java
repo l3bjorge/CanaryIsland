@@ -25,7 +25,7 @@ public class IslandsMenuView
   private ImageButton buttonHierr;
   private ImageButton buttonGom;
 
-  private TextView text, textFtv, textLanz, textGranca, textTnf;
+  private TextView text, textFtv, textLanz, textGranca, textTnf, textHierr, textPalma, textGome;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,9 @@ public class IslandsMenuView
     textLanz = (TextView) findViewById(R.id.textLanz);
     textGranca = (TextView) findViewById(R.id.textGranca);
     textTnf = (TextView) findViewById(R.id.textTnf);
+    textHierr = (TextView) findViewById(R.id.textHierr);
+    textPalma = (TextView) findViewById(R.id.textPalma);
+    textGome = (TextView) findViewById(R.id.textGome);
 
 
 
@@ -142,12 +145,15 @@ public class IslandsMenuView
   }
 
   @Override
-  public void setTextaso(String textaso, String textasoFtv, String textasoLanz, String textasoGranca, String textasoTnf) {
+  public void setTextaso(String textaso, String textasoFtv, String textasoLanz, String textasoGranca, String textasoTnf, String textasoHierr, String textasoPalma, String textasoGome) {
     text.setText(textaso);
     textFtv.setText(textasoFtv);
     textLanz.setText(textasoLanz);
     textGranca.setText(textasoGranca);
     textTnf.setText(textasoTnf);
+    textHierr.setText(textasoHierr);
+    textPalma.setText(textasoPalma);
+    textGome.setText(textasoGome);
   }
 
 }
