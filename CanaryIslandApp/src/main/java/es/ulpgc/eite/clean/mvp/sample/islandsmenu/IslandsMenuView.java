@@ -77,7 +77,7 @@ public class IslandsMenuView
     buttonLanz.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onFtvButtonClicked();
+        getPresenter().onLnzButtonClicked();
       }
     });
 
@@ -85,7 +85,7 @@ public class IslandsMenuView
     buttonPalm.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onFtvButtonClicked();
+        getPresenter().onPlmButtonClicked();
       }
     });
 
@@ -93,7 +93,7 @@ public class IslandsMenuView
     buttonHierr.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onFtvButtonClicked();
+        getPresenter().onHrrButtonClicked();
       }
     });
 
@@ -101,7 +101,7 @@ public class IslandsMenuView
     buttonGom.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        getPresenter().onFtvButtonClicked();
+        getPresenter().onGmrButtonClicked();
       }
     });
 
