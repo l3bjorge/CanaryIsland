@@ -40,8 +40,16 @@ public class LocationItem {
     return category;
   }
 
-  public String getDescription() {
-    String description = dbItem.getDescription();
+  public String getDescription(String language) {
+
+    String description = "";
+    if (language.equals("English")) {
+      description = dbItem.getDescription();
+    } else if(language.equals("Spanish")){
+      description = dbItem.getDescriptionSpanish();
+    } else if(language.equals("German")){
+      description = dbItem.getDescriptionGerman();
+    }
 
     return description;
   }

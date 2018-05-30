@@ -20,6 +20,8 @@ public class LocationDbItem extends RealmObject{
     private String faceurl;
     private String instagram;
     private String instagramurl;
+    private String descriptionSpanish;
+  private String descriptionGerman;
 
 
   private CategoryDbItem category;
@@ -109,6 +111,21 @@ public class LocationDbItem extends RealmObject{
     this.instagramurl = instagramurl;
   }
 
+  public String getDescriptionSpanish() {
+    return descriptionSpanish;
+  }
+
+    public void setDescriptionSpanish(String descriptionSpanish) {
+        this.descriptionSpanish = descriptionSpanish;
+    }
+
+    public void setDescriptionGerman(String descriptionGerman) {
+        this.descriptionGerman = descriptionGerman;
+    }
+
+    public String getDescriptionGerman() {
+    return descriptionGerman;
+  }
 
     @Override
   public boolean equals(Object obj) {
@@ -120,4 +137,7 @@ public class LocationDbItem extends RealmObject{
     }
     return false;
   }
+
+
+
 }

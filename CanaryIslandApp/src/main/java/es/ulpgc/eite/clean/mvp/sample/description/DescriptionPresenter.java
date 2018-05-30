@@ -59,6 +59,10 @@ public class DescriptionPresenter
       instaBttnVisibity = true;
     }
 
+    String language = getLanguage();
+    getView().setDescription(selectedItem.getDescription(language));
+
+
     checkTittleVisibility();
     checkDescriptionVisibility();
     checkLocationBttnVisibility();
@@ -66,7 +70,7 @@ public class DescriptionPresenter
     checkFaceBttnVisibility();
     checkInstaBttnVisibility();
     getView().setTittle(selectedItem.getTitle());
-    getView().setDescription(selectedItem.getDescription());
+
     getModel().setFacebook(selectedItem.getDbItem().getFacebook());
     getModel().setIdFacebook(selectedItem.getDbItem().getFaceurl());
     getModel().setInstagram(selectedItem.getDbItem().getInstagramurl());
@@ -118,7 +122,7 @@ public class DescriptionPresenter
     checkFaceBttnVisibility();
     checkInstaBttnVisibility();
     getView().setTittle(selectedItem.getTitle());
-    getView().setDescription(selectedItem.getDescription());
+//    getView().setDescription(selectedItem.getDescription());
   }
 
   /**
