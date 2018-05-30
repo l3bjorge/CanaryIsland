@@ -56,7 +56,7 @@ public interface IslandsMenu {
   interface PresenterToView extends ContextView {
     void finishScreen();
     void hideToolbar();
-    void setTextaso(String textaso);
+    void setTextaso(String textaso, String textasoFtv, String textasoLanz);
   }
 
   /**
@@ -67,6 +67,9 @@ public interface IslandsMenu {
     void setLanguage(String language);
 
 
+    String getTextFtv();
+
+    String getTextLanz();
   }
 
   /**
@@ -75,6 +78,9 @@ public interface IslandsMenu {
   interface ModelToPresenter {
 
     String getLanguage();
+
+
   }
+
 
 }

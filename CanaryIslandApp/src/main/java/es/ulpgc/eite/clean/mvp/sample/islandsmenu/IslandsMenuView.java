@@ -25,7 +25,7 @@ public class IslandsMenuView
   private ImageButton buttonHierr;
   private ImageButton buttonGom;
 
-  private TextView text;
+  private TextView text, textFtv, textLanz;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,11 @@ public class IslandsMenuView
     Log.d(TAG, "calling onCreate()");
 
     text = (TextView) findViewById(R.id.text);
+
+    textFtv = (TextView) findViewById(R.id.textFtv);
+    textLanz = (TextView) findViewById(R.id.textLanz);
+
+
 
     toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
@@ -135,7 +140,10 @@ public class IslandsMenuView
   }
 
   @Override
-  public void setTextaso(String textaso) {
+  public void setTextaso(String textaso, String textasoFtv, String textasoLanz) {
     text.setText(textaso);
+    textFtv.setText(textasoFtv);
+    textLanz.setText(textasoLanz);
   }
+
 }

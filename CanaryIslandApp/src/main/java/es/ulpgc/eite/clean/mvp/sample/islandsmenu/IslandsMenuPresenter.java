@@ -37,6 +37,7 @@ public class IslandsMenuPresenter
     mediator.startingScreen(this);
 
 
+
   }
 
   /**
@@ -295,7 +296,7 @@ public class IslandsMenuPresenter
     Log.d(TAG, "calling setCurrentState()");
 
     if(isViewRunning()) {
-      getView().setTextaso(getModel().getTittle());
+      getView().setTextaso(getModel().getTittle(), getModel().getTextFtv(), getModel().getTextLanz());
 
     }
     checkToolbarVisibility();
