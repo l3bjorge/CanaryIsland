@@ -23,12 +23,22 @@ public class LocationDbItem extends RealmObject{
     private String descriptionSpanish;
   private String descriptionGerman;
 
+  private String image;
+
 
   private CategoryDbItem category;
   private IslandDbItem island;
 
 
   public LocationDbItem() {
+  }
+
+  public String getImage() {
+    return image;
+  }
+
+  public void setImage(String image) {
+    this.image = image;
   }
 
   public CategoryDbItem getCategory() {

@@ -91,6 +91,7 @@ public interface Description {
     void showInstaBttn();
 
 
+    void setImage(String image);
   }
 
   /**
@@ -112,6 +113,10 @@ public interface Description {
     void setIdFacebook(String idFacebook);
     void setInstagram(String instagram);
     void setIdInstagram(String idInstagram);
+
+    String getImage();
+
+    void setImage(String image);
   }
 
   /**

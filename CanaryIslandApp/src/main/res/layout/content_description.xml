@@ -11,7 +11,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="es.ulpgc.eite.clean.mvp.sample.canaryisland.CanaryIslandView"
     tools:showIn="@layout/activity_description">
 
 
@@ -27,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/canteras" />
+            />
 
         <LinearLayout
             android:layout_width="match_parent"

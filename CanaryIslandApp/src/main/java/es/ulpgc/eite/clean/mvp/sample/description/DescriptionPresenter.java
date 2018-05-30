@@ -21,6 +21,7 @@ public class DescriptionPresenter
   private boolean tittleVisible, descriptionVisible, locationBttnVisibity, webBttnVisibity, faceBttnVisibity, instaBttnVisibity;
 
 
+
   /**
    * Operation called during VIEW creation in {@link GenericActivity#onResume(Class, Object)}
    * Responsible to initialize MODEL.
@@ -77,6 +78,9 @@ public class DescriptionPresenter
     getModel().setIdInstagram(selectedItem.getDbItem().getInstagram());
     getModel().setWeb(selectedItem.getDbItem().getWeb());
     getModel().setLocation(selectedItem.getDbItem().getMap());
+
+
+
 
 
   }
@@ -341,6 +345,8 @@ public class DescriptionPresenter
   public void onScreenStarted() {
     Log.d(TAG, "calling onScreenStarted()");
     setCurrentState();
+    getModel().setImage(selectedItem.getDbItem().getImage());
+    getView().setImage(getModel().getImage());
   }
 
 
@@ -354,6 +360,8 @@ public class DescriptionPresenter
     setCurrentState();
     getView().setTittle(getModel().getTittle());
     getView().setDescription(getModel().getDescription());
+    getModel().setImage(selectedItem.getDbItem().getImage());
+    getView().setImage(getModel().getImage());
 
   }
 
