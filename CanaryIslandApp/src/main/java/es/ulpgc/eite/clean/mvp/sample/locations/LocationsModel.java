@@ -3,16 +3,12 @@ package es.ulpgc.eite.clean.mvp.sample.locations;
 import android.os.Handler;
 import android.util.Log;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.GenericModel;
-import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
-import io.realm.Realm;
-import io.realm.RealmList;
 
 
 public class LocationsModel
@@ -24,7 +20,6 @@ public class LocationsModel
   private String label;
   private List<LocationItem> items;
 
-  private List<List<ModelItem>> itemsSet = null;
   private String position = null;
   private boolean runningTask;
   private boolean validDatabase;

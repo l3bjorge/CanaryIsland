@@ -21,7 +21,6 @@ import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
-import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
 
 import static android.support.v7.widget.RecyclerView.VERTICAL;

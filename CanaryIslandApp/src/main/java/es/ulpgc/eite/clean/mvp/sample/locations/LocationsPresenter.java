@@ -11,11 +11,8 @@ import es.ulpgc.eite.clean.mvp.ContextView;
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.GenericPresenter;
 import es.ulpgc.eite.clean.mvp.sample.app.Mediator;
-import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 import es.ulpgc.eite.clean.mvp.sample.data.LocationItem;
-import es.ulpgc.eite.clean.mvp.sample.data.MasterDetailData;
-import io.realm.Realm;
 
 public class LocationsPresenter
     extends GenericPresenter

@@ -12,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,10 +21,8 @@ import java.util.List;
 
 import es.ulpgc.eite.clean.mvp.GenericActivity;
 import es.ulpgc.eite.clean.mvp.sample.R;
-import es.ulpgc.eite.clean.mvp.sample.app.ModelItem;
 import es.ulpgc.eite.clean.mvp.sample.data.CategoryItem;
 
-import static android.support.v7.widget.RecyclerView.HORIZONTAL;
 import static android.support.v7.widget.RecyclerView.VERTICAL;
 
 public class CategoryView
