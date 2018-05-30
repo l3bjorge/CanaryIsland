@@ -53,9 +53,7 @@ public interface Category {
   interface PresenterToView extends ContextView {
     void finishScreen();
     void hideProgress();
-    void showError(String msg);
     void showProgress();
-    //void setLabel(String txt);
     void setRecyclerAdapterContent(List<CategoryItem> items, String language);
   }
 
@@ -73,7 +71,6 @@ public interface Category {
    */
   interface ModelToPresenter {
     void onLoadItemsTaskFinished(List<CategoryItem> items, String language);
-    void onLoadItemsTaskStarted();
     String getLanguage();
     Context getManagedContext();
 
