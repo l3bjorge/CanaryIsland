@@ -42,15 +42,18 @@ public class DescriptionPresenter
     tittleVisible = true;
     descriptionVisible = true;
     faceBtnVisibity = true;
+    instaBtnVisibity = true;
+    webBtnVisibity = true;
+    locationBtnVisibity = true;
 
 
 
     if (selectedItem.getDbItem().getMap() == null){
-      locationBtnVisibity = true;
+      locationBtnVisibity = false;
     }
 
     if (selectedItem.getDbItem().getWeb() == null){
-      webBtnVisibity = true;
+      webBtnVisibity = false;
     }
 
     if (selectedItem.getDbItem().getFacebook() == null){
@@ -58,7 +61,7 @@ public class DescriptionPresenter
     }
 
     if (selectedItem.getDbItem().getInstagram() == null){
-      instaBtnVisibity = true;
+      instaBtnVisibity = false;
     }
 
     String language = getLanguage();
@@ -104,21 +107,6 @@ public class DescriptionPresenter
     tittleVisible = true;
     descriptionVisible = true;
 
-    if (getModel().getLocation() != null){
-      locationBtnVisibity = true;
-    }
-
-    if (getModel().getWeb() != null){
-      webBtnVisibity = true;
-    }
-
-    if (getModel().getFacebook() != null){
-      faceBtnVisibity = true;
-    }
-
-    if (getModel().getInstagram() != null){
-      instaBtnVisibity = true;
-    }
 
     checkTittleVisibility();
     checkDescriptionVisibility();

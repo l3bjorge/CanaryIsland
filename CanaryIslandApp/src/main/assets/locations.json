@@ -37,6 +37,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -61,6 +62,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -85,6 +87,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -109,6 +112,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -133,6 +137,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -157,6 +162,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -181,6 +187,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -205,6 +212,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -229,6 +237,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -245,12 +254,14 @@
     "id": 100 ,
     "name": "Playa de Agua Dulce" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
-    "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.","map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -268,12 +279,15 @@
     "id": 101 ,
     "name": "Playa del Socorro" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -290,12 +304,15 @@
     "id": 102 ,
     "name": "Puerto de la Cruz" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -312,12 +329,15 @@
     "id": 103 ,
     "name": "Playa Grande" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -334,12 +354,15 @@
     "id": 104 ,
     "name": "Playa del Diego Hernández" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -356,12 +379,15 @@
     "id": 105 ,
     "name": "Playa del Médano" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -387,6 +413,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 3,
       "name": "Fuerteventura"
@@ -411,6 +438,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 3,
       "name": "Fuerteventura"
@@ -435,6 +463,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 3,
       "name": "Fuerteventura"
@@ -459,6 +488,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 3,
       "name": "Fuerteventura"
@@ -483,6 +513,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 3,
       "name": "Fuerteventura"
@@ -507,6 +538,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 4,
       "name": "Lanzarote"
@@ -531,6 +563,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 4,
       "name": "Lanzarote"
@@ -555,6 +588,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 4,
       "name": "Lanzarote"
@@ -579,6 +613,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 4,
       "name": "Lanzarote"
@@ -603,6 +638,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 4,
       "name": "Lanzarote"
@@ -627,6 +663,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 5,
       "name": "El Hierro"
@@ -651,6 +688,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 5,
       "name": "El Hierro"
@@ -675,6 +713,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 5,
       "name": "El Hierro"
@@ -699,6 +738,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 5,
       "name": "El Hierro"
@@ -723,6 +763,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 5,
       "name": "El Hierro"
@@ -747,6 +788,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 6,
       "name": "La Palma"
@@ -771,6 +813,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 6,
       "name": "La Palma"
@@ -795,6 +838,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 6,
       "name": "La Palma"
@@ -819,6 +863,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 6,
       "name": "La Palma"
@@ -842,6 +887,7 @@
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "instagramurl": "http://instagram.com/_u/instagram",
     "island":  {
       "id": 6,
@@ -868,6 +914,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -892,6 +939,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -916,6 +964,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -940,6 +989,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -964,6 +1014,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -988,6 +1039,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1012,6 +1064,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1036,6 +1089,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1060,6 +1114,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1084,6 +1139,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1097,18 +1153,19 @@
   },
 
 
-
-
   {
     "id": 106 ,
     "name": "Parque Nacional del Teide" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Tenerife"
@@ -1125,12 +1182,15 @@
     "id": 107 ,
     "name": "Parque de La Granja" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Tenerife"
@@ -1147,12 +1207,15 @@
     "id": 108 ,
     "name": "Loro Parque" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Tenerife"
@@ -1169,12 +1232,15 @@
     "id": 109 ,
     "name": "Siam Park" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Tenerife"
@@ -1191,12 +1257,15 @@
     "id": 110 ,
     "name": "Parque Las Indias" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Tenerife"
@@ -1222,6 +1291,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1246,6 +1316,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1270,6 +1341,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1294,6 +1366,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1318,6 +1391,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1342,6 +1416,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1366,6 +1441,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1390,6 +1466,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1414,6 +1491,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1438,6 +1516,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1454,12 +1533,15 @@
     "id": 111 ,
     "name": "Plaza Del Duque" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1476,12 +1558,15 @@
     "id": 112 ,
     "name": "La Villa" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1499,12 +1584,15 @@
     "id": 113 ,
     "name": "El Mirador" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1521,12 +1609,15 @@
     "id": 114 ,
     "name": "San Blas" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1543,12 +1634,15 @@
     "id": 115 ,
     "name": "Punta Larga" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands). Frequented throughout the year, it is the beach preferred by most of the city's inhabitants and foreigners who visit it, who can enjoy it at any time of the year thanks to the mild climate.",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "http://miplayadelascanteras.com/",
     "facebook": "https://es-es.facebook.com/periodicoCanarias7/",
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1560,6 +1654,7 @@
       "germanname": "Einkaufszentren"
     }
   },
+
 
   {
     "id": 30 ,
@@ -1573,6 +1668,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1597,6 +1693,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1621,6 +1718,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1645,6 +1743,7 @@
     "faceurl": "fb://page/172572586147087",
     "instagram": "https://www.instagram.com/instagram/?hl=es",
     "instagramurl": "http://instagram.com/_u/instagram",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1669,6 +1768,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1693,6 +1793,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1717,6 +1818,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1741,6 +1843,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1765,6 +1868,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1789,6 +1893,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1801,17 +1906,19 @@
     }
   },
 
-
   {
     "id": 116,
     "name": "ARTlandya" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1828,12 +1935,15 @@
     "id": 117,
     "name": "Museo de Malvasia" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1850,12 +1960,15 @@
     "id": 118,
     "name": "Museo Histórico Militar de Canarias" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1872,12 +1985,15 @@
     "id": 119,
     "name": "Observatorio del Teide" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1895,12 +2011,15 @@
     "id": 120,
     "name": "Museo de la Naturaleza y el Hombre" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -1912,6 +2031,7 @@
       "germanname": "Museen"
     }
   },
+
 
   {
     "id": 40 ,
@@ -1925,6 +2045,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1949,6 +2070,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1973,6 +2095,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -1997,6 +2120,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2021,6 +2145,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2045,6 +2170,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2069,6 +2195,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2093,6 +2220,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2117,6 +2245,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2141,6 +2270,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2153,17 +2283,19 @@
     }
   },
 
-
   {
     "id": 121 ,
     "name": "El Rincon de Juan Carlos" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -2180,12 +2312,15 @@
     "id": 122 ,
     "name": "La Vieja Restaurante" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -2202,12 +2337,15 @@
     "id": 123 ,
     "name": "La Hierbita" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -2225,12 +2363,15 @@
     "id": 124 ,
     "name": "El Pariente" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -2247,12 +2388,15 @@
     "id": 125 ,
     "name": "Japonés Fujiyama" ,
     "description": "The beach of Las Canteras is the main urban beach of the city of Las Palmas de Gran Canaria (Gran Canaria, Canary Islands)",
+    "descriptionSpanish": "La playa de Las Canteras es la principal playa urbana de la ciudad de Las Palmas de Gran Canaria (Gran Canaria, Islas Canarias). Frecuente durante todo el año, es la playa preferida por la mayoría de los habitantes de la ciudad y los extranjeros que la visitan, que pueden disfrutarla en cualquier época del año gracias al clima templado.",
+    "descriptionGerman": "Der Strand von Las Canteras ist der wichtigste Stadtstrand der Stadt Las Palmas de Gran Canaria (Gran Canaria, Kanarische Inseln). Der Strand, der das ganze Jahr über frequentiert wird, ist der Strand, der von den meisten Einwohnern der Stadt und von Ausländern, die ihn besuchen, bevorzugt wird, die ihn dank des milden Klimas zu jeder Jahreszeit genießen können.",
     "map": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "web": "https://www.google.es/maps/place/Playa+De+Las+Canteras/@28.1383998,-15.4380441,16.5z/data=!4m5!3m4!1s0xc4095163c74eccb:0x3e52f017b6b424c4!8m2!3d28.1372993!4d-15.43791?hl=es&authuser=0",
     "facebook": "http://miplayadelascanteras.com/",
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 2,
       "name": "Tenerife"
@@ -2277,6 +2421,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2301,6 +2446,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2325,6 +2471,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2349,6 +2496,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2373,6 +2521,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2397,6 +2546,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2421,6 +2571,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2445,6 +2596,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2469,6 +2621,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2493,6 +2646,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2517,6 +2671,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2541,6 +2696,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2565,6 +2721,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2589,6 +2746,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2613,6 +2771,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2637,6 +2796,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2661,6 +2821,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2685,6 +2846,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2709,6 +2871,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2733,6 +2896,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2757,6 +2921,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2781,6 +2946,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2805,6 +2971,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2829,6 +2996,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2853,6 +3021,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2877,6 +3046,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2901,6 +3071,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2925,6 +3096,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2949,6 +3121,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2973,6 +3146,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -2997,6 +3171,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3021,6 +3196,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3045,6 +3221,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3069,6 +3246,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3093,6 +3271,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3117,6 +3296,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3141,6 +3321,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3165,6 +3346,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3189,6 +3371,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3213,6 +3396,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3237,6 +3421,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3261,6 +3446,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3285,6 +3471,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3309,6 +3496,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3333,6 +3521,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3357,6 +3546,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3381,6 +3571,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3405,6 +3596,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3429,6 +3621,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3453,6 +3646,7 @@
     "faceurl": "https://es-es.facebook.com/periodicoCanarias7/",
     "instagram": "fb://page/172572586147087",
     "instagramurl": "https://www.instagram.com/instagram/?hl=es",
+    "image": "https://www.surfsearchspot.com/wp-content/uploads/2016/06/las-canteras-mejor-playa-urbana-del-mundo.png",
     "island":  {
       "id": 1,
       "name": "Gran Canaria"
@@ -3464,4 +3658,6 @@
       "germanname": "Aktivitäten"
     }
   }
+
+
 ]
