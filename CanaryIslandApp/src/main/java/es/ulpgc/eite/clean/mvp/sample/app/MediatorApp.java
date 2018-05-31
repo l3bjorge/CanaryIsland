@@ -391,15 +391,15 @@ public class MediatorApp extends Application implements Mediator.Lifecycle, Medi
     }
 
     @Override
-    public void share(String location) {
+    public void share(String location, String image, String map) {
         Log.d(TAG, "calling share()" );
         String message = null;
         if(language.equals("Spanish")){
-            message = "Vista este lugar: " + location;
+            message = "Vista este lugar: " + location + " " + image + " " + map;
         } else if (language.equals("English")){
-            message = "View this place: " + location;
+            message = "View this place: " + location + " " + image + " " + map;
         } else if (language.equals("German")){
-            message = "Sehen Sie sich diesen Ort an: " + location;
+            message = "Sehen Sie sich diesen Ort an: " + location + " " + image + " " + map;
         }
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);

@@ -250,7 +250,7 @@ public class DescriptionPresenter
     if(isViewRunning()){
       Log.d(TAG, "calling onBtnShareClicked()");
       Mediator.Navigation mediator = (Mediator.Navigation) getApplication();
-      mediator.share(selectedItem.getTitle());
+      mediator.share(selectedItem.getTitle(), getModel().getImage(), getModel().getLocation());
     }
   }
 

@@ -63,7 +63,7 @@ public interface Mediator {
     void goToWeb(String url);
     void goToFacebook(String url, String faceId);
     void goToInstagram(String instagramId, String url);
-    void share(String location);
+    void share(String location, String image, String map);
 
 
 

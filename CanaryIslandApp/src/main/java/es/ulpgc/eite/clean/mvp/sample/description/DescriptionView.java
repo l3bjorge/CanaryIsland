@@ -172,7 +172,7 @@ public class DescriptionView
 
   @Override
   public void hideLocationBtn() {
-    locationBtn.setVisibility(View.INVISIBLE);
+    locationBtn.setVisibility(View.GONE);
   }
 
   @Override
