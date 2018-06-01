@@ -42,25 +42,35 @@ public class HomeModel
 
   /**
    * Method to get the value of the "label" parameter that it the title of our app
-   *
    * @return the value of the "label" parameter with the title of the app
    */
-
   @Override
   public String getLabel() {
     return label;
   }
 
+  /**
+   *  Method to get the value of the "label" parameter that it the spanish label of our app
+   * @return the value of the "label" parameter with the spanish label of the app
+   */
   public String getTextEspa(){
     textEspa = "Español";
     return textEspa;
   }
 
+  /**
+   *  Method to get the value of the "label" parameter that it the spanish label of our app
+   * @return the value of the "label" parameter with the spanish label of the app
+   */
   public String getTextEngl(){
     textEngl = "English";
     return textEngl;
   }
 
+  /**
+   *  Method to get the value of the "label" parameter that it the spanish label of our app
+   * @return the value of the "label" parameter with the spanish label of the app
+   */
   public String getTextDeut(){
     textDeut = "Deutsch";
     return textDeut;

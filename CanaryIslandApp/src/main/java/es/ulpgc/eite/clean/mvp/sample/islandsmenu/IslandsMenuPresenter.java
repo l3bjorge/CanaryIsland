@@ -92,7 +92,9 @@ public class IslandsMenuPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // View To Presenter /////////////////////////////////////////////////////////////
 
-
+    /**
+     * Method called when clicked in Gran Canaria button.
+     */
   @Override
   public void onGcButtonClicked() {
     Log.d(TAG, "calling onGcButtonClicked()");
@@ -111,6 +113,9 @@ public class IslandsMenuPresenter
 
   }
 
+    /**
+     * Method called when clicked in Tenerife button.
+     */
   @Override
   public void onTnfButtonClicked() {
     Log.d(TAG, "calling onTnfButtonClicked()");
@@ -127,6 +132,9 @@ public class IslandsMenuPresenter
     }
   }
 
+    /**
+     * Method called when clicked in Lanzarote button.
+     */
   @Override
   public void onLnzButtonClicked() {
     Log.d(TAG, "calling onLnzButtonClicked()");
@@ -143,6 +151,9 @@ public class IslandsMenuPresenter
     }
   }
 
+    /**
+     * Method called when clicked in Fuerteventura button.
+     */
   @Override
   public void onFtvButtonClicked() {
     Log.d(TAG, "calling onFtvButtonClicked()");
@@ -159,6 +170,9 @@ public class IslandsMenuPresenter
     }
   }
 
+    /**
+     * Method called when clicked in La Palma button.
+     */
   @Override
   public void onPlmButtonClicked() {
     Log.d(TAG, "calling onPlmButtonClicked()");
@@ -175,6 +189,9 @@ public class IslandsMenuPresenter
     }
   }
 
+    /**
+     * Method called when clicked in La Gomera button.
+     */
   @Override
   public void onGmrButtonClicked() {
     Log.d(TAG, "calling onGmrButtonClicked()");
@@ -191,6 +208,9 @@ public class IslandsMenuPresenter
     }
   }
 
+    /**
+     * Method called when clicked in El Hierro button.
+     */
   @Override
   public void onHrrButtonClicked() {
     Log.d(TAG, "calling onHrrButtonClicked()");
@@ -210,6 +230,10 @@ public class IslandsMenuPresenter
   /////////////////////////////////////////////////////////////////////////////////////
   // Model To Presenter //////////////////////////////////////////////////////////////
 
+    /**
+     * Method that get the language selected
+     * @return this language
+     */
   @Override
   public String getLanguage(){
     Mediator.Navigation media = (Mediator.Navigation) getApplication();
@@ -219,12 +243,19 @@ public class IslandsMenuPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // State /////////////////////////////////////////////////////////////////////////
 
-
+    /**
+     * Method that set the visibility of the toolbar
+     * @param visible is a boolean that if true the toolbar will be visible and if the false is not visible
+     */
   @Override
   public void setToolbarVisibility(boolean visible) {
     toolbarVisible = visible;
   }
 
+    /**
+     * Method that set the language selected
+     * @param language the language selected
+     */
   @Override
   public void setLanguage(String language) {
     getModel().setLanguage(language);
@@ -234,12 +265,18 @@ public class IslandsMenuPresenter
   ///////////////////////////////////////////////////////////////////////////////////
   // To Hello //////////////////////////////////////////////////////////////////////
 
+    /**
+     * Method that defines what to do when creating the screen
+     */
   @Override
   public void onScreenStarted() {
     Log.d(TAG, "calling onScreenStarted()");
     setCurrentState();
   }
 
+    /**
+     * Method that defines what to do when resuming the screen
+     */
   @Override
   public void onScreenResumed() {
     Log.d(TAG, "calling onScreenResumed()");
@@ -247,6 +284,10 @@ public class IslandsMenuPresenter
     setCurrentState();
   }
 
+    /**
+     * Method that checks the island has been selected
+     * @return the island selected
+     */
   @Override
   public String checkIsland() {
     if (gcButtonClicked){
@@ -271,11 +312,15 @@ public class IslandsMenuPresenter
   // Hello To //////////////////////////////////////////////////////////////////////
 
 
+
   @Override
   public Context getManagedContext(){
     return getActivityContext();
   }
 
+    /**
+     * Method that defines what to do when destroy the screen
+     */
   @Override
   public void destroyView(){
     if(isViewRunning()) {
@@ -283,6 +328,10 @@ public class IslandsMenuPresenter
     }
   }
 
+    /**
+     * Method that defines the visibility of the toolbar
+     * @return if the toolbar is visible
+     */
   @Override
   public boolean isToolbarVisible() {
     return toolbarVisible;

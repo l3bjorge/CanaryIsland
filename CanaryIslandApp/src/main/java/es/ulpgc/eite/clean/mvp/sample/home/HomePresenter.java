@@ -150,8 +150,7 @@ public class HomePresenter
   // State /////////////////////////////////////////////////////////////////////////
 
   /**
-   * Method that establishes the visibility of the toolbar
-   *
+   * Method that set the visibility of the toolbar
    * @param visible is a boolean that if true the toolbar will be visible and if the false is not visible
    */
 
@@ -208,7 +207,6 @@ public class HomePresenter
 
   /**
    * Method that defines the visibility of the toolbar
-   *
    * @return if the toolbar is visible
    */
   @Override
@@ -217,8 +215,7 @@ public class HomePresenter
   }
 
   /**
-   * Method that gives us the chosen language when clicking on any of the languages
-   *
+   * Method that gives us the chosen language when clicking on any of the language
    * @return the selected language
    */
   @Override

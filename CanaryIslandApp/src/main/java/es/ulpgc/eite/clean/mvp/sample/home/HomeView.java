@@ -21,6 +21,10 @@ public class HomeView
   private TextView text, textEspa, textEngl, textDeut;
 
 
+  /**
+   * Method that states what to do when we create the screen.
+   * @param savedInstanceState
+   */
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -74,7 +78,7 @@ public class HomeView
   }
 
   /**
-   * Method that states what to do when we press the button back
+   * Method that states what to do when we press the button back.
    */
   @Override
   public void onBackPressed() {
@@ -83,7 +87,7 @@ public class HomeView
   }
 
   /**
-   * Method that states what to do when we destroy the screen
+   * Method that states what to do when we destroy the screen.
    */
   @Override
   protected void onDestroy() {
@@ -96,7 +100,7 @@ public class HomeView
   // Presenter To View /////////////////////////////////////////////////////////////
 
   /**
-   *
+   *Method that finish this screen.
    */
   @Override
   public void finishScreen() {
@@ -105,7 +109,7 @@ public class HomeView
   }
 
   /**
-   *
+   *Method that hide the toolbar
    */
   @Override
   public void hideToolbar() {
@@ -113,8 +117,11 @@ public class HomeView
   }
 
   /**
-   *
-   * @param title
+   * Method that set the tittle and the languages labels
+   * @param title this is the text of tittle label
+   * @param TextoEspa this is the text of spanish label
+   * @param TextoEngl this is the text of english label
+   * @param TextoDeut this is the text of german label
    */
   @Override
   public void setLabel(String title, String TextoEspa, String TextoEngl, String TextoDeut) {

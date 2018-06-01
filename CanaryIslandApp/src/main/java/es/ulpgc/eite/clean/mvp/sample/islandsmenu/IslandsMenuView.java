@@ -27,6 +27,10 @@ public class IslandsMenuView
 
   private TextView text, textFtv, textLanz, textGranca, textTnf, textHierr, textPalma, textGome;
 
+  /**
+   * Method that states what to do when we create the screen.
+   * @param savedInstanceState
+   */
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -116,6 +120,7 @@ public class IslandsMenuView
   protected void onResume() {
     super.onResume(IslandsMenuPresenter.class, this);
   }
+
 
   @Override
   public void onBackPressed() {
