@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home.ModelToPresenter" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="169" x="262" y="412"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home.ToHome" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="169" x="283" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home.State" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="184" x="492" y="412"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home" project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="169" x="492" y="-69"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home.ViewToPresenter" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="173" x="49" y="412"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.HomePresenter" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/HomePresenter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="192" x="9" y="-69"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home.PresenterToView" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="219" x="946" y="412"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="8" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home.PresenterToModel" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="169" x="737" y="412"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="9" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.HomeView" project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/HomeView.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="219" x="946" y="-69"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.HomeModel" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/HomeModel.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="187" x="719" y="-69"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="es.ulpgc.eite.clean.mvp.sample.home.Home.HomeTo" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/home/Home.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="170" x="492" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <realization id="12">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <nesting id="13">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <realization id="14">    
+    <bendpoint x="-3" y="412"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="15">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <generalization id="16">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <nesting id="17">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="3"/>  
+  </generalization>  
+  <nesting id="19">    
+    <bendpoint x="706" y="412"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </nesting>  
+  <realization id="20">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <nesting id="21">    
+    <bendpoint x="461" y="412"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <realization id="22">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="23">    
+    <bendpoint x="18" y="412"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <nesting id="24">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <nesting id="25">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <nesting id="26">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <interface id="1" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu.ModelToPresenter" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="198" x="357" y="456"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="2" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu.State" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="198" x="616" y="456"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu.IslandsMenuTo" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="198" x="378" y="721"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="4" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu.ViewToPresenter" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="198" x="119" y="456"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="5" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="63" width="198" x="616" y="-205"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="6" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuPresenter" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenuPresenter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="621" width="198" x="79" y="-205"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu.ToIslandsMenu" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="198" x="616" y="721"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="8" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu.PresenterToView" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="355" x="1113" y="456"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="9" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuView" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenuView.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="355" x="1113" y="-205"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenuModel" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenuModel.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="198" x="875" y="-205"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="es.ulpgc.eite.clean.mvp.sample.islandsmenu.IslandsMenu.PresenterToModel" 
+    project="CanaryIsland_CanaryIsland" 
+    file="/CanaryIsland_CanaryIsland/CanaryIslandApp/src/main/java/es/ulpgc/eite/clean/mvp/sample/islandsmenu/IslandsMenu.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="198" x="875" y="456"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <nesting id="12">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <realization id="13">    
+    <bendpoint x="88" y="456"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <generalization id="14">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <realization id="15">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <nesting id="16">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <realization id="17">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <nesting id="18">    
+    <bendpoint x="844" y="456"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <realization id="19">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <nesting id="20">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <nesting id="21">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <realization id="22">    
+    <bendpoint x="67" y="456"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <realization id="23">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <nesting id="24">    
+    <bendpoint x="585" y="456"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <nesting id="25">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="11"/>  
+  </nesting>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
